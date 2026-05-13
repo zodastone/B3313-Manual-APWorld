@@ -16,7 +16,7 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
     - You will eventually need all 13 Red Stars so that B3313 will let you access the final Bowser fight, but this can wait until you reach go mode.
   - 10 Power Stars (unlocks 3rd Floor (beta))
   - All Caps
-- Optional: [PopTracker](https://poptracker.github.io/) and [Pack for B3313](TODO link). This has maps for where courses are in each overworld chunk, and can function as a client, i.e. clicking off a location on the map will actually send the location.
+- Optional: [PopTracker](https://poptracker.github.io/) and [Pack for B3313](https://github.com/zodastone/B3313-Manual-APWorld-PopTracker). This has maps for where courses are in each overworld chunk, and can function as a client, i.e. clicking off a location on the map will actually send the location.
 
 # What's Randomized
 
@@ -26,7 +26,7 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
   - Triple Jump, Backflip, Side Flip, Wall Kick, Dive, Ground Pound, Kick, Ledge Grab: Self-explanatory.
   - Long Jump
     - Also includes the B3313-added "flying somersault" performed via Z->B while moving.
-  - Climb:
+  - Climb
     - As in SM64EX, includes climbing poles/trees as well as hanging from ceilings.
     - Here, this also includes the B3313-added ability to climb up certain walls and jump off them.
     - If a wall is climbable, using Wall Kick on it instead is not in logic (for simplicity, since these walls are finicky about when you can do a true Wall Kick off them).
@@ -81,7 +81,7 @@ Examples:
 - wf.z64 is only logically accessible from the warp in the owl cage in Whomp's Kingdom.
 - Eel Graveyard is only logically accessible from swimming beyond the edge of the moat in Castle Grounds.
 - Snow Tunnels is only logically accessible from the consistent entrances in 4th Floor (beta) and Vanilla/Mirrored Upstairs.
-If you encounter an out-of-logic course by chance when attempting to enter an in-logic course, feel free to clear it if you want (you'll have to find it in its proper group in the client/tracker, though).
+- If you encounter an out-of-logic course by chance when attempting to enter an in-logic course, feel free to clear it if you want (you'll have to find it in its proper group in the client/tracker, though).
 
 ## Power Star Requirements
 - **There are no Power Star requirements for anything.** Power Stars are pure filler.
@@ -145,6 +145,7 @@ The YAML has options to enable various tricks, such as advanced movement techniq
   - Not likely, as my ROM hacking experience is minimal and I already have a large backlog of other projects I want to work on. If you are interested in taking the logic herein and making a non-manual APWorld from this, go for it.
 - How do I reach (insert location here)?
   - In this repo, check manual_b3313_zodastone/data/locations.json and regions.json, and search for the relevant location or region. Some of the trickier locations and regions contain comments explaining the logic.
+  - The PopTracker pack's maps can help if you aren't sure which course entrance in an overworld chunk leads to the course you're interested in. 
   - The B3313 wiki page on Fandom has a large amount of knowledge about the game, including all the ways each area can be entered. The overworld/course names in this APWorld match the names on the wiki.
   - 99% of the relevant overworld is reachable in Sphere 1. Some trickier cases:
     - Painting Museum: From the start of the game, take the far back door to Toad Hall, then the first pipe on the left and the door to Pink Upstairs, then the door on the left, and the door on the left again.
