@@ -1,0 +1,1576 @@
+{
+	"Main Overworld":
+	{
+		"connects_to": [
+			"3rd Floor (beta)",
+			"4th Floor",
+			"4th Floor (beta)",
+			"Basement Annex",
+			"Beta Lobby A",
+			"Beta Lobby B",
+			"Beta Lobby C",
+			"Beta Lobby D",
+			"Beta Lobby E",
+			"Bowser's Domain",
+			"Bowser's Floor and Endgame",
+			"Castle Bathroom",
+			"Castle Grounds",
+			"Challenge Lobby",
+			"Courtyard (fabribated)",
+			"Crescent Castle",
+			"Crimson Hallway",
+			"Cryptic Hideout",
+			"Elder Koopa's Library",
+			"Fabricated Castle Grounds",
+			"Fabricated Lobby",
+			"Fake Lobby",
+			"Floor 2B",
+			"Floor 3B",
+			"Floor 4B",
+			"Genesis Basement",
+			"Hybrid Lobby",
+			"Internal Garden",
+			"Internal Sewer System",
+			"Nebula Lobby",
+			"Orange Hall",
+			"Painting Museum",
+			"Parallel Lobby",
+			"Plexal Basement",
+			"Plexal Hallway",
+			"Plexal Lobby",
+			"Plexal Upstairs",
+			"Polygonal Chaos",
+			"Purple Lobby and Upstairs",
+			"Royal Lobby",
+			"Silent Hall",
+			"Star Road",
+			"Stellar Tower",
+			"Uncanny Courtyard",
+			"Vanilla Basement Maze",
+			"Vanilla Courtyard",
+			"Vanilla Lobby",
+			"Vanilla and Mirrored Upstairs"
+		],
+		"requires": [],
+		"starting": true,
+		"map": "overworld"
+	},
+	"3rd Floor (beta)":
+	{
+		"connects_to": ["3rd Floor (beta) Side Ledges", "3rd Floor (beta) Vanish Side", "Minion Base", "Test Level", "Tall Floating Fortress", "Wing Cap by the Rainbow Highway", "Cubic Greens"],
+		"requires": "|3rd Floor (beta) Courses|",
+		"map": "3f_beta"
+	},
+	"3rd Floor (beta) Side Ledges":
+	{
+		"connects_to": ["athletic", "castle1"],
+		"requires": "{HeightKick()}",
+		"map": "3f_beta"
+	},
+	"3rd Floor (beta) Vanish Side":
+	{
+		"connects_to": ["castle2"],
+		"requires": "|Vanish Cap|",
+		"map": "3f_beta"
+	},
+	"athletic":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"castle1":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"Minion Base":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"Test Level":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"Tall Floating Fortress":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"Wing Cap by the Rainbow Highway":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"Cubic Greens":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"castle2":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "3f_beta"
+	},
+	"4th Floor":
+	{
+		"connects_to": ["Deep-Water Station"],
+		"requires": "|4th Floor Courses|",
+		"map": "4f"
+	},
+	"Deep-Water Station":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f"
+	},
+	"4th Floor (beta)":
+	{
+		"connects_to": ["yajimatest", "Stone Island Pathway", "Collision Test", "Fire Field", "Test Course", "Fire Fortress", "Brown Stony Steps", "Sombrero Land", "athletic2", "Snow Tunnels"],
+		"requires": "|4th Floor (beta) Courses|",
+		"map": "4f_beta"
+	},
+	"yajimatest":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Stone Island Pathway":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Collision Test":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Fire Field":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Test Course":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Fire Fortress":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Brown Stony Steps":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Sombrero Land":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"athletic2":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Snow Tunnels":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "4f_beta"
+	},
+	"Basement Annex":
+	{
+		"connects_to": ["Ghost House", "Cozy Woods", "Carryboy Farmland"],
+		"requires": "|Basement Annex Courses|",
+		"map": "basement_annex"
+	},
+	"Ghost House":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "basement_annex"
+	},
+	"Cozy Woods":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "basement_annex"
+	},
+	"Carryboy Farmland":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "basement_annex"
+	},
+	"Beta Lobby A":
+	{
+		"connects_to": ["Snow Slider (B-Roll)", "Mountain (B-Roll) Upper", "Fire Bubble (B-Roll)", "Water Land (Shoshinkai)"],
+		"requires": "|Beta Lobby A Courses|",
+		"map": "beta_lobby_a"
+	},
+	"Snow Slider (B-Roll)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_a"
+	},
+	"Mountain (B-Roll) Upper":
+	{
+		"connects_to": [],
+		"requires": "|Climb| OR ({HeightLedgeGrab()} AND (|Cannon Unlock (Mountain (B-Roll))| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))))",
+		"map": "beta_lobby_a"
+	},
+	"Fire Bubble (B-Roll)":
+	{
+		"connects_to": ["Melting Magma Mound"],
+		"requires": [],
+		"map": "beta_lobby_a"
+	},
+	"Melting Magma Mound":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_a"
+	},
+	"Water Land (Shoshinkai)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_a"
+	},
+	"Beta Lobby B":
+	{
+		"connects_to": ["Jolly Roger Lagoon", "Frosty Highlands", "Whomp's Kingdom", "Blazing Bully Base"],
+		"requires": "|Beta Lobby B Courses|",
+		"map": "beta_lobby_b"
+	},
+	"Jolly Roger Lagoon":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands":
+	{
+		"connects_to": ["Snowman's Land (beta)"],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Snowman's Land (beta)":
+	{
+		"connects_to": ["Frosty Highlands Pipe Entrance"],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands Pipe Entrance":
+	{
+		"connects_to": ["Frosty Highlands"],
+		"requires": "{HeightBackflip()}",
+		"map": "beta_lobby_b"
+	},
+	"Whomp's Kingdom":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Blazing Bully Base":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Beta Lobby C":
+	{
+		"connects_to": ["Blargg's Lava Realm", "Jolly Roger Bay (beta)", "Bowser in the Dark World (Shoshinkai)"],
+		"requires": "|Beta Lobby C Courses|",
+		"map": "beta_lobby_c"
+	},
+	"Blargg's Lava Realm":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_c"
+	},
+	"Jolly Roger Bay (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_c"
+	},
+	"Bowser in the Dark World (Shoshinkai)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_c"
+	},
+	"Beta Lobby D":
+	{
+		"connects_to": ["Snowman's Land (beta)", "River Mountain"],
+		"requires": "|Beta Lobby D Courses|",
+		"map": "beta_lobby_d"
+	},
+	"River Mountain":
+	{
+		"connects_to": ["Dark Downtown"],
+		"requires": [],
+		"map": "beta_lobby_d"
+	},
+	"Dark Downtown":
+	{
+		"connects_to": ["Dark Downtown Pipe"],
+		"requires": [],
+		"map": "beta_lobby_d"
+	},
+	"Dark Downtown Pipe":
+	{
+		"connects_to": ["Bob-omb Battlefield (beta)"],
+		"requires": "({HeightSideFlip()} OR (|Kick| AND {YamlEnabled(slope_movement)}) OR (|Climb| and |Long Jump|)) AND {HeightBackflip()}",
+		"map": "beta_lobby_d"
+	},
+	"Bob-omb Battlefield (beta)":
+	{
+		"connects_to": ["River Mountain"],
+		"requires": [],
+		"map": "beta_lobby_d"
+	},
+	"Beta Lobby E":
+	{
+		"connects_to": ["Water Land (B-Roll)", "Fire Bubble (Shoshinkai)", "Mountain (Shoshinkai)", "Snow Slider (Shoshinkai)"],
+		"requires": "|Beta Lobby E Courses|",
+		"map": "beta_lobby_e"
+	},
+	"Water Land (B-Roll)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_e"
+	},
+	"Fire Bubble (Shoshinkai)":
+	{
+		"connects_to": ["Melting Magma Mound"],
+		"requires": [],
+		"map": "beta_lobby_e"
+	},
+	"Mountain (Shoshinkai)":
+	{
+		"connects_to": ["Mountain (Shoshinkai) Upper"],
+		"requires": [],
+		"map": "beta_lobby_e"
+	},
+	"Mountain (Shoshinkai) Upper":
+	{
+		"connects_to": [],
+		"requires": "|Cannon Unlock (Mountain (Shoshinkai))| OR |Climb| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))",
+		"map": "beta_lobby_e"
+	},
+	"Snow Slider (Shoshinkai)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "beta_lobby_e"
+	},
+	"Bowser's Domain":
+	{
+		"connects_to": ["Drip Drop Depths"],
+		"requires": "|Bowser's Domain Courses|",
+		"map": "bowser_domain"
+	},
+	"Drip Drop Depths":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "bowser_domain"
+	},
+	"Bowser's Floor and Endgame":
+	{
+		"connects_to": ["Bob-omb Village", "Peach's Cell"],
+		"requires": "|Bowser's Floor and Endgame Courses|",
+		"map": "bowser_floor"
+	},
+	"Bob-omb Village":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "bowser_floor"
+	},
+	"Peach's Cell":
+	{
+		"connects_to": ["Randomized Realm"],
+		"requires": "{HeightKick()}",
+		"map": "bowser_floor",
+		"_comment": "This is the only pipe in the game tall enough to get a height requirement"
+	},
+	"Randomized Realm":
+	{
+		"connects_to": ["Eternal Fort"],
+		"requires": [],
+		"map": "bowser_floor"
+	},
+	"Eternal Fort":
+	{
+		"connects_to": [],
+		"requires": "|Triple Jump| AND (|Wing Cap| OR (|Side Flip| AND |Wall Kick| AND |Ledge Grab|))",
+		"map": "bowser_floor"
+	},
+	"Castle Bathroom":
+	{
+		"connects_to": ["River Mountain (beta)"],
+		"requires": "|Castle Bathroom Courses|",
+		"map": "castle_bathroom"
+	},
+	"River Mountain (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "castle_bathroom"
+	},
+	"Castle Grounds":
+	{
+		"connects_to": ["Sunken Castle", "Eel Graveyard"],
+		"requires": "|Castle Grounds Courses|",
+		"map": "castle_grounds"
+	},
+	"Sunken Castle":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "castle_grounds"
+	},
+	"Eel Graveyard":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "castle_grounds"
+	},
+	"Challenge Lobby":
+	{
+		"connects_to": ["Tall Tall Treetops", "Motos Factory", "Tower of the Wing Cap (beta) Upper"],
+		"requires": "|Challenge Lobby Courses|",
+		"map": "challenge_lobby"
+	},
+	"Tall Tall Treetops":
+	{
+		"connects_to": ["Tall Tall Treetops Upper", "Tall Tall Treetops Ramps From Bottom"],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Tall Tall Treetops Upper":
+	{
+		"connects_to": ["Tall Tall Treetops Ramps Star"],
+		"requires": "|Cannon Unlock (Tall Tall Treetops)| AND (|Ledge Grab| OR |Backflip| OR |Side Flip| OR |Triple Jump|)",
+		"map": "challenge_lobby"
+	},
+	"Tall Tall Treetops Ramps From Bottom":
+	{
+		"connects_to": ["Tall Tall Treetops Ramps Star"],
+		"requires": "{DistKick()} OR (|Side Flip| AND |Wall Kick|)",
+		"map": "challenge_lobby"
+	},
+	"Tall Tall Treetops Ramps Star":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Motos Factory":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Tower of the Wing Cap (beta) Upper":
+	{
+		"connects_to": ["Tower of the Wing Cap (beta) Switch", "Sky-High Pathway Upper"],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Tower of the Wing Cap (beta) Switch":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Sky-High Pathway Upper":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Sky-High Pathway Lower":
+	{
+		"connects_to": ["Sky-High Pathway Upper from Lower"],
+		"requires": [],
+		"map": "challenge_lobby"
+	},
+	"Sky-High Pathway Upper from Lower":
+	{
+		"connects_to": ["Tower of the Wing Cap (beta) Upper from SHP Upper from Lower", "Tower of the Wing Cap (beta) Switch from SHP Upper from Lower", "Sky-High Pathway Upper"],
+		"requires": "|Wall Kick| AND (|Ledge Grab| OR (|Side Flip| AND |Triple Jump|))",
+		"map": "challenge_lobby"
+	},
+	"Tower of the Wing Cap (beta) Switch from SHP Upper from Lower":
+	{
+		"connects_to": ["Tower of the Wing Cap (beta) Switch"],
+		"requires": "{DistLongJump()} AND (|Cannon Unlock (Tower of the Wing Cap (beta))| OR (|Triple Jump| AND |Wing Cap|))",
+		"map": "challenge_lobby"
+	},
+	"Tower of the Wing Cap (beta) Upper from SHP Upper from Lower":
+	{
+		"connects_to": ["Tower of the Wing Cap (beta) Upper"],
+		"requires": "{DistLongJump()} AND |Wing Cap| AND (|Cannon Unlock (Tower of the Wing Cap (beta))| OR |Triple Jump|)",
+		"map": "challenge_lobby"
+	},
+	"Courtyard (fabribated)":
+	{
+		"connects_to": ["Big Boo's Haunt (beta)", "Checkerboard (fabricated)"],
+		"requires": "|Courtyard (fabricated) Courses|",
+		"map": "courtyard_fabricated"
+	},
+	"Big Boo's Haunt (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "courtyard_fabricated"
+	},
+	"Checkerboard (fabricated)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "courtyard_fabricated"
+	},
+	"Crescent Castle":
+	{
+		"connects_to": ["Bountiful Beach", "Tick Tock Blocks"],
+		"requires": "|Crescent Castle Courses|",
+		"map": "crescent_castle"
+	},
+	"Bountiful Beach":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "crescent_castle"
+	},
+	"Tick Tock Blocks":
+	{
+		"connects_to": [],
+		"requires": "|Wall Kick|",
+		"map": "crescent_castle"
+	},
+	"Crimson Hallway":
+	{
+		"connects_to": ["Aquarium Limbo", "Bowser's Checkered Madness"],
+		"requires": "|Crimson Hallway Courses|",
+		"map": "crimson_hallway"
+	},
+	"Aquarium Limbo":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "crimson_hallway"
+	},
+	"Bowser's Checkered Madness":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "crimson_hallway"
+	},
+	"Cryptic Hideout":
+	{
+		"connects_to": ["Click Clock Climb"],
+		"requires": "|Cryptic Hideout Courses|",
+		"map": "cryptic_hideout"
+	},
+	"Click Clock Climb":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "cryptic_hideout"
+	},
+	"Elder Koopa's Library":
+	{
+		"connects_to": ["Spiky Sand Land", "Bedrock Magmas"],
+		"requires": "|Elder Koopa's Library Courses|",
+		"map": "elder_library"
+	},
+	"Spiky Sand Land":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "elder_library"
+	},
+	"Bedrock Magmas":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "elder_library"
+	},
+	"Fabricated Castle Grounds":
+	{
+		"connects_to": ["Wet-Dry Moat"],
+		"requires": "|Fabricated Castle Grounds Courses| AND (|Ledge Grab| OR ({YamlEnabled(hidden_stuff)} AND (|Kick| OR |Triple Jump|) AND |Climb|))",
+		"map": "fabricated_grounds",
+		"_comment": "Can hang from the underside of the moat bridge"
+	},
+	"Wet-Dry Moat":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "fabricated_grounds"
+	},
+	"Fabricated Lobby":
+	{
+		"connects_to": ["Water Land (fabricated)", "Fire Bubble (fabricated)", "Mountain (fabricated)", "Snow Slider (fabricated)", "Fabricated Lobby (Corrupted)"],
+		"requires": "|Fabricated Lobby Courses|",
+		"map": "fabricated_lobby"
+	},
+	"Water Land (fabricated)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "fabricated_lobby"
+	},
+	"Fire Bubble (fabricated)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "fabricated_lobby"
+	},
+	"Mountain (fabricated)":
+	{
+		"connects_to": ["Mountain (fabricated) Upper"],
+		"requires": [],
+		"map": "fabricated_lobby"
+	},
+	"Mountain (fabricated) Upper":
+	{
+		"connects_to": [],
+		"requires": "|Cannon Unlock (Mountain (fabricated))| OR |Climb| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))",
+		"map": "fabricated_lobby"
+	},
+	"Snow Slider (fabricated)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "fabricated_lobby"
+	},
+	"Fabricated Lobby (Corrupted)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "fabricated_lobby"
+	},
+	"Fake Lobby":
+	{
+		"connects_to": ["Fake Lobby Hole"],
+		"requires": "|Fake Lobby Courses|",
+		"map": "fake_lobby"
+	},
+	"Fake Lobby Hole":
+	{
+		"connects_to": ["Mario's Maze"],
+		"requires": "|Ground Pound|",
+		"map": "fake_lobby"
+	},
+	"Mario's Maze":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "fake_lobby"
+	},
+	"Floor 2B":
+	{
+		"connects_to": ["Midnight Meadow", "Wiggler's Forest Fortress", "Sunshine Isles", "Goomboss Battle"],
+		"requires": "|Floor 2B Courses|",
+		"map": "floor_2b"
+	},
+	"Midnight Meadow":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_2b"
+	},
+	"Wiggler's Forest Fortress":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_2b"
+	},
+	"Sunshine Isles":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_2b"
+	},
+	"Goomboss Battle":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_2b"
+	},
+	"Floor 3B":
+	{
+		"connects_to": ["Sandstone Palace", "Lethal Cavern"],
+		"requires": "|Floor 3B Courses|",
+		"map": "floor_3b"
+	},
+	"Sandstone Palace":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_3b"
+	},
+	"Lethal Cavern":
+	{
+		"connects_to": [],
+		"requires": "({HeightBackflip()} AND {YamlEnabled(lava_boost)}) OR ({DistKick()} AND |Wall Kick|)",
+		"map": "floor_3b"
+	},
+	"Floor 4B":
+	{
+		"connects_to": ["Fly Guy's Hill", "Peach's Secret Slide (beta)", "Dream Forest", "Toxic Ruins", "Dream Battlefield", "Water Cube", "Floor 4B Upper Hole"],
+		"requires": "|Floor 4B Courses|",
+		"map": "floor_4b"
+	},
+	"Fly Guy's Hill":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Peach's Secret Slide (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Dream Forest":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Toxic Ruins":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Dream Battlefield":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Water Cube":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Floor 4B Upper Hole":
+	{
+		"connects_to": ["Big Blue Skylands"],
+		"requires": "{HeightBackflip()}",
+		"map": "floor_4b"
+	},
+	"Big Blue Skylands":
+	{
+		"connects_to": ["Dream Forest"],
+		"requires": [],
+		"map": "floor_4b"
+	},
+	"Genesis Basement":
+	{
+		"connects_to": ["Flower Fields", "Chroma Tundra", "Holy Yellow Switch Palace"],
+		"requires": "|Genesis Basement Courses|",
+		"map": "genesis_basement"
+	},
+	"Flower Fields":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "genesis_basement"
+	},
+	"Chroma Tundra":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "genesis_basement"
+	},
+	"Holy Yellow Switch Palace":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "genesis_basement"
+	},
+	"Hybrid Lobby":
+	{
+		"connects_to": ["Haunted Mansion Back"],
+		"requires": "|Hybrid Lobby Courses|",
+		"map": "hybrid_lobby"
+	},
+	"Haunted Mansion Back":
+	{
+		"connects_to": [],
+		"requires": "|Triple Jump|",
+		"map": "hybrid_lobby"
+	},
+	"Internal Garden":
+	{
+		"connects_to": ["Bob-omb Tower"],
+		"requires": "|Internal Garden Courses|",
+		"map": "internal_garden"
+	},
+	"Bob-omb Tower":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "internal_garden"
+	},
+	"Internal Sewer System":
+	{
+		"connects_to": ["Melting Magma Mound"],
+		"requires": "|Internal Sewer System Courses|",
+		"map": "internal_sewer"
+	},
+	"Nebula Lobby":
+	{
+		"connects_to": ["Secret of the Plexus", "Nebula Lobby Clock Ledge", "Dire Bubble", "Skyhigh Pipelands End", "Chomp's Cloudy Isles", "Blazing Bullet Factory", "Snow Ravine", "Rustic Swampland", "Blackrock Mountain", "Wet-Dry Ruins", "Captain Fly Guy's Tower", "Snowman's Frozen Desert"],
+		"requires": "|Nebula Lobby Courses|",
+		"map": "nebula_lobby"
+	},
+	"Secret of the Plexus":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Nebula Lobby Clock Ledge":
+	{
+		"connects_to": ["Tick Tock Slide"],
+		"requires": "{HeightLedgeGrab()}",
+		"map": "nebula_lobby"
+	},
+	"Tick Tock Slide":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Dire Bubble":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Skyhigh Pipelands End":
+	{
+		"connects_to": [],
+		"requires": "{DistKick()} AND |Wall Kick|",
+		"map": "nebula_lobby"
+	},
+	"Chomp's Cloudy Isles":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Blazing Bullet Factory":
+	{
+		"connects_to": ["Blazing Bullet Factory Top", "Blazing Bullet Factory Aquarium"],
+		"requires": "|Vanish Cap|",
+		"map": "nebula_lobby"
+	},
+	"Blazing Bullet Factory Top":
+	{
+		"connects_to": [],
+		"requires": "|Wall Kick| OR |Ledge Grab| OR |Backflip| OR |Side Flip|",
+		"map": "nebula_lobby"
+	},
+	"Blazing Bullet Factory Aquarium":
+	{
+		"connects_to": [],
+		"requires": "{HeightWallKickLedgeGrab()}",
+		"map": "nebula_lobby"
+	},
+	"Snow Ravine":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Rustic Swampland":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Blackrock Mountain":
+	{
+		"connects_to": ["Blackrock Mountain Top"],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Blackrock Mountain Top":
+	{
+		"connects_to": ["Bedrock Magmas"],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Wet-Dry Ruins":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Captain Fly Guy's Tower":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Snowman's Frozen Desert":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Orange Hall":
+	{
+		"connects_to": ["Vanish Cap under the Moat (beta)"],
+		"requires": "|Orange Hall Courses| AND {HeightBackflip()}",
+		"map": "orange_hall"
+	},
+	"Vanish Cap under the Moat (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "orange_hall"
+	},
+	"Painting Museum":
+	{
+		"connects_to": ["Tall Mountain", "Dream Castle", "Dry Square"],
+		"requires": "|Painting Museum Courses|",
+		"map": "painting_museum",
+		"_comment": "Access in Sphere 1: from start, to back doors to Toad Hall, left pipe and door to Pink Upstairs, door on left, door on left"
+	},
+	"Tall Mountain":
+	{
+		"connects_to": ["Tall Mountain Top"],
+		"requires": [],
+		"map": "painting_museum"
+	},
+	"Tall Mountain Top":
+	{
+		"connects_to": [],
+		"requires": "|Wall Kick| OR |Climb|",
+		"map": "painting_museum"
+	},
+	"Dream Castle":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "painting_museum"
+	},
+	"Dry Square":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "painting_museum"
+	},
+	"Parallel Lobby":
+	{
+		"connects_to": ["Wing Mario over the Floating Islands", "Treetop Ride", "Frosty Flowering Peak", "Steep Green Summit", "Parallel Lobby Vanish Painting", "The City", "Curly's Fire Bubble", "Hazy Memory Cave", "Underwater Maze", "Frosty Mountains", "Bowser's Airship", "Bowser in the Dark World (Shoshinkai)"],
+		"requires": "|Parallel Lobby Courses|",
+		"map": "parallel_lobby"
+	},
+	"Wing Mario over the Floating Islands":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Treetop Ride":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Frosty Flowering Peak":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Steep Green Summit":
+	{
+		"connects_to": ["Monkey Slide (beta)"],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Monkey Slide (beta)":
+	{
+		"connects_to": [],
+		"requires": "(|Climb| OR ({HeightBackflip()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND {HeightKick()}",
+		"map": "parallel_lobby"
+	},
+	"Parallel Lobby Vanish Painting":
+	{
+		"connects_to": ["No Man's Land"],
+		"requires": "|Vanish Cap| AND {HeightBackflip()}",
+		"map": "parallel_lobby"
+	},
+	"No Man's Land":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"The City":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Curly's Fire Bubble":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Hazy Memory Cave":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Underwater Maze":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Frosty Mountains":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Bowser's Airship":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "parallel_lobby"
+	},
+	"Plexal Basement":
+	{
+		"connects_to": ["Hazy Maze Cave (beta)", "Caldera Temple", "Sandy Skyloft", "Bowser in the Fire Sea", "Tiny-Huge Island (beta) Upper", "Flooded Downtown", "Shifted Sand Land", "Desert Maze", "Toad Catacombs", "Lethal Cavern", "Dry Town"],
+		"requires": "|Plexal Basement Courses|",
+		"map": "plexal_basement"
+	},
+	"Hazy Maze Cave (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Caldera Temple":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Sandy Skyloft":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Bowser in the Fire Sea":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Tiny-Huge Island (beta) Upper":
+	{
+		"connects_to": ["Tiny-Huge Island (beta) Tiny"],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Tiny-Huge Island (beta) Tiny":
+	{
+		"connects_to": ["Tiny-Huge Island (beta) Upper"],
+		"requires": "|Wall Kick| OR |Triple Jump| OR |Side Flip| OR |Backflip|",
+		"map": "plexal_basement"
+	},
+	"Tiny-Huge Island (beta) Mid-Size":
+	{
+		"connects_to": ["Tiny-Huge Island (beta) Upper"],
+		"requires": "|Wall Kick| OR |Triple Jump| OR |Cannon Unlock (Tiny-Huge Island (beta))|",
+		"map": "plexal_basement"
+	},
+	"Flooded Downtown":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Shifted Sand Land":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Desert Maze":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Toad Catacombs":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Dry Town":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Plexal Hallway":
+	{
+		"connects_to": ["Grim Green Forest", "Thwomp's Fortress", "Rocky Trek", "Cave City"],
+		"requires": "|Plexal Hallway Courses|",
+		"map": "plexal_hallway"
+	},
+	"Grim Green Forest":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_hallway"
+	},
+	"Thwomp's Fortress":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_hallway"
+	},
+	"Rocky Trek":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_hallway"
+	},
+	"Cave City":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_hallway"
+	},
+	"Plexal Lobby":
+	{
+		"connects_to": ["Big Boo's Haunted Forest Upper", "Grassy Highlands", "Bob-omb Test Field", "Goomba Hills"],
+		"requires": "|Plexal Lobby Courses|",
+		"map": "plexal_lobby"
+	},
+	"Big Boo's Haunted Forest Upper":
+	{
+		"connects_to": ["Big Boo's Haunted Forest Lower from Upper"],
+		"requires": [],
+		"map": "plexal_lobby"
+	},
+	"Big Boo's Haunted Forest Lower from Upper":
+	{
+		"connects_to": ["Big Boo's Haunted Forest Lower"],
+		"requires": "|Vanish Cap|",
+		"map": "plexal_lobby"
+	},
+	"Big Boo's Haunted Forest Lower":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_lobby"
+	},
+	"Grassy Highlands":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_lobby"
+	},
+	"Bob-omb Test Field":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_lobby"
+	},
+	"Goomba Hills":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_lobby"
+	},
+	"Plexal Upstairs":
+	{
+		"connects_to": ["Rainbow Ride (beta)", "Sky-High Pathway Lower", "Lavish Lava Mountain", "Creepy Cove", "Pleasant Pleasant Falls", "Dry Town", "Big Boo's Fortress"],
+		"requires": "|Plexal Upstairs Courses|",
+		"map": "plexal_upstairs"
+	},
+	"Rainbow Ride (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_upstairs"
+	},
+	"Lavish Lava Mountain":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_upstairs"
+	},
+	"Creepy Cove":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_upstairs"
+	},
+	"Pleasant Pleasant Falls":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_upstairs"
+	},
+	"Big Boo's Fortress":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "plexal_upstairs"
+	},
+	"Polygonal Chaos":
+	{
+		"connects_to": ["SGI Indy", "MIPS's Forest"],
+		"requires": "|Polygonal Chaos Courses|",
+		"map": "polygonal chaos",
+		"_comment": "Access in Sphere 1: start, back doors to Toad Hall, left pipe, door to Pink Upstairs, opposite doors"
+	},
+	"SGI Indy":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "polygonal chaos"
+	},
+	"MIPS's Forest":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "polygonal chaos"
+	},
+	"Purple Lobby and Upstairs":
+	{
+		"connects_to": ["Bowser in the Dark World (Shoshinkai)", "MIPS's Forest"],
+		"requires": "|Purple Lobby and Upstairs Courses|",
+		"map": "purple"
+	},
+	"Royal Lobby":
+	{
+		"connects_to": ["Salty Salty Shore", "Piranha Plant Garden", "Downtown City", "Tall Tall Mountain (beta)"],
+		"requires": "|Royal Lobby Courses|",
+		"map": "royal_lobby"
+	},
+	"Salty Salty Shore":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "royal_lobby"
+	},
+	"Piranha Plant Garden":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "royal_lobby"
+	},
+	"Downtown City":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "royal_lobby"
+	},
+	"Tall Tall Mountain (beta)":
+	{
+		"connects_to": ["Magic Mushroom Cave"],
+		"requires": [],
+		"map": "royal_lobby"
+	},
+	"Magic Mushroom Cave":
+	{
+		"connects_to": [],
+		"requires": "{DistWallKickLedgeGrab()} OR (|Kick| AND {YamlEnabled(slope_movement)})",
+		"map": "royal_lobby"
+	},
+	"Silent Hall":
+	{
+		"connects_to": ["Uncanny Moat", "Vanish Cap within the Plexus"],
+		"requires": "|Silent Hall Courses|",
+		"map": "silent_hall"
+	},
+	"Uncanny Moat":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "silent_hall"
+	},
+	"Vanish Cap within the Plexus":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "silent_hall"
+	},
+	"Star Road":
+	{
+		"connects_to": ["Yoshi's Beach", "Ultra Battle Fort", "Snow Tower", "Wet-Dry Town", "Corrupted Challenge", "Star Road Endings Pipe"],
+		"requires": "|Star Road Courses|",
+		"map": "star_road",
+		"_comment": "Access in Sphere 1: set game to ACT 1 by waiting on title screen for 30 seconds, Plexal Lobby, Boo cage to Crimson Hallway, die"
+	},
+	"Yoshi's Beach":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "star_road"
+	},
+	"Ultra Battle Fort":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "star_road"
+	},
+	"Snow Tower":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "star_road"
+	},
+	"Wet-Dry Town":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "star_road"
+	},
+	"Corrupted Challenge":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "star_road"
+	},
+	"Star Road Endings Pipe":
+	{
+		"connects_to": ["Endings"],
+		"requires": "|Triple Jump| OR {YamlEnabled(hidden_stuff)}",
+		"map": "star_road",
+		"_comment": "Hidden warp on the the tip of the star past the number 3"
+	},
+	"Endings":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "star_road"
+	},
+	"Stellar Tower":
+	{
+		"connects_to": ["Mountainside Village", "Bob-omb Grassyfield", "Misty Beach"],
+		"requires": "|Stellar Tower Courses|",
+		"map": "stellar_tower"
+	},
+	"Mountainside Village":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "stellar_tower"
+	},
+	"Bob-omb Grassyfield":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "stellar_tower"
+	},
+	"Misty Beach":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "stellar_tower"
+	},
+	"Uncanny Courtyard":
+	{
+		"connects_to": ["Battle Fort", "Uncanny Courtyard Checkerboard Warp"],
+		"requires": "|Uncanny Courtyard Courses|",
+		"map": "uncanny_courtyard"
+	},
+	"Battle Fort":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "uncanny_courtyard"
+	},
+	"Uncanny Courtyard Checkerboard Warp":
+	{
+		"connects_to": ["Checkerboard"],
+		"requires": "{HeightWallKickLedgeGrab()}",
+		"map": "uncanny_courtyard"
+	},
+	"Checkerboard":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "uncanny_courtyard"
+	},
+	"Vanilla Basement Maze":
+	{
+		"connects_to": ["Chroma Tundra (beta)", "Cave Dungeon", "Fire Bubble (Shoshinkai)"],
+		"requires": "|Vanilla Basement Maze Courses|",
+		"map": "vanilla_basement"
+	},
+	"Chroma Tundra (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_basement"
+	},
+	"Cave Dungeon":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_basement"
+	},
+	"Vanilla Courtyard":
+	{
+		"connects_to": ["Big Boo's Haunt (vanilla)"],
+		"requires": "|Vanilla Courtyard Courses|",
+		"map": "vanilla_courtyard"
+	},
+	"Big Boo's Haunt (vanilla)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_courtyard"
+	},
+	"Vanilla Lobby":
+	{
+		"connects_to": ["Big Boo's Haunted Forest Lower", "Bowser in the Dark World (beta)", "Bob-omb Battlefield (beta)", "Cool Cool Mountain (beta)", "Flying Fortress", "Fish Tank Ledge", "Jolly Roger Docks"],
+		"requires": "|Vanilla Lobby Courses|",
+		"map": "vanilla_lobby"
+	},
+	"Bowser in the Dark World (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_lobby"
+	},
+	"Cool Cool Mountain (beta)":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_lobby"
+	},
+	"Flying Fortress":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_lobby"
+	},
+	"Fish Tank Ledge":
+	{
+		"connects_to": ["Fish Tank"],
+		"requires": "{HeightLedgeGrab()}",
+		"map": "vanilla_lobby"
+	},
+	"Fish Tank":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_lobby"
+	},
+	"Jolly Roger Docks":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_lobby"
+	},
+	"Vanilla and Mirrored Upstairs":
+	{
+		"connects_to": ["Wet-Dry Paradise", "Snowman's Darkness", "Wet-Dry World (beta)", "Tiny-Huge Island (beta) Upper", "Tiny-Huge Island (beta) Tiny", "Tiny-Huge Island (beta) Mid-Size", "Grassy Snowy Summit", "Clockwork Innards", "Fire Bubble 2", "Snow Tunnels", "Flying Fortress"],
+		"requires": "|Vanilla and Mirrored Upstairs Courses|",
+		"map": "vanilla_upstairs"
+	},
+	"Wet-Dry Paradise":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_upstairs"
+	},
+	"Snowman's Darkness":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_upstairs"
+	},
+	"Wet-Dry World (beta)":
+	{
+		"connects_to": ["Wet-Dry World (beta) Upper"],
+		"requires": [],
+		"map": "vanilla_upstairs"
+	},
+	"Wet-Dry World (beta) Upper":
+	{
+		"connects_to": ["Wet-Dry World (beta) Behind the Grate"],
+		"requires": "{HeightLedgeGrab()} OR (|Kick| AND {YamlEnabled(slope_movement)})}",
+		"map": "vanilla_upstairs"
+	},
+	"Wet-Dry World (beta) Behind the Grate":
+	{
+		"connects_to": ["Dry Town"],
+		"requires": "|Ledge Grab| OR |Cannon Unlock (Wet-Dry World (beta))| OR |Triple Jump|",
+		"map": "vanilla_upstairs"
+	},
+	"Grassy Snowy Summit":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_upstairs"
+	},
+	"Clockwork Innards":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_upstairs"
+	},
+	"Fire Bubble 2":
+	{
+		"connects_to": [],
+		"requires": [],
+		"map": "vanilla_upstairs"
+	}
+}

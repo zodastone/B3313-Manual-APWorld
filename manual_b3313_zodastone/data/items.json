@@ -1,0 +1,629 @@
+[
+	{
+		"count":1,
+		"name": "Dead Bowser",
+		"category": ["Victory Items"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Triple Jump",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Long Jump",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Backflip",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Side Flip",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Wall Kick",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Dive",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Ground Pound",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Kick",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Climb",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Ledge Grab",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Wing Cap",
+		"category": ["Caps"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Metal Cap",
+		"category": ["Caps"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Vanish Cap",
+		"category": ["Caps"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Green Comet",
+		"category": ["Comets"],
+		"progression": true
+	},
+	{
+		"count":13,
+		"name": "Red Star",
+		"category": ["Red Stars"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Big Blue Skylands)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Blackrock Mountain)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Bob-omb Grassyfield)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Bob-omb Battlefield (beta))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Chroma Tundra)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Creepy Cove)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Dream Battlefield)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Dry Town)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Fire Field)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Fire Fortress)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Fly Guy's Hill)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Flying Fortress)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Goomba Hills)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Grassy Highlands)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Misty Beach)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Mountain (B-Roll))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Mountain (Shoshinkai))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Mountain (fabricated))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Piranha Plant Garden)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Pleasant Pleasant Falls)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Sandstone Palace)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Shifting Sand Land (beta))",
+		"category": ["Cannons"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Snow Ravine)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Snowman's Darkness)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (River Mountain)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (River Mountain (beta))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Tall Tall Treetops)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Tiny-Huge Island (beta))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Tower of the Wing Cap (beta))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Toxic Ruins)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Ultra Battle Fort)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Wet-Dry Paradise)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Wet-Dry World (beta))",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Whomp's Kingdom)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Yoshi's Beach)",
+		"category": ["Cannons"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Floating Hotel)",
+		"category": ["Cannons"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Vanilla Castle Grounds)",
+		"category": ["Cannons"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Cannon Unlock (Wing Mario over the Floating Islands)",
+		"category": ["Cannons"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "3rd Floor (beta) Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "4th Floor Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "4th Floor (beta) Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Basement Annex Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Beta Lobby A Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Beta Lobby B Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Beta Lobby C Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Beta Lobby D Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Beta Lobby E Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Bowser's Domain Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Bowser's Floor and Endgame Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Castle Bathroom Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Castle Grounds Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Challenge Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Courtyard (fabricated) Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Crescent Castle Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Crimson Hallway Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cryptic Hideout Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Elder Koopa's Library Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Fabricated Castle Grounds Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Fabricated Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Fake Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Floor 2B Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Floor 3B Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Floor 4B Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Genesis Basement Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Hybrid Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Internal Garden Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Internal Sewer System Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Nebula Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Orange Hall Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Painting Museum Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Parallel Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Plexal Basement Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Plexal Hallway Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Plexal Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Plexal Upstairs Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Polygonal Chaos Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Purple Lobby and Upstairs Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Royal Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Silent Hall Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Star Road Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Stellar Tower Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Uncanny Courtyard Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Vanilla Basement Maze Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Vanilla Courtyard Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Vanilla Lobby Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Vanilla and Mirrored Upstairs Courses",
+		"category": ["Course Unlocks"],
+		"progression": true
+	},
+	{
+		"count":100,
+		"name": "Power Star",
+		"category": ["Filler"]
+	},
+	{
+		"count":100,
+		"name": "50 Coins",
+		"category": ["Filler"]
+	},
+	{
+		"count":100,
+		"name": "10 Coins",
+		"category": ["Filler"]
+	}
+]

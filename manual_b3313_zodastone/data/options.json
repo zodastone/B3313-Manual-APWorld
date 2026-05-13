@@ -1,0 +1,126 @@
+{
+	"core": {
+		
+	},
+	"user": {
+		"red_star_locations": {
+			"type": "Choice",
+			"display_name": "Red Star Locations",
+			"description": [
+				"Where Red Stars are placed.",
+				"If vanilla, total_red_stars will be capped at 13, and values less than 13 will result in some vanilla locations being randomly selected."
+			],
+			"values": {
+				"vanilla": 0,
+				"local": 1,
+				"anywhere": 2
+			},
+			"default": 1,
+			"allow_custom_value": false,
+			"group": "Red Stars"
+		},
+		"total_red_stars": {
+			"type": "Range",
+			"display_name": "Total Red Stars",
+			"description": [
+				"Number of Red Stars to place.",
+				"This is capped at 13 if red_star_locations is vanilla."
+			],
+			"range_start": 0,
+			"default": 20,
+			"range_end": 33,
+			"group": "Red Stars"
+		},
+		"eternal_fort_red_stars": {
+			"type": "Range",
+			"display_name": "Eternal Fort Red Stars",
+			"description": [
+				"Number of Red Stars to access Eternal Fort.",
+				"Note: This only applies to last pipe before the Bowser arena. The big area immediately preceding it (Randomized Realm) is accessible with 0 Red Stars (B3313 normally requires 13 Red Stars for this)"
+			],
+			"range_start": 0,
+			"default": 13,
+			"range_end": 33,
+			"group": "Red Stars"
+		},
+		"slope_movement": {
+			"type": "Toggle",
+			"display_name": "Slope Movement",
+			"description": [
+				"Whether slope movement tricks are enabled. This is anything beyond jumping at a slope and running to the top, and includes:",
+				"   Using momentum from sliding down a slope to make a jump",
+				"   Jumping or jump-kicking to ascend a slope backwards",
+				"   Kicking up a slope",
+				"   Diving at the top of a slope",
+				"      Note: Haunted Mansion - Top of the Mansion is an exception to this, climbing the last slope trickless expects Dive, since slope-kicking is the only other option."
+			],
+			"default": false,
+			"group": "Tricks"
+		},
+		"hidden stuff": {
+			"type": "Toggle",
+			"display_name": "Hidden Stuff",
+			"description": [
+				"Whether tricks for interacting with invisible things are enabled. This includes:",
+				"   5 secrets spots with no visual cue, unless normally required by B3313 (Misty Beach Secrets without Metal Cap)",
+				"   Invisible water switches (Dream Castle without Vanish Cap)",
+				"   Hanging from ceilings without a texture suggesting you can hang from them (underside of Castle Grounds bridges)",
+				"   Going through doors obscured by another texture (Uncanny Courtyard Red Coins via Funhouse)",
+				"   Obscure warps (not required by B3313, no obvious visual cue, not a warp in vanilla SM64)",
+				"      Note: The warp to wf.z64 in the owl cage in Whomp's Kingdom is an exception to this, reaching wf.z64 always expects using this warp, since random chance is the only other option."
+			],
+			"default": false,
+			"group": "Tricks"
+		},
+		"lava_boost": {
+			"type": "Toggle",
+			"display_name": "Lava Boost",
+			"description": [
+				"Whether trick for taking damage from lava is enabled.",
+				"   Taking other types of damage (fall damage) is in logic regardless of this option.",
+				"   Does not include bouncing on lava while wearing the Metal Cap.",
+				"   Includes other damage sources that share the same animation (ice water, spiky Thwomps).",
+				"      Note: Wet-Dry Ruins - Inside the House is an exception to this, reaching the star trickless expects damage-boosting off the Thwomp, since an obscure warp is the only other option."
+			],
+			"default": false,
+			"group": "Tricks"
+		},
+		"bomb_clip": {
+			"type": "Toggle",
+			"display_name": "Bomb Clip",
+			"description": [
+				"Whether trick for bomb clipping past the gate in Inside the Summit is enabled."
+			],
+			"default": false,
+			"group": "Tricks"
+		},
+		"backwards_long_jump": {
+			"type": "Toggle",
+			"display_name": "Backwards Long Jump",
+			"description": [
+				"Whether trick for performing a backwards long jump in Sandstone Palace is enabled."
+			],
+			"default": false,
+			"group": "Tricks"
+		},
+		"fly_guy": {
+			"type": "Toggle",
+			"display_name": "Fly Guy Boost",
+			"description": [
+				"Whether trick for making jumps by jumping on a Fly Guy is enabled.",
+				"   Only includes 'typically cooperative' Fly Guys."
+			],
+			"default": false,
+			"group": "Tricks"
+		},
+		"fast_swim": {
+			"type": "Toggle",
+			"display_name": "Fast Swimming",
+			"description": [
+				"Whether trick for reaching areas by abusing B3313's fast swim mechanic is enabled."
+			],
+			"default": false,
+			"group": "Tricks"
+		}
+	}
+}
