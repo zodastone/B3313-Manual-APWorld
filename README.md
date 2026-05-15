@@ -14,7 +14,7 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
 - A save file with sufficient access to the game's locations. Truly accessing every location requires a 100% complete save file, but you can get by with the following:
   - 2 Red Stars (unlocks all moves and overworld)
     - You will eventually need all 13 Red Stars so that B3313 will let you access the final Bowser fight, but this can wait until you reach go mode.
-  - 10 Power Stars (unlocks 3rd Floor (beta))
+  - 33 Power Stars (unlocks all areas besides final Bowser fight)
   - All Caps
 - Optional: [PopTracker](https://poptracker.github.io/) and [Pack for B3313](https://github.com/zodastone/B3313-Manual-APWorld-PopTracker). This has maps for where courses are in each overworld chunk, and can function as a client, i.e. clicking off a location on the map will actually send the location.
 
@@ -51,6 +51,7 @@ Your objective is to defeat the Bowser in the final Bowser area (Eternal Fort). 
 - The "Bowser's Floor and Endgame Courses" item which gates Eternal Fort
 - Enough Red Stars to unlock Eternal Fort (the amount is configurable in the YAML)
 - Whatever moves/abilities you need to reach and defeat Bowser
+  - Note: The "alternative" final Bowser fight (Eternal Fort (beta)), accessed only through a rare event, is not in logic.
 
 ## Overworld Access
 You are free to traverse all areas of the overworld (using the moves/abilities you have unlocked).
@@ -78,15 +79,15 @@ B3313 has some places where a course is accessed via a randomly-occurring event.
 Examples:
 - Uncanny Moat, Vanish Cap within the Plexus, and Unagi's Tunnel are the only courses that logically require a low/mid-probability entrance.
 - The usual entrances to Whomp's Kingdom, Pleasant Pleasant Falls, and Frosty Highlands are in logic, despite them having a rare chance to cause a spooky event.
-- wf.z64 is only logically accessible from the warp in the owl cage in Whomp's Kingdom.
+- wf.z64 is only logically accessible from the warp in the owl cage in Whomp's Kingdom or Flying Fortress.
 - Eel Graveyard is only logically accessible from swimming beyond the edge of the moat in Castle Grounds.
 - Snow Tunnels is only logically accessible from the consistent entrances in 4th Floor (beta) and Vanilla/Mirrored Upstairs.
 - If you encounter an out-of-logic course by chance when attempting to enter an in-logic course, feel free to clear it if you want (you'll have to find it in its proper group in the client/tracker, though).
 
 ## Power Star Requirements
 - **There are no Power Star requirements for anything.** Power Stars are pure filler.
-- Playing on a save file with 10 Power Stars (to unlock 3rd Floor (beta)) should be sufficient to deal with B3313's Power Star requirements.
-  - For locations that normally require more Power Stars (e.g. Dream Castle, Toad's Rec Room, MIPS, the Whomp's Kingdom warp), since it's a manual you can just walk to where the location is and clear the check.
+- Playing on a save file with 33 Power Stars (to unlock 3rd Floor (beta)) should be sufficient to deal with B3313's Power Star requirements.
+  - For locations that normally require more Power Stars (e.g. Toad's Rec Room, MIPS, the Whomp's Kingdom SMG2 warp), since it's a manual you can just walk to where the location is and clear the check.
   - Green Stars now require the Green Comet item, instead of the usual 120 Power Stars. Again, just walk to where the Green Stars would be and clear the check.
 
 ## Red Star Requirements
@@ -148,8 +149,8 @@ The YAML has options to enable various tricks, such as advanced movement techniq
   - The PopTracker pack's maps can help if you aren't sure which course entrance in an overworld chunk leads to the course you're interested in. 
   - The B3313 wiki page on Fandom has a large amount of knowledge about the game, including all the ways each area can be entered. The overworld/course names in this APWorld match the names on the wiki.
   - 99% of the relevant overworld is reachable in Sphere 1. Some trickier cases:
-    - Painting Museum: From the start of the game, take the far back door to Toad Hall, then the first pipe on the left and the door to Pink Upstairs, then the door on the left, and the door on the left again.
-    - Polygonal Chaos: Follow the above to Pink Upstairs, then keep going forward through doors until you reach Polygonal Chaos. This puts you in an elevated spot near SGI Indy, where you can access all the courses here without needing to scale the big steps.
+    - Painting Museum: From the start of the game, take the far back door to Toad Hall, then the first pipe on the left and the door to Peach Upstairs, then the door on the left, and the door on the left again.
+    - Polygonal Chaos: Follow the above to Peach Upstairs, then keep going forward through doors until you reach Polygonal Chaos. This puts you in an elevated spot near SGI Indy, where you can access all the courses here without needing to scale the big steps.
     - Vanilla Lobby Toad: Follow the above to Polygonal Chaos, then walk forward a long way to the set of double doors. This will put you right by the Toad, without needing to fly through the window.
     - Uncanny Courtyard Red Coins with hidden_stuff enabled: You don't have to jump over the wall if you approach from the back side. Start with Beta Lobby B and Plexal Upstairs, then take the upper door and the crescent moon door to Cryptic Hideout, then the door on the left to Funhouse, then the door hidden behind a texture with red hills on it.
     - Star Road: Set the game to ACT 1 by waiting on the title screen for ~30 seconds. Go to Plexal Lobby, then take the Boo cage to Crimson Hallway. Dying will then take you to a darkened version of the ending sequence which you can follow to Star Road. The pipes in Star Road (and most other places) are just short enough to enter with a basic jump.

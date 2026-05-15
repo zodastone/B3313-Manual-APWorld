@@ -67,7 +67,7 @@
 				"   Hanging from ceilings without a texture suggesting you can hang from them (underside of Castle Grounds bridges)",
 				"   Going through doors obscured by another texture (Uncanny Courtyard Red Coins via Funhouse)",
 				"   Obscure warps (not required by B3313, no obvious visual cue, not a warp in vanilla SM64)",
-				"      Note: The warp to wf.z64 in the owl cage in Whomp's Kingdom is an exception to this, reaching wf.z64 always expects using this warp, since random chance is the only other option."
+				"      Note: The warp to wf.z64 in the owl cage in Whomp's Kingdom or Flying Fortress is an exception to this, reaching wf.z64 always expects using this warp, since random chance is the only other option."
 			],
 			"default": false,
 			"group": "Tricks"

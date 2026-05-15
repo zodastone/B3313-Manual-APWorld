@@ -291,6 +291,18 @@
 	},
 	"Whomp's Kingdom":
 	{
+		"connects_to": ["wf.z64 from WK"],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"wf.z64 from WK":
+	{
+		"connects_to": ["wf.z64"],
+		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Triple Jump|",
+		"map": "beta_lobby_b"
+	},
+	"wf.z64":
+	{
 		"connects_to": [],
 		"requires": [],
 		"map": "beta_lobby_b"
@@ -974,7 +986,7 @@
 		"connects_to": ["Tall Mountain", "Dream Castle", "Dry Square"],
 		"requires": "|Painting Museum Courses|",
 		"map": "painting_museum",
-		"_comment": "Access in Sphere 1: from start, to back doors to Toad Hall, left pipe and door to Pink Upstairs, door on left, door on left"
+		"_comment": "Access in Sphere 1: from start, to back doors to Toad Hall, left pipe and door to Peach Upstairs, door on left, door on left"
 	},
 	"Tall Mountain":
 	{
@@ -1275,7 +1287,7 @@
 		"connects_to": ["SGI Indy", "MIPS's Forest"],
 		"requires": "|Polygonal Chaos Courses|",
 		"map": "polygonal chaos",
-		"_comment": "Access in Sphere 1: start, back doors to Toad Hall, left pipe, door to Pink Upstairs, opposite doors"
+		"_comment": "Access in Sphere 1: start, back doors to Toad Hall, left pipe, door to Peach Upstairs, opposite doors"
 	},
 	"SGI Indy":
 	{
@@ -1497,8 +1509,14 @@
 	},
 	"Flying Fortress":
 	{
-		"connects_to": [],
+		"connects_to": ["wf.z64 from FF"],
 		"requires": [],
+		"map": "vanilla_lobby"
+	},
+	"wf.z64 from FF":
+	{
+		"connects_to": ["wf.z64"],
+		"requires": "|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}",
 		"map": "vanilla_lobby"
 	},
 	"Fish Tank Ledge":

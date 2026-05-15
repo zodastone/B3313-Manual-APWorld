@@ -211,7 +211,7 @@
 		"region": "Main Overworld",
 		"category": ["Overworld"],
 		"requires": [],
-		"_comment": "In Sphere 1, from start, back doors to Toad Lobby, left pipe to Pink Upstairs, opposite doors to Polygonal Chaos, opposite doors to Vanilla Lobby by the Toad"
+		"_comment": "In Sphere 1, from start, back doors to Toad Lobby, left pipe to Peach Upstairs, opposite doors to Polygonal Chaos, opposite doors to Vanilla Lobby by the Toad"
 	},
 	{
 		"name": "athletic - In the Box",
@@ -562,13 +562,14 @@
 		"name": "Whomp's Kingdom - Top of the Tower",
 		"region": "Whomp's Kingdom",
 		"category": ["Beta Lobby B"],
-		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Climb| OR |Backflip| OR (|Wall Kick| AND (|Triple Jump| OR |Side Flip|))"
+		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Climb| OR |Backflip| OR |Wall Kick| OR |Triple Jump|",
+		"_comment": "Reach floating islands with backflip from Thwomp, or Wall Kick or Triple Jump from below floating islands."
 	},
 	{
 		"name": "Whomp's Kingdom - Red Coins",
 		"region": "Whomp's Kingdom",
 		"category": ["Beta Lobby B"],
-		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Climb| OR |Backflip| OR (|Wall Kick| AND (|Triple Jump| OR |Side Flip|))"
+		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Climb| OR |Backflip| OR |Wall Kick| OR |Triple Jump|"
 	},
 	{
 		"name": "Whomp's Prison - In a Jail Cell",
@@ -591,10 +592,10 @@
 	},
 	{
 		"name": "wf.z64 - Top of the Tower",
-		"region": "Whomp's Kingdom",
-		"category": ["Beta Lobby B"],
-		"requires": "(|Cannon Unlock (Whomp's Kingdom)| OR |Triple Jump|) AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|",
-		"_comment": "Only logical access is via warp in owl cage, since low-probability encounters are not in logic"
+		"region": "wf.z64",
+		"category": ["Beta Lobby B", "Vanilla Lobby", "Vanilla and Mirrored Upstairs"],
+		"requires": "|Side Flip| AND |Wall Kick| AND |Ledge Grab|",
+		"_comment": "Only logical access is via warp in owl cage in Whomp's Kingdom or Flying Fortress, since low-probability encounters are not in logic"
 	},
 	{
 		"name": "Blazing Bully Base - Boil the Big Bully",
