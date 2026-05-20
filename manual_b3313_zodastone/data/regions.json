@@ -430,9 +430,9 @@
 	"Peach's Cell":
 	{
 		"connects_to": ["Randomized Realm"],
-		"requires": "{HeightKick()}",
+		"requires": [],
 		"map": "bowser_floor",
-		"_comment": "This is the only pipe in the game tall enough to get a height requirement"
+		"_comment": "If the pipe is too high due to scaling, can use the other entrance that rarely goes to Eternal Fort (beta)"
 	},
 	"Randomized Realm":
 	{

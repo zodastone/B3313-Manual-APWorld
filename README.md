@@ -16,7 +16,10 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
     - You will eventually need all 13 Red Stars so that B3313 will let you access the final Bowser fight, but this can wait until you reach go mode.
   - 33 Power Stars (unlocks all areas besides final Bowser fight)
   - All Caps
-- Optional: [PopTracker](https://poptracker.github.io/) and [Pack for B3313](https://github.com/zodastone/B3313-Manual-APWorld-PopTracker). This has maps for where courses are in each overworld chunk, and can function as a client, i.e. clicking off a location on the map will actually send the location.
+- Optional: [PopTracker](https://poptracker.github.io/) and [Pack for B3313](https://github.com/zodastone/B3313-Manual-APWorld-PopTracker).
+  - This has maps for where courses are in each overworld chunk.
+  - This can function as a client, i.e. clicking off a location on the map will actually send the location.
+    - Sending the victory condition is not currently supported via the tracker; you'll need to use manual client for this.
 
 # What's Randomized
 
@@ -98,15 +101,17 @@ Examples:
   - You'll eventually need a save file with 13 Red Stars to enter Eternal Fort to finish the game. If you don't have one, just grab the remaining Red Stars in-game once you reach go mode (or use vanilla Red Star placement for your first seed).
 
 ### Dynamic Difficulty
-B3313 has a dynamic difficulty feature that kicks in after you get a few Red Stars, adding more enemies, making them drop Purple Coins, and making some bosses harder, depending on how well you play.
-- You are expected to swap in a save file with lower dynamic difficulty if needed (this really only affects Prince Bob-omb).
+B3313 has a dynamic difficulty feature that kicks in after you get a few Red Stars, adding enemies and Purple Coins, making some bosses harder, and even slightly changing how tall/wide the levels are, depending on how well you play.
+- You are expected to swap in a save file with lower dynamic difficulty if needed (looking at you, Prince Bob-omb).
 - Taking multiple large amounts of damage is not in logic, even if it would be feasible without any Purple Coins present.
+- Logic regarding the heights and distances of jumps considers some potential level scaling, consistent with what a veteran player could accumulate over a single playthrough if scale-increasing moves such as Long Jump are used early and often.
+  - It's recommended to make a backup of your save file (from the emulator save folder) and revert to it for each seed, to prevent the boss difficulty and level scaling from stacking over the course of multiple playthroughs.
 
 # Logic Difficulty
 The logic with no tricks enabled is intended to have a difficulty level accessible to those already familiar with B3313 and/or SM64EX's movement rando.
 - "Frame perfect" jumps are not required.
 - Leniency is added in some places where missing a difficult jump would result in death or a lengthy backtrack.
-- Maximize the height of basic jumps by getting a running start and holding forward/A throughout. Many pipes are just short enough to be accessible with no moves.
+- Maximize the height of basic jumps by getting a running start and holding forward/A throughout. Many pipes are just short enough to be accessible with no moves, even with level scaling active.
 - Techniques expected by B3313, such as scaling a tall ledge with a same-side wall jump, are in logic.
 - Using a Kick to extend the height or distance of a jump is in logic.
 - Using a Shell to jump long distances or scale steep slopes is in logic.

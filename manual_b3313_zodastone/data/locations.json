@@ -223,7 +223,7 @@
 		"name": "castle1 - Star Chase",
 		"region": "castle1",
 		"category": ["3rd Floor (beta)"],
-		"requires": "(|Kick| AND {YamlEnabled(slope_movement)}) OR ({DistLedgeGrab()} AND {HeightDoubleJumpWallKick()})"
+		"requires": "{YamlEnabled(slope_movement)} OR ({DistLedgeGrab()} AND {HeightDoubleJumpWallKick()})"
 	},
 	{
 		"name": "Minion Base - Silver Stars",
@@ -325,7 +325,7 @@
 		"name": "Fire Field - Red Coins",
 		"region": "Fire Field",
 		"category": ["4th Floor (beta)"],
-		"requires": "|Cannon Unlock (Fire Field)| OR ((|Kick| AND {YamlEnabled(slope_movement)}) AND (|Climb| OR |Long Jump| OR |Triple Jump| OR {YamlEnabled(lava_boost)}))"
+		"requires": "|Cannon Unlock (Fire Field)| OR ({YamlEnabled(slope_movement)} AND (|Climb| OR |Long Jump| OR |Triple Jump| OR {YamlEnabled(lava_boost)}))"
 	},
 	{
 		"name": "Test Course - End of the Course",
@@ -1633,13 +1633,13 @@
 		"name": "Snowman's Frozen Desert - Top of the Mountain",
 		"region": "Snowman's Frozen Desert",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "{HeightKick()}"
 	},
 	{
 		"name": "Snowman's Frozen Desert - In the Deep Freeze",
 		"region": "Snowman's Frozen Desert",
 		"category": ["Nebula Lobby"],
-		"requires": "|Ground Pound|",
+		"requires": "{HeightKick()} AND |Ground Pound|",
 		"_comment": "Can climb the mountain and jump from there"
 	},
 	{
