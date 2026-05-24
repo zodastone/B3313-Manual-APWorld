@@ -26,7 +26,9 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
 ## Items
 
 - Moves
-  - Triple Jump, Backflip, Side Flip, Wall Kick, Dive, Ground Pound, Kick, Ledge Grab: Self-explanatory.
+  - Backflip, Side Flip, Wall Kick, Dive, Ground Pound, Kick, Ledge Grab: Self-explanatory.
+  - Triple Jump
+    - As in SM64EX, also includes Double Jump.
   - Long Jump
     - Also includes the B3313-added "flying somersault" performed via Z->B while moving.
   - Climb

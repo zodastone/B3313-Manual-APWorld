@@ -1882,7 +1882,7 @@
 		"name": "Bowser in the Airship Cabin - Defeat Bowser",
 		"region": "Bowser's Airship",
 		"category": ["Parallel Lobby"],
-		"requires": "{HeightBackflip()}"
+		"requires": "|Backflip| OR |Side Flip| OR |Triple Jump| OR (|Wall Kick| AND |Ledge Grab|)"
 	},
 	{
 		"name": "Hazy Maze Cave (beta) - At the Lake",
@@ -2114,7 +2114,7 @@
 		"name": "Big Boo's Haunted Forest - Silver Stars",
 		"region": "Big Boo's Haunted Forest Upper",
 		"category": ["Plexal Lobby", "Vanilla Lobby"],
-		"requires": "{HeightKick()}"
+		"requires": "{HeightKick()} AND |Vanish Cap|"
 	},
 	{
 		"name": "Big Boo's Haunted Forest - Bottom of the Slide",

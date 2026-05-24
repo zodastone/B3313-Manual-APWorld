@@ -1450,7 +1450,7 @@
 	"Uncanny Courtyard Checkerboard Warp":
 	{
 		"connects_to": ["Checkerboard"],
-		"requires": "{HeightWallKickLedgeGrab()}",
+		"requires": "(|Triple Jump| OR |Side Flip|) AND |Wall Kick| AND |Ledge Grab|",
 		"map": "uncanny_courtyard"
 	},
 	"Checkerboard":
@@ -1522,7 +1522,7 @@
 	"Fish Tank Ledge":
 	{
 		"connects_to": ["Fish Tank"],
-		"requires": "{HeightLedgeGrab()}",
+		"requires": "|Ledge Grab| OR |Backflip| OR |Side Flip| OR |Triple Jump|",
 		"map": "vanilla_lobby"
 	},
 	"Fish Tank":
