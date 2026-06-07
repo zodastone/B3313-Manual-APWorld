@@ -177,14 +177,14 @@
 		"name": "Uncanny Courtyard - MIPS 1",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Backflip| OR |Side Flip| OR |Triple Jump| OR |Climb|",
+		"requires": "|Triple Jump| OR (|Ledge Grab| AND (|Side Flip| OR |Climb|))",
 		"_comment": "Only appears if you have 15 Power Stars in-game"
 	},
 	{
 		"name": "Uncanny Courtyard - MIPS 2",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Backflip| OR |Side Flip| OR |Triple Jump| OR |Climb|",
+		"requires": "|Triple Jump| OR (|Ledge Grab| AND (|Side Flip| OR |Climb|))",
 		"_comment": "Only appears if you have 50 Power Stars in-game"
 	},
 	{
@@ -307,7 +307,7 @@
 		"name": "Stone Island Pathway - End of the Course",
 		"region": "Stone Island Pathway",
 		"category": ["4th Floor (beta)"],
-		"requires": "{HeightBackflip()}"
+		"requires": "{HeightWallKick()}"
 	},
 	{
 		"name": "Collision Test - In the Yellow Box",
@@ -409,14 +409,13 @@
 		"name": "Carryboy Farmland - Red Coins",
 		"region": "Carryboy Farmland",
 		"category": ["Basement Annex"],
-		"requires": "{HeightKick()} OR |Climb|"
+		"requires": []
 	},
 	{
 		"name": "Carryboy Farmland - Plant the Crops",
 		"region": "Carryboy Farmland",
 		"category": ["Basement Annex"],
-		"requires": "{HeightKick()} OR |Climb|",
-		"_comment": "Not in logic to bounce off Goombas to escape the pits"
+		"requires": []
 	},
 	{
 		"name": "Snow Slider (B-Roll) - Bottom of the Mountain",
@@ -525,13 +524,13 @@
 		"name": "Cold Cold Crevasse - Top of the Area",
 		"region": "Frosty Highlands",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
-		"requires": "{HeightWallKick()}"
+		"requires": "|Wall Kick|"
 	},
 	{
 		"name": "Cold Cold Crevasse - Silver Stars",
 		"region": "Frosty Highlands",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
-		"requires": "{HeightKick()} AND ({DistLongJump()} OR {HeightBackflip()})"
+		"requires": "{HeightLedgeGrab()} AND ({DistLongJump()} OR {HeightBackflip()})"
 	},
 	{
 		"name": "Snowman's Land (beta) - In the Deep Freeze",
@@ -741,7 +740,7 @@
 		"name": "Dark Downtown - Red Coins",
 		"region": "Dark Downtown",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "(|Climb| AND |Long Jump|) OR (({HeightSideFlip()} OR (|Kick| AND {YamlEnabled(slope_movement)})) AND {HeightBackflip()})",
+		"requires": "(|Climb| AND |Long Jump|) OR (({HeightSideFlip()} OR ((|Kick| OR |Backflip|) AND {YamlEnabled(slope_movement)})) AND {HeightLedgeGrab()})",
 		"_comment": "With Climb and Long Jump, can reach the water switch on the white building"
 	},
 	{
@@ -785,7 +784,7 @@
 		"name": "Chomp Caverns - Top of the Cavern",
 		"region": "Bob-omb Battlefield (beta)",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "{HeightBackflip()} AND {DistKick()}"
+		"requires": "{HeightWallKick()} AND {DistKick()}"
 	},
 	{
 		"name": "Water Land (B-Roll) - Through the Jet Stream",
@@ -939,7 +938,7 @@
 		"name": "Bob-omb Cavern - Fake Yellow Switch",
 		"region": "River Mountain (beta)",
 		"category": ["Castle Bathroom"],
-		"requires": "|Triple Jump| OR (|Cannon Unlock (River Mountain (beta))| AND {DistLongJump()} AND {HeightLedgeGrab()})"
+		"requires": "|Triple Jump| OR (|Cannon Unlock (River Mountain (beta))| AND {DistLongJump()} AND {HeightBackflip()})"
 	},
 	{
 		"name": "Sunken Castle - In the Cage",
@@ -1282,7 +1281,7 @@
 		"name": "Sandstone Palace - Inside the Pyramid",
 		"region": "Sandstone Palace",
 		"category": ["Floor 3B"],
-		"requires": "|Cannon Unlock (Sandstone Palace)| AND (|Vanish Cap| OR {YamlEnabled(backwards_long_jump)})"
+		"requires": "|Cannon Unlock (Sandstone Palace)| AND (|Vanish Cap| OR (|Long Jump| AND {YamlEnabled(backwards_long_jump)}))"
 	},
 	{
 		"name": "Lethal Cavern - Metal Cap Switch",
@@ -1312,7 +1311,8 @@
 		"name": "Fly Guy's Hill - Red Coins",
 		"region": "Fly Guy's Hill",
 		"category": ["Floor 4B"],
-		"requires": "{HeightLedgeGrab()}"
+		"requires": "{HeightBackflip()} OR ({HeightLedgeGrab()} AND {YamlEnabled(slope_movement)})",
+		"_comment": "With slope_movement, can get on top of the mound near the lighthouse by running up it (without jumping)"
 	},
 	{
 		"name": "Peach's Secret Slide (beta) - Bottom of the Slide",
@@ -1433,8 +1433,8 @@
 		"name": "Haunted Mansion - Top of the Mansion",
 		"region": "Haunted Mansion Back",
 		"category": ["Hybrid Lobby"],
-		"requires": "|Wall Kick| AND (|Dive| OR (|Kick| AND {YamlEnabled(slope_movement)}))",
-		"_comment": "Logic expects diving at the top of the slope, since slope-kicking is only other option"
+		"requires": "|Wall Kick| AND (|Dive| OR {YamlEnabled(slope_movement)})",
+		"_comment": "Logic expects diving at the top of the slope, since slope kicking or jumping is only other option"
 	},
 	{
 		"name": "Haunted Mansion - Red Coins",
@@ -1652,7 +1652,7 @@
 		"name": "Vanish Cap under the Moat (beta) - End of the Course",
 		"region": "Vanish Cap under the Moat (beta)",
 		"category": ["Orange Hall"],
-		"requires": "|Triple Jump| OR (((|Kick| AND {YamlEnabled(slope_movement)}) OR |Wall Kick|) AND {DistKick()}) OR ({HeightWallKick()} AND ({DistLongJump()} OR |Climb|))",
+		"requires": "|Triple Jump| OR (({YamlEnabled(slope_movement)} OR |Wall Kick|) AND {DistKick()}) OR ({HeightWallKick()} AND ({DistLongJump()} OR |Climb|))",
 		"_comment": "Can skip most of the level with Triple Jump, or by getting on top of the wall near the start"
 	},
 	{
@@ -1761,7 +1761,7 @@
 		"name": "Steep Green Summit - Scale the Mountain",
 		"region": "Steep Green Summit",
 		"category": ["Parallel Lobby"],
-		"requires": "|Climb| OR ({HeightBackflip()} AND (|Kick| AND {YamlEnabled(slope_movement)}))"
+		"requires": "|Climb| OR ({HeightWallKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))"
 	},
 	{
 		"name": "Steep Green Summit - Mysterious Mountainside",
@@ -1912,7 +1912,7 @@
 		"name": "Sandy Skyloft - Climb the Stone Tower",
 		"region": "Sandy Skyloft",
 		"category": ["Plexal Basement"],
-		"requires": "|Triple Jump| AND (|Wing Cap| OR ((|Kick| OR (|Long Jump| AND |Dive|)) AND {YamlEnabled(slope_movement)} AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|))"
+		"requires": "|Triple Jump| AND (|Wing Cap| OR ({YamlEnabled(slope_movement)} AND |Wall Kick| AND |Ledge Grab|))"
 	},
 	{
 		"name": "Sandy Skyloft - Under the Far Yellow Roof",
@@ -2077,13 +2077,13 @@
 		"name": "Thwomp's Fortress - Green Star on the Checker Platform",
 		"region": "Thwomp's Fortress",
 		"category": ["Plexal Hallway"],
-		"requires": "({HeightBackflip()} OR {YamlEnabled(lava_boost)}) AND {DistLongJump()} AND |Green Comet|"
+		"requires": "{HeightBackflip()} AND {DistLongJump()} AND |Green Comet|"
 	},
 	{
 		"name": "Rocky Trek - Top of the Mountain",
 		"region": "Rocky Trek",
 		"category": ["Plexal Hallway"],
-		"requires": "{HeightWallKick()}"
+		"requires": "{HeightWallKick()} OR ({HeightLedgeGrab()} AND |Climb|)"
 	},
 	{
 		"name": "Cave City - Elevate for Silver Stars",
@@ -2253,14 +2253,14 @@
 		"name": "Pleasant Pleasant Falls - Top of the Climb",
 		"region": "Pleasant Pleasant Falls",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightSideFlipLedgeGrab()}",
+		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightWallKick()}",
 		"_comment": "There's a second cannon partway up the cliff"
 	},
 	{
 		"name": "Pleasant Pleasant Falls - Red Coins",
 		"region": "Pleasant Pleasant Falls",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightSideFlipLedgeGrab()}"
+		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightWallKick()}"
 	},
 	{
 		"name": "Big Boo's Fortress - Behind Luigi's Mirror",
@@ -2284,14 +2284,14 @@
 		"name": "SGI Indy - Top of Near-Right Corner",
 		"region": "SGI Indy",
 		"category": ["Polygonal Chaos"],
-		"requires": "|Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR (|Side Flip| AND |Dive|))) OR (|Triple Jump| AND |Side Flip| AND |Ledge Grab|))",
+		"requires": "|Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR |Dive|)) OR (|Triple Jump| AND |Side Flip| AND |Ledge Grab|))",
 		"_comment": "Without slope_movement, you are expected to go all the way to the back-left corner, climb up to the 2nd floor there, then make your way back. Skipping the last wall kick section via a gap in level geometry is not in logic."
 	},
 	{
 		"name": "SGI Indy - 2nd Floor Near-Left Yellow Area",
 		"region": "SGI Indy",
 		"category": ["Polygonal Chaos"],
-		"requires": "|Triple Jump| AND |Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR (|Side Flip| AND |Dive|))) OR (|Side Flip| AND |Ledge Grab|))"
+		"requires": "|Triple Jump| AND |Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR |Dive|)) OR (|Side Flip| AND |Ledge Grab|))"
 	},
 	{
 		"name": "SGI Indy - 3rd Floor Processor",
@@ -2334,13 +2334,13 @@
 		"name": "Piranha's Igloo - Behind the Glass",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "(|Cannon Unlock (Piranha Plant Garden)| OR {HeightSideFlipLedgeGrab()}) AND |Vanish Cap|"
+		"requires": "(|Cannon Unlock (Piranha Plant Garden)| OR {HeightWallKick()}) AND |Vanish Cap|"
 	},
 	{
 		"name": "Piranha's Igloo - Pluck the Piranha Flowers",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR {HeightSideFlipLedgeGrab()}"
+		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR {HeightWallKick()}"
 	},
 	{
 		"name": "Downtown City - Flood the City",
@@ -2370,7 +2370,7 @@
 		"name": "Tall Tall Mountain (beta) - Breathtaking View from the Bridge",
 		"region": "Tall Tall Mountain (beta)",
 		"category": ["Royal Lobby"],
-		"requires": "{DistWallKickLedgeGrab()} OR (|Wall Kick| AND (|Kick| AND {YamlEnabled(slope_movement)}))"
+		"requires": "{DistWallKickLedgeGrab()} OR ({DistLedgeGrab()} AND {YamlEnabled(slope_movement)})"
 	},
 	{
 		"name": "Tall Tall Mountain (beta) - Red Coins",
@@ -2582,8 +2582,7 @@
 		"name": "Bob-omb Grassyfield - Tree Secrets",
 		"region": "Bob-omb Grassyfield",
 		"category": ["Stellar Tower"],
-		"requires": [],
-		"_comment": "Climb not required even though Mario will typically grab the tree right after you activate a secret"
+		"requires": "|Climb| OR |Backflip| OR |Side Flip| OR |Triple Jump| OR {YamlEnabled(slope_movement)}"
 	},
 	{
 		"name": "Misty Beach - Timed Box Secrets",
@@ -2710,7 +2709,7 @@
 		"name": "Big Boo's Haunt (vanilla) - Red Coins",
 		"region": "Big Boo's Haunt (vanilla)",
 		"category": ["Vanilla Courtyard"],
-		"requires": []
+		"requires": "{HeightLedgeGrab()}"
 	},
 	{
 		"name": "Bowser in the Dark World (December '95) - Defeat Bowser",
@@ -2758,7 +2757,7 @@
 		"name": "Flying Fortress - Top of the Tower",
 		"region": "Flying Fortress",
 		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs"],
-		"requires": "(|Wing Cap| AND |Cannon Unlock (Flying Fortress)|) OR |Side Flip| OR |Triple Jump| OR ((|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}) AND (|Kick| AND {YamlEnabled(slope_movement)}))"
+		"requires": "(|Wing Cap| AND |Cannon Unlock (Flying Fortress)|) OR |Side Flip| OR |Triple Jump| OR ((|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}) AND {YamlEnabled(slope_movement)})"
 	},
 	{
 		"name": "Fish Tank - Red Coins",
@@ -2795,13 +2794,13 @@
 		"name": "Wet-Dry Paradise - Pluck the Piranha Flowers",
 		"region": "Wet-Dry Paradise",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightDoubleJumpWallKick()} OR ({YamlEnabled(slope_movement)} AND (|Wall Kick| OR ({HeightWallKick()} AND |Climb|)))"
+		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightDoubleJumpWallKick()} OR ({YamlEnabled(slope_movement)} AND (|Wall Kick| OR ({HeightBackflip()} AND |Climb|)))"
 	},
 	{
 		"name": "Wet-Dry Paradise - Destroy the Crystals",
 		"region": "Wet-Dry Paradise",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightWallKick()}"
+		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightWallKick()} OR ({HeightBackflip()} AND {YamlEnabled(slope_movement)})"
 	},
 	{
 		"name": "Wet-Dry Paradise - Ring Secrets",

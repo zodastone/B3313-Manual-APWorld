@@ -52,7 +52,7 @@
 				"   Jumping or jump-kicking to ascend a slope backwards",
 				"   Kicking up a slope",
 				"   Diving at the top of a slope",
-				"      Note: Haunted Mansion - Top of the Mansion is an exception to this, climbing the last slope trickless expects Dive, since slope-kicking is the only other option."
+				"      Note: Haunted Mansion - Top of the Mansion is an exception to this, climbing the last slope trickless expects Dive, since slope kicking or jumping is the only other option."
 			],
 			"default": false,
 			"group": "Tricks"

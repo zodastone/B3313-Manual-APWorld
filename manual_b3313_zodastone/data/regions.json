@@ -358,7 +358,7 @@
 	"Dark Downtown Pipe":
 	{
 		"connects_to": ["Bob-omb Battlefield (beta)"],
-		"requires": "({HeightSideFlip()} OR (|Kick| AND {YamlEnabled(slope_movement)}) OR (|Climb| and |Long Jump|)) AND {HeightBackflip()}",
+		"requires": "({HeightSideFlip()} OR ((|Kick| OR |Backflip|) AND {YamlEnabled(slope_movement)}) OR (|Climb| and |Long Jump|)) AND {HeightLedgeGrab()}",
 		"map": "beta_lobby_d"
 	},
 	"Bob-omb Battlefield (beta)":
@@ -539,7 +539,7 @@
 	"Sky-High Pathway Upper from Lower":
 	{
 		"connects_to": ["Tower of the Wing Cap (beta) Upper from SHP Upper from Lower", "Tower of the Wing Cap (beta) Switch from SHP Upper from Lower", "Sky-High Pathway Upper"],
-		"requires": "|Wall Kick| AND (|Ledge Grab| OR (|Side Flip| AND |Triple Jump|))",
+		"requires": "|Wall Kick| AND (|Ledge Grab| OR |Triple Jump|)",
 		"map": "challenge_lobby"
 	},
 	"Tower of the Wing Cap (beta) Switch from SHP Upper from Lower":
@@ -918,7 +918,7 @@
 	"Blazing Bullet Factory Top":
 	{
 		"connects_to": [],
-		"requires": "|Wall Kick| OR |Ledge Grab| OR |Backflip| OR |Side Flip|",
+		"requires": "{HeightLedgeGrab()}",
 		"map": "nebula_lobby"
 	},
 	"Blazing Bullet Factory Aquarium":
@@ -1045,7 +1045,7 @@
 	"Monkey Slide (beta)":
 	{
 		"connects_to": [],
-		"requires": "(|Climb| OR ({HeightBackflip()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND {HeightKick()}",
+		"requires": "(|Climb| OR ({HeightWallKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND {HeightKick()}",
 		"map": "parallel_lobby"
 	},
 	"Parallel Lobby Vanish Painting":
@@ -1340,7 +1340,7 @@
 	"Magic Mushroom Cave":
 	{
 		"connects_to": [],
-		"requires": "{DistWallKickLedgeGrab()} OR (|Kick| AND {YamlEnabled(slope_movement)})",
+		"requires": "{DistWallKickLedgeGrab()} OR {YamlEnabled(slope_movement)}",
 		"map": "royal_lobby"
 	},
 	"Silent Hall":
@@ -1363,10 +1363,16 @@
 	},
 	"Star Road":
 	{
-		"connects_to": ["Yoshi's Beach", "Ultra Battle Fort", "Snow Tower", "Wet-Dry Town", "Corrupted Challenge", "Star Road Endings Pipe"],
+		"connects_to": ["Star Road 5 Pipes", "Star Road Endings Pipe"],
 		"requires": "|Star Road Courses|",
 		"map": "star_road",
 		"_comment": "Access in Sphere 1: set game to ACT 1 by waiting on title screen for 30 seconds, Plexal Lobby, Boo cage to Crimson Hallway, die"
+	},
+	"Star Road 5 Pipes":
+	{
+		"connects_to": ["Yoshi's Beach", "Ultra Battle Fort", "Snow Tower", "Wet-Dry Town", "Corrupted Challenge"],
+		"requires": "{HeightKick()}",
+		"map": "star_road"
 	},
 	"Yoshi's Beach":
 	{
