@@ -6,8 +6,8 @@
 		"progression": true
 	},
 	{
-		"count":1,
-		"name": "Triple Jump",
+		"count":2,
+		"name": "Progressive Triple Jump",
 		"category": ["Moves"],
 		"progression": true
 	},
@@ -55,13 +55,43 @@
 	},
 	{
 		"count":1,
-		"name": "Climb",
+		"name": "Pole Climb",
 		"category": ["Moves"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Ledge Grab",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Wall Climb",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Ceiling Hang",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":2,
+		"name": "Progressive Grab",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Swim",
+		"category": ["Moves"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Shell",
 		"category": ["Moves"],
 		"progression": true
 	},
@@ -225,7 +255,7 @@
 		"count":1,
 		"name": "Cannon Unlock (Shifting Sand Land (beta))",
 		"category": ["Cannons"],
-		"useful": true
+		"progression": true
 	},
 	{
 		"count":1,

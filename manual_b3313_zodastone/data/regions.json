@@ -70,7 +70,7 @@
 	"3rd Floor (beta) Vanish Side":
 	{
 		"connects_to": ["castle2"],
-		"requires": "|Vanish Cap|",
+		"requires": "|Vanish Cap| AND {GroundBox()}",
 		"map": "3f_beta"
 	},
 	"athletic":
@@ -238,7 +238,7 @@
 	"Mountain (B-Roll) Upper":
 	{
 		"connects_to": [],
-		"requires": "|Climb| OR ({HeightLedgeGrab()} AND (|Cannon Unlock (Mountain (B-Roll))| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))))",
+		"requires": "|Pole Climb| OR ({HeightLedgeGrab()} AND (|Cannon Unlock (Mountain (B-Roll))| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))))",
 		"map": "beta_lobby_a"
 	},
 	"Fire Bubble (B-Roll)":
@@ -261,7 +261,7 @@
 	},
 	"Beta Lobby B":
 	{
-		"connects_to": ["Jolly Roger Lagoon", "Frosty Highlands", "Whomp's Kingdom", "Blazing Bully Base"],
+		"connects_to": ["Jolly Roger Lagoon", "Frosty Highlands Main Entrance", "Whomp's Kingdom", "Blazing Bully Base"],
 		"requires": "|Beta Lobby B Courses|",
 		"map": "beta_lobby_b"
 	},
@@ -271,22 +271,58 @@
 		"requires": [],
 		"map": "beta_lobby_b"
 	},
-	"Frosty Highlands":
+	"Frosty Highlands Main Entrance":
 	{
-		"connects_to": ["Snowman's Land (beta)"],
+		"connects_to": ["Frosty Highlands by Crevasse from Main"],
 		"requires": [],
 		"map": "beta_lobby_b"
 	},
 	"Snowman's Land (beta)":
 	{
-		"connects_to": ["Frosty Highlands Pipe Entrance"],
+		"connects_to": ["Frosty Highlands Ledge Above Pipe From Pipe"],
 		"requires": [],
 		"map": "beta_lobby_b"
 	},
-	"Frosty Highlands Pipe Entrance":
+	"Frosty Highlands by Crevasse from Ledge Above Pipe":
 	{
-		"connects_to": ["Frosty Highlands"],
+		"connects_to": ["Frosty Highlands by Crevasse"],
 		"requires": "{HeightBackflip()}",
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands by Crevasse from Main":
+	{
+		"connects_to": ["Frosty Highlands by Crevasse"],
+		"requires": "|Shell| OR {YamlEnabled(slope_movement)}",
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands by Crevasse":
+	{
+		"connects_to": ["Frosty Highlands Upper", "Frosty Highlands Ledge Above Pipe From Crevasse"],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands Upper":
+	{
+		"connects_to": [],
+		"requires": "|Shell| OR {YamlEnabled(slope_movement)} AND (|Progressive Triple Jump:2| OR |Wall Kick|)",
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands Ledge Above Pipe From Crevasse":
+	{
+		"connects_to": ["Frosty Highlands Ledge Above Pipe"],
+		"requires": [],
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands Ledge Above Pipe From Pipe":
+	{
+		"connects_to": ["Frosty Highlands Ledge Above Pipe"],
+		"requires": "{HeightLedgeGrab()}",
+		"map": "beta_lobby_b"
+	},
+	"Frosty Highlands Ledge Above Pipe":
+	{
+		"connects_to": ["Frosty Highlands by Crevasse from Ledge Above Pipe", "Snowman's Land (beta)"],
+		"requires": [],
 		"map": "beta_lobby_b"
 	},
 	"Whomp's Kingdom":
@@ -298,7 +334,7 @@
 	"wf.z64 from WK":
 	{
 		"connects_to": ["wf.z64"],
-		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Triple Jump|",
+		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Progressive Triple Jump:2|",
 		"map": "beta_lobby_b"
 	},
 	"wf.z64":
@@ -352,13 +388,13 @@
 	"Dark Downtown":
 	{
 		"connects_to": ["Dark Downtown Pipe"],
-		"requires": [],
+		"requires": "|Swim| OR {DistKick()} OR |Cannon Unlock (River Mountain)|",
 		"map": "beta_lobby_d"
 	},
 	"Dark Downtown Pipe":
 	{
 		"connects_to": ["Bob-omb Battlefield (beta)"],
-		"requires": "({HeightSideFlip()} OR ((|Kick| OR |Backflip|) AND {YamlEnabled(slope_movement)}) OR (|Climb| and |Long Jump|)) AND {HeightLedgeGrab()}",
+		"requires": "{HeightLedgeGrab()} AND ((|Pole Climb| AND |Long Jump| AND |Swim|) OR (({HeightSideFlip()} OR |Progressive Triple Jump:1| OR ({YamlEnabled(slope_movement)} AND (|Backflip| OR |Kick|))) AND ({DistLongJump()} OR |Swim|)))",
 		"map": "beta_lobby_d"
 	},
 	"Bob-omb Battlefield (beta)":
@@ -394,7 +430,7 @@
 	"Mountain (Shoshinkai) Upper":
 	{
 		"connects_to": [],
-		"requires": "|Cannon Unlock (Mountain (Shoshinkai))| OR |Climb| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))",
+		"requires": "|Cannon Unlock (Mountain (Shoshinkai))| OR |Pole Climb| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))",
 		"map": "beta_lobby_e"
 	},
 	"Snow Slider (Shoshinkai)":
@@ -443,7 +479,7 @@
 	"Eternal Fort":
 	{
 		"connects_to": [],
-		"requires": "|Triple Jump| AND (|Wing Cap| OR (|Side Flip| AND |Wall Kick| AND |Ledge Grab|))",
+		"requires": "|Progressive Triple Jump:2| AND (|Wing Cap| OR (|Side Flip| AND |Wall Kick| AND |Ledge Grab|))",
 		"map": "bowser_floor"
 	},
 	"Castle Bathroom":
@@ -491,13 +527,13 @@
 	"Tall Tall Treetops Upper":
 	{
 		"connects_to": ["Tall Tall Treetops Ramps Star"],
-		"requires": "|Cannon Unlock (Tall Tall Treetops)| AND (|Ledge Grab| OR |Backflip| OR |Side Flip| OR |Triple Jump|)",
+		"requires": "|Cannon Unlock (Tall Tall Treetops)| AND (|Ledge Grab| OR |Backflip| OR |Side Flip| OR |Progressive Triple Jump:1|)",
 		"map": "challenge_lobby"
 	},
 	"Tall Tall Treetops Ramps From Bottom":
 	{
 		"connects_to": ["Tall Tall Treetops Ramps Star"],
-		"requires": "{DistKick()} OR (|Side Flip| AND |Wall Kick|)",
+		"requires": "{DistDoubleJump()} OR (|Side Flip| AND |Wall Kick|)",
 		"map": "challenge_lobby"
 	},
 	"Tall Tall Treetops Ramps Star":
@@ -539,19 +575,19 @@
 	"Sky-High Pathway Upper from Lower":
 	{
 		"connects_to": ["Tower of the Wing Cap (beta) Upper from SHP Upper from Lower", "Tower of the Wing Cap (beta) Switch from SHP Upper from Lower", "Sky-High Pathway Upper"],
-		"requires": "|Wall Kick| AND (|Ledge Grab| OR |Triple Jump|)",
+		"requires": "|Wall Kick| AND (|Ledge Grab| OR |Progressive Triple Jump:1|)",
 		"map": "challenge_lobby"
 	},
 	"Tower of the Wing Cap (beta) Switch from SHP Upper from Lower":
 	{
 		"connects_to": ["Tower of the Wing Cap (beta) Switch"],
-		"requires": "{DistLongJump()} AND (|Cannon Unlock (Tower of the Wing Cap (beta))| OR (|Triple Jump| AND |Wing Cap|))",
+		"requires": "{DistLongJump()} AND (|Cannon Unlock (Tower of the Wing Cap (beta))| OR (|Progressive Triple Jump:2| AND |Wing Cap|))",
 		"map": "challenge_lobby"
 	},
 	"Tower of the Wing Cap (beta) Upper from SHP Upper from Lower":
 	{
 		"connects_to": ["Tower of the Wing Cap (beta) Upper"],
-		"requires": "{DistLongJump()} AND |Wing Cap| AND (|Cannon Unlock (Tower of the Wing Cap (beta))| OR |Triple Jump|)",
+		"requires": "{DistLongJump()} AND |Wing Cap| AND (|Cannon Unlock (Tower of the Wing Cap (beta))| OR |Progressive Triple Jump:2|)",
 		"map": "challenge_lobby"
 	},
 	"Courtyard (fabribated)":
@@ -641,7 +677,7 @@
 	"Fabricated Castle Grounds":
 	{
 		"connects_to": ["Wet-Dry Moat"],
-		"requires": "|Fabricated Castle Grounds Courses| AND (|Ledge Grab| OR ({YamlEnabled(hidden_stuff)} AND (|Kick| OR |Triple Jump|) AND |Climb|))",
+		"requires": "|Fabricated Castle Grounds Courses| AND ((|Swim| AND |Ledge Grab|) OR ({YamlEnabled(hidden_stuff)} AND (|Ledge Grab| OR |Kick| OR |Progressive Triple Jump:2|) AND |Ceiling Hang|))",
 		"map": "fabricated_grounds",
 		"_comment": "Can hang from the underside of the moat bridge"
 	},
@@ -678,7 +714,7 @@
 	"Mountain (fabricated) Upper":
 	{
 		"connects_to": [],
-		"requires": "|Cannon Unlock (Mountain (fabricated))| OR |Climb| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))",
+		"requires": "|Cannon Unlock (Mountain (fabricated))| OR |Pole Climb| OR {HeightWallKickLedgeGrab()} OR (|Dive| AND {YamlEnabled(slope_movement)} AND (|Long Jump| OR |Kick|))",
 		"map": "fabricated_lobby"
 	},
 	"Snow Slider (fabricated)":
@@ -846,7 +882,7 @@
 	"Haunted Mansion Back":
 	{
 		"connects_to": [],
-		"requires": "|Triple Jump|",
+		"requires": "|Progressive Triple Jump:2|",
 		"map": "hybrid_lobby"
 	},
 	"Internal Garden":
@@ -900,7 +936,7 @@
 	"Skyhigh Pipelands End":
 	{
 		"connects_to": [],
-		"requires": "{DistKick()} AND |Wall Kick|",
+		"requires": "{DistDoubleJump()} AND |Wall Kick|",
 		"map": "nebula_lobby"
 	},
 	"Chomp's Cloudy Isles":
@@ -912,7 +948,7 @@
 	"Blazing Bullet Factory":
 	{
 		"connects_to": ["Blazing Bullet Factory Top", "Blazing Bullet Factory Aquarium"],
-		"requires": "|Vanish Cap|",
+		"requires": "|Vanish Cap| AND {GroundBox()}",
 		"map": "nebula_lobby"
 	},
 	"Blazing Bullet Factory Top":
@@ -924,7 +960,7 @@
 	"Blazing Bullet Factory Aquarium":
 	{
 		"connects_to": [],
-		"requires": "{HeightWallKickLedgeGrab()}",
+		"requires": "{HeightWallKickLedgeGrab()} AND |Swim|",
 		"map": "nebula_lobby"
 	},
 	"Snow Ravine":
@@ -948,13 +984,19 @@
 	"Blackrock Mountain Top":
 	{
 		"connects_to": ["Bedrock Magmas"],
-		"requires": [],
+		"requires": "|Shell| OR |Progressive Triple Jump:2| OR |Cannon Unlock (Blackrock Mountain)|",
 		"map": "nebula_lobby"
 	},
 	"Wet-Dry Ruins":
 	{
-		"connects_to": [],
+		"connects_to": ["Wet-Dry Ruins Houses"],
 		"requires": [],
+		"map": "nebula_lobby"
+	},
+	"Wet-Dry Ruins Houses":
+	{
+		"connects_to": [],
+		"requires": "|Progressive Triple Jump:2| OR (|Progressive Triple Jump:1| AND |Kick|) OR ({HeightBackflip()} AND |Swim|)",
 		"map": "nebula_lobby"
 	},
 	"Captain Fly Guy's Tower":
@@ -997,7 +1039,7 @@
 	"Tall Mountain Top":
 	{
 		"connects_to": [],
-		"requires": "|Wall Kick| OR |Climb|",
+		"requires": "|Wall Kick| OR |Wall Climb|",
 		"map": "painting_museum"
 	},
 	"Dream Castle":
@@ -1045,13 +1087,13 @@
 	"Monkey Slide (beta)":
 	{
 		"connects_to": [],
-		"requires": "(|Climb| OR ({HeightWallKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND {HeightKick()}",
+		"requires": "(|Pole Climb| OR ({HeightDoubleJumpKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND {HeightKick()}",
 		"map": "parallel_lobby"
 	},
 	"Parallel Lobby Vanish Painting":
 	{
 		"connects_to": ["No Man's Land"],
-		"requires": "|Vanish Cap| AND {HeightBackflip()}",
+		"requires": "|Vanish Cap| AND {GroundBox()} AND {HeightBackflip()}",
 		"map": "parallel_lobby"
 	},
 	"No Man's Land":
@@ -1098,8 +1140,14 @@
 	},
 	"Plexal Basement":
 	{
-		"connects_to": ["Hazy Maze Cave (beta)", "Caldera Temple", "Sandy Skyloft", "Bowser in the Fire Sea", "Tiny-Huge Island (beta) Upper", "Flooded Downtown", "Shifted Sand Land", "Desert Maze", "Toad Catacombs", "Lethal Cavern", "Dry Town"],
+		"connects_to": ["Hazy Maze Cave (beta)", "Caldera Temple", "Sandy Skyloft", "Bowser in the Fire Sea", "Tiny-Huge Island (beta) Huge", "Flooded Downtown", "Shifted Sand Land", "Desert Maze", "Lethal Cavern", "Plexal Basement Flooded"],
 		"requires": "|Plexal Basement Courses|",
+		"map": "plexal_basement"
+	},
+	"Plexal Basement Flooded":
+	{
+		"connects_to": ["Toad Catacombs", "Dry Town"],
+		"requires": "|Swim|",
 		"map": "plexal_basement"
 	},
 	"Hazy Maze Cave (beta)":
@@ -1126,22 +1174,34 @@
 		"requires": [],
 		"map": "plexal_basement"
 	},
-	"Tiny-Huge Island (beta) Upper":
-	{
-		"connects_to": ["Tiny-Huge Island (beta) Tiny"],
-		"requires": [],
-		"map": "plexal_basement"
-	},
 	"Tiny-Huge Island (beta) Tiny":
 	{
-		"connects_to": ["Tiny-Huge Island (beta) Upper"],
-		"requires": "|Wall Kick| OR |Triple Jump| OR |Side Flip| OR |Backflip|",
+		"connects_to": ["Tiny-Huge Island (beta) Pipe"],
+		"requires": "{HeightDoubleJump()}",
 		"map": "plexal_basement"
 	},
 	"Tiny-Huge Island (beta) Mid-Size":
 	{
-		"connects_to": ["Tiny-Huge Island (beta) Upper"],
-		"requires": "|Wall Kick| OR |Triple Jump| OR |Cannon Unlock (Tiny-Huge Island (beta))|",
+		"connects_to": ["Tiny-Huge Island (beta) Pipe"],
+		"requires": "|Progressive Triple Jump:2| OR ({YamlEnabled(slope_movement)} AND |Kick|) OR (|Swim| AND (|Cannon Unlock (Tiny-Huge Island (beta))| OR |Wall Kick|))",
+		"map": "plexal_basement"
+	},
+	"Tiny-Huge Island (beta) Huge":
+	{
+		"connects_to": ["Tiny-Huge Island (beta) Pipe"],
+		"requires": "|Shell| OR ({YamlEnabled(slope_movement)} AND |Kick|) OR (|Wing Cap| AND |Progressive Triple Jump:2| AND {GroundBox()}) OR (|Swim| AND (|Cannon Unlock (Tiny-Huge Island (beta))| OR |Progressive Triple Jump:2|))",
+		"map": "plexal_basement"
+	},
+	"Tiny-Huge Island (beta) Pipe":
+	{
+		"connects_to": ["Tiny-Huge Island (beta) Top"],
+		"requires": [],
+		"map": "plexal_basement"
+	},
+	"Tiny-Huge Island (beta) Top":
+	{
+		"connects_to": [],
+		"requires": "|Shell| OR ({YamlEnabled(slope_movement)} AND |Kick|) OR {HeightBackflip()} OR (|Wing Cap| AND {GroundBox()} AND |Swim| AND |Cannon Unlock (Tiny-Huge Island (beta))|)",
 		"map": "plexal_basement"
 	},
 	"Flooded Downtown":
@@ -1219,7 +1279,7 @@
 	"Big Boo's Haunted Forest Lower from Upper":
 	{
 		"connects_to": ["Big Boo's Haunted Forest Lower"],
-		"requires": "|Vanish Cap|",
+		"requires": "|Vanish Cap| AND {GroundBox()}",
 		"map": "plexal_lobby"
 	},
 	"Big Boo's Haunted Forest Lower":
@@ -1407,7 +1467,7 @@
 	"Star Road Endings Pipe":
 	{
 		"connects_to": ["Endings"],
-		"requires": "|Triple Jump| OR {YamlEnabled(hidden_stuff)}",
+		"requires": "|Progressive Triple Jump:2| OR {YamlEnabled(hidden_stuff)}",
 		"map": "star_road",
 		"_comment": "Hidden warp on the the tip of the star past the number 3"
 	},
@@ -1456,7 +1516,7 @@
 	"Uncanny Courtyard Checkerboard Warp":
 	{
 		"connects_to": ["Checkerboard"],
-		"requires": "(|Triple Jump| OR |Side Flip|) AND |Wall Kick| AND |Ledge Grab|",
+		"requires": "(|Progressive Triple Jump:1| OR |Side Flip|) AND |Wall Kick| AND |Ledge Grab|",
 		"map": "uncanny_courtyard"
 	},
 	"Checkerboard":
@@ -1522,13 +1582,13 @@
 	"wf.z64 from FF":
 	{
 		"connects_to": ["wf.z64"],
-		"requires": "|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}",
+		"requires": "|Cannon Unlock (Flying Fortress)| OR |Pole Climb| OR {HeightKick()}",
 		"map": "vanilla_lobby"
 	},
 	"Fish Tank Ledge":
 	{
 		"connects_to": ["Fish Tank"],
-		"requires": "|Ledge Grab| OR |Backflip| OR |Side Flip| OR |Triple Jump|",
+		"requires": "|Ledge Grab| OR |Backflip| OR |Side Flip| OR |Progressive Triple Jump:1|",
 		"map": "vanilla_lobby"
 	},
 	"Fish Tank":
@@ -1545,7 +1605,7 @@
 	},
 	"Vanilla and Mirrored Upstairs":
 	{
-		"connects_to": ["Wet-Dry Paradise", "Snowman's Darkness", "Wet-Dry World (beta)", "Tiny-Huge Island (beta) Upper", "Tiny-Huge Island (beta) Tiny", "Tiny-Huge Island (beta) Mid-Size", "Grassy Snowy Summit", "Clockwork Innards", "Fire Bubble 2", "Snow Tunnels", "Flying Fortress"],
+		"connects_to": ["Wet-Dry Paradise", "Snowman's Darkness", "Wet-Dry World (beta)", "Tiny-Huge Island (beta) Huge", "Tiny-Huge Island (beta) Tiny", "Tiny-Huge Island (beta) Mid-Size", "Grassy Snowy Summit", "Clockwork Innards", "Fire Bubble 2", "Snow Tunnels", "Flying Fortress"],
 		"requires": "|Vanilla and Mirrored Upstairs Courses|",
 		"map": "vanilla_upstairs"
 	},
@@ -1570,13 +1630,13 @@
 	"Wet-Dry World (beta) Upper":
 	{
 		"connects_to": ["Wet-Dry World (beta) Behind the Grate"],
-		"requires": "{HeightLedgeGrab()} OR (|Kick| AND {YamlEnabled(slope_movement)})}",
+		"requires": "|Swim| AND ({HeightLedgeGrab()} OR (|Kick| AND {YamlEnabled(slope_movement)}))",
 		"map": "vanilla_upstairs"
 	},
 	"Wet-Dry World (beta) Behind the Grate":
 	{
 		"connects_to": ["Dry Town"],
-		"requires": "|Ledge Grab| OR |Cannon Unlock (Wet-Dry World (beta))| OR |Triple Jump|",
+		"requires": "|Swim| AND (|Ledge Grab| OR |Cannon Unlock (Wet-Dry World (beta))| OR |Progressive Triple Jump:1|)",
 		"map": "vanilla_upstairs"
 	},
 	"Grassy Snowy Summit":

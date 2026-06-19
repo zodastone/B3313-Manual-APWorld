@@ -35,56 +35,76 @@ def HeightWallKickLedgeGrab(world: World, multiworld: MultiWorld, state: Collect
     
 def HeightDoubleJumpWallKick(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via double jump + wall kick."""
-    return "(|Wall Kick| AND (|Triple Jump| OR |Ledge Grab| OR |Side Flip|))"
+    return "(|Wall Kick| AND (|Progressive Triple Jump:1| OR |Ledge Grab| OR |Side Flip|))"
     
 def HeightSideFlipLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via side flip + ledge grab."""
-    return "(|Triple Jump| OR (|Side Flip| AND |Ledge Grab|) OR (|Wall Kick| AND (|Ledge Grab| OR |Side Flip|)))"
+    return "(|Progressive Triple Jump:2| OR (|Side Flip| AND |Ledge Grab|) OR (|Wall Kick| AND (|Ledge Grab| OR |Side Flip|)))"
     
 def HeightWallKick(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via wall kick."""
-    return "(|Triple Jump| OR (|Side Flip| AND |Ledge Grab|) OR |Wall Kick|)"
+    return "(|Progressive Triple Jump:2| OR (|Side Flip| AND |Ledge Grab|) OR |Wall Kick|)"
+    
+def HeightDoubleJumpLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+    """Player can jump high enough to reach a platform reachable via double jump + ledge grab."""
+    return "(|Progressive Triple Jump:2| OR ((|Side Flip| OR |Progressive Triple Jump:1|) AND |Ledge Grab|) OR |Wall Kick|)"
+    
+def HeightDoubleJumpKick(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+    """Player can jump high enough to reach a platform reachable via double jump + kick."""
+    return "(|Progressive Triple Jump:2| OR ((|Side Flip| OR |Progressive Triple Jump:1|) AND |Ledge Grab|) OR |Wall Kick| OR (|Progressive Triple Jump:1| AND |Kick|))"
     
 def HeightSideFlip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via side flip."""
-    return "(|Triple Jump| OR |Side Flip| OR |Wall Kick|)"
+    return "(|Progressive Triple Jump:2| OR |Side Flip| OR |Wall Kick| OR (|Progressive Triple Jump:1| AND (|Kick| OR |Ledge Grab|)))"
     
 def HeightBackflip(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via backflip."""
-    return "(|Triple Jump| OR |Side Flip| OR |Backflip| OR |Wall Kick|)"
+    return "(|Progressive Triple Jump:2| OR |Side Flip| OR |Backflip| OR |Wall Kick| OR (|Progressive Triple Jump:1| AND (|Kick| OR |Ledge Grab|)))"
+    
+def HeightDoubleJump(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+    """Player can jump high enough to reach a platform reachable via double jump."""
+    return "(|Progressive Triple Jump:1| OR |Side Flip| OR |Backflip| OR |Wall Kick|)"
     
 def HeightLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via ledge grab."""
-    return "(|Triple Jump| OR |Side Flip| OR |Backflip| OR |Ledge Grab| OR |Wall Kick|)"
+    return "(|Progressive Triple Jump:1| OR |Side Flip| OR |Backflip| OR |Ledge Grab| OR |Wall Kick|)"
     
 def HeightKick(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump high enough to reach a platform reachable via jump + kick."""
-    return "(|Triple Jump| OR |Side Flip| OR |Backflip| OR |Ledge Grab| OR |Kick| OR |Wall Kick|)"
+    return "(|Progressive Triple Jump:1| OR |Side Flip| OR |Backflip| OR |Ledge Grab| OR |Kick| OR |Wall Kick|)"
     
 def DistLongJumpWallKickLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump far enough to reach a platform reachable via long jump + wall kick + ledge grab."""
-    return "(|Triple Jump| OR (|Long Jump| AND |Ledge Grab| AND |Wall Kick|))"
+    return "(|Progressive Triple Jump:2| OR (|Long Jump| AND |Ledge Grab| AND |Wall Kick|))"
     
 def DistLongJumpLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump far enough to reach a platform reachable via long jump + ledge grab."""
-    return "(|Triple Jump| OR (|Long Jump| AND (|Ledge Grab| OR |Wall Kick|)))"
+    return "(|Progressive Triple Jump:2| OR (|Long Jump| AND (|Ledge Grab| OR |Wall Kick|)))"
     
 def DistLongJump(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump far enough to reach a platform reachable via long jump."""
-    return "(|Triple Jump| OR |Long Jump|)"
+    return "(|Progressive Triple Jump:2| OR |Long Jump|)"
     
-def DistDive(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
-    """Player can jump far enough to reach a platform reachable via jump + dive."""
-    return "(|Triple Jump| OR |Long Jump| OR |Dive|)"
+def DistDoubleJumpKick(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+    """Player can jump far enough to reach a platform reachable via double jump + kick/dive."""
+    return "(|Progressive Triple Jump:2| OR |Long Jump| OR (|Progressive Triple Jump:1| AND (|Kick| OR |Dive|)))"
     
 def DistKick(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump far enough to reach a platform reachable via jump + kick."""
-    return "(|Triple Jump| OR |Long Jump| OR |Dive| OR |Kick|)"
+    return "(|Progressive Triple Jump:2| OR |Long Jump| OR |Dive| OR |Kick|)"
+    
+def DistDoubleJump(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+    """Player can jump far enough to reach a platform reachable via double jump."""
+    return "(|Progressive Triple Jump:1| OR |Long Jump| OR |Dive| OR |Kick|)"
     
 def DistWallKickLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump far enough to reach a platform reachable via jump + wall kick + ledge grab."""
-    return "(|Triple Jump| OR |Long Jump| OR |Dive| OR |Kick| OR (|Wall Kick| AND |Ledge Grab|))"
+    return "(|Progressive Triple Jump:1| OR |Long Jump| OR |Dive| OR |Kick| OR (|Wall Kick| AND |Ledge Grab|))"
     
 def DistLedgeGrab(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """Player can jump far enough to reach a platform reachable via jump + ledge grab."""
-    return "(|Triple Jump| OR |Long Jump| OR |Dive| OR |Kick| OR |Ledge Grab|)"
+    return "(|Progressive Triple Jump:1| OR |Long Jump| OR |Dive| OR |Kick| OR |Ledge Grab|)"
+    
+def GroundBox(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
+    """Player can break a box on the ground."""
+    return "(|Progressive Triple Jump:2| OR |Progressive Grab:1| OR |Kick| OR |Ground Pound|)"

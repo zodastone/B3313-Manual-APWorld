@@ -26,19 +26,31 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
 ## Items
 
 - Moves
-  - Backflip, Side Flip, Wall Kick, Dive, Ground Pound, Kick, Ledge Grab: Self-explanatory.
-  - Triple Jump
-    - As in SM64EX, also includes Double Jump.
+  - Backflip, Side Flip, Wall Kick, Dive, Ground Pound, Ledge Grab: Self-explanatory.
+  - Ceiling Hang
+    - For hanging from various surfaces, owls, etc.
+  - Kick
+    - Also includes the "breakdance" kick performed via Z->B while stationary.
   - Long Jump
-    - Also includes the B3313-added "flying somersault" performed via Z->B while moving.
-  - Climb
-    - As in SM64EX, includes climbing poles/trees as well as hanging from ceilings.
-    - Here, this also includes the B3313-added ability to climb up certain walls and jump off them.
+    - Also includes the B3313-added "flying somersault" performed via Z->B while running.
+  - Pole Climb
+    - For climbing poles, trees, etc.
+  - Progressive Grab
+    - This has 2 stages, Punch (can press B to strike objects with Mario's hand), and Grab (can pick up objects)
+  - Progressive Triple Jump
+    - This has 2 stages, Double Jump and Triple Jump. You always have access to the basic jump.
+  - Shell
+    - This is the ability to ride around on Koopa Shells.
+  - Swim
+    - This is the ability to move through water via Mario's swimming/grabbing animations.
+    - If you have the Metal Cap, you can enter water and walk along the bottom without Swim.
+  - Wall Climb
+    - This is the B3313-added ability to climb up certain walls and jump off them.
     - If a wall is climbable, using Wall Kick on it instead is not in logic (for simplicity, since these walls are finicky about when you can do a true Wall Kick off them).
 - Caps
 - Green Comet: A made-up item that is required to obtain any Green Stars, because gating these behind 120 Stars would not be ideal. Power Stars are pure filler in this APWorld.
 - Course Access: These grant you access to the courses inside a certain chunk of overworld. E.g. "Beta Lobby A Courses" grants you access to Snow Slider (B-Roll), Mountain (B-Roll), etc.
-- Cannons: Includes the cannon for that course and its sub-areas (Whomp's Kingdom is the only course that has a sub-area with a cannon).
+- Cannons: Includes the cannon for that course and its sub-areas.
 - Red Stars: A configurable amount of these gate the final Bowser fight, and they do nothing else.
 - Various filler items
 
@@ -75,7 +87,6 @@ The "Courses" items grant access to the courses within the corresponding chunk o
 ### Wait, What's "Overworld" and What's a "Course"?
 Indeed, B3313 blurs the line between the two. The definitive answer is, whatever is in the "Overworld" group in the client/tracker is overworld, everything else is a course.
 - Areas accessed from overworld via walking through a door, walking through a loading zone and walking out the other side, or entering a pipe and exiting another pipe are overworld.
-- Areas that you can only enter via Mario's "sparkly somersault" animation are courses.
 - Notable examples: Toad's Hedge Maze, Floating Hotel, and Mr. I's Maze are overworld. Dream Castle and Peach's Cell are courses.
 
 ### RNG Course Access Logic
@@ -129,7 +140,7 @@ The logic with no tricks enabled is intended to have a difficulty level accessib
 
 ## Randomization of Moves
 There's no dedicated option in the YAML to control which moves are randomized. If you want to start with all/some moves, then add them to your start_inventory_from_pool.
-- E.g. \{"Triple Jump": 1, "Long Jump": 1, "Backflip": 1, "Side Flip": 1, "Wall Kick": 1, "Dive": 1, "Ground Pound": 1, "Kick": 1, "Climb": 1, "Ledge Grab": 1\}
+- E.g. \{"Progressive Triple Jump": 2, "Long Jump": 1, "Backflip": 1, "Side Flip": 1, "Wall Kick": 1, "Dive": 1, "Ground Pound": 1, "Kick": 1, "Pole Climb": 1, "Ledge Grab": 1, "Swim": 1, "Progressive Grab": 2, "Wall Climb": 1, "Ceiling Hang": 1, "Shell": 1\}
 
 ## Tricks
 The YAML has options to enable various tricks, such as advanced movement techniques and interacting with invisible objects.
@@ -148,7 +159,7 @@ The YAML has options to enable various tricks, such as advanced movement techniq
 - What version of B3313 is this APWorld for?
   - 1.0.2 (latest "official" release), because it's the version I'm familiar with. Other versions will not have the same stars/locations.
 - Why isn't this part of the more general SM64 Hacks APWorld project?
-  - B3313 is derived from a decompilation of SM64, so is not compatible with that project's modifications to assembly code or assumptions on save memory layout.
+  - B3313 1.0.2 is derived from a decompilation of SM64, so is not compatible with that project's modifications to assembly code or assumptions on save memory layout.
 - Are you planning to make a full (non-manual) APWorld of this?
   - Not likely, as my ROM hacking experience is minimal and I already have a large backlog of other projects I want to work on. If you are interested in taking the logic herein and making a non-manual APWorld from this, go for it.
 - How do I reach (insert location here)?
@@ -161,3 +172,4 @@ The YAML has options to enable various tricks, such as advanced movement techniq
     - Vanilla Lobby Toad: Follow the above to Polygonal Chaos, then walk forward a long way to the set of double doors. This will put you right by the Toad, without needing to fly through the window.
     - Uncanny Courtyard Red Coins with hidden_stuff enabled: You don't have to jump over the wall if you approach from the back side. Start with Beta Lobby B and Plexal Upstairs, then take the upper door and the crescent moon door to Cryptic Hideout, then the door on the left to Funhouse, then the door hidden behind a texture with red hills on it.
     - Star Road: Set the game to ACT 1 by waiting on the title screen for ~30 seconds. Go to Plexal Lobby, then take the Boo cage to Crimson Hallway. Dying will then take you to a darkened version of the ending sequence which you can follow to Star Road. The pipes in Star Road (and most other places) are just short enough to enter with a basic jump.
+    - Basement Maze Star Box without Swim: Go to Parallel Lobby, take the door that leads to the Hazy Memory Cave portal, take the opposite-side door, fall down the fountain on the opposite side of the hedge maze, and take the pipe.

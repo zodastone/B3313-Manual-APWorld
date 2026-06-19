@@ -23,7 +23,7 @@
 		"name": "Bros' House - Green Star in the Box",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Green Comet|"
+		"requires": "|Green Comet| AND {GroundBox()}"
 	},
 	{
 		"name": "Crumbling Castle - Green Star Past the Broken Door",
@@ -47,13 +47,13 @@
 		"name": "Floating Hotel - Silver Stars",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Wing Cap| AND |Triple Jump|"
+		"requires": "|Wing Cap| AND |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Floor 2B - In the Box",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "{HeightBackflip()} OR {YamlEnabled(slope_movement)}"
+		"requires": "({HeightBackflip()} OR {YamlEnabled(slope_movement)}) AND {GroundBox()}"
 	},
 	{
 		"name": "Floor 3B - Talk to Toad",
@@ -65,7 +65,7 @@
 		"name": "Forest Maze - Green Star in the Box",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Green Comet|"
+		"requires": "|Green Comet| AND {GroundBox()}"
 	},
 	{
 		"name": "Imperfect Sanctuary Lobby - Follow Peach's Call",
@@ -77,7 +77,7 @@
 		"name": "Lunar Tower - Green Star on the Checker Platform",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Green Comet| AND |Wing Cap| AND (|Triple Jump| OR {YamlEnabled(hidden_stuff)})",
+		"requires": "|Green Comet| AND |Wing Cap| AND (|Progressive Triple Jump:2| OR {YamlEnabled(hidden_stuff)})",
 		"_comment": "Warp on top of the Wing Cap box"
 	},
 	{
@@ -90,7 +90,7 @@
 		"name": "Nebula Lobby - Green Star in the Window",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Green Comet| AND |Vanish Cap|"
+		"requires": "|Green Comet| AND |Vanish Cap| AND {GroundBox()}"
 	},
 	{
 		"name": "Nightmare Basement - Talk to Toad",
@@ -115,13 +115,13 @@
 		"name": "Orange Hall - Behind the Window",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "{HeightBackflip()}"
+		"requires": "{HeightDoubleJump()} AND {GroundBox()}"
 	},
 	{
 		"name": "Peaceful Grounds - Green Star Atop the Castle",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Green Comet| AND ((|Kick| AND {YamlEnabled(slope_movement)}) OR (|Climb| AND |Triple Jump|)) AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|",
+		"requires": "|Green Comet| AND ((|Kick| AND {YamlEnabled(slope_movement)}) OR (|Pole Climb| AND |Progressive Triple Jump:2|)) AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|",
 		"_comment": "Can climb the first level by jumping off the top of a tree"
 	},
 	{
@@ -146,13 +146,13 @@
 		"name": "Solar Tower - Red Coins",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Wing Cap| AND |Triple Jump|"
+		"requires": "|Wing Cap| AND |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Stellar Tower - Red Coins",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Wing Cap| AND |Triple Jump|"
+		"requires": "|Wing Cap| AND |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "The Star - Silver Stars",
@@ -164,7 +164,7 @@
 		"name": "Toad's Hedge Maze - Red Coins",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": []
+		"requires": "|Swim| OR {DistDoubleJumpKick()}"
 	},
 	{
 		"name": "Toad's Rec Room - Find the Right Box",
@@ -177,21 +177,21 @@
 		"name": "Uncanny Courtyard - MIPS 1",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Triple Jump| OR (|Ledge Grab| AND (|Side Flip| OR |Climb|))",
+		"requires": "|Progressive Grab:2| AND (|Progressive Triple Jump:2| OR (|Ledge Grab| AND (|Progressive Triple Jump:1| OR |Side Flip| OR |Pole Climb|)))",
 		"_comment": "Only appears if you have 15 Power Stars in-game"
 	},
 	{
 		"name": "Uncanny Courtyard - MIPS 2",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Triple Jump| OR (|Ledge Grab| AND (|Side Flip| OR |Climb|))",
+		"requires": "|Progressive Grab:2| AND (|Progressive Triple Jump:2| OR (|Ledge Grab| AND (|Progressive Triple Jump:1| OR |Side Flip| OR |Pole Climb|)))",
 		"_comment": "Only appears if you have 50 Power Stars in-game"
 	},
 	{
 		"name": "Uncanny Courtyard - Red Coins",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": "|Wall Kick| OR |Climb| OR {YamlEnabled(hidden_stuff)}",
+		"requires": "|Wall Kick| OR |Pole Climb| OR {YamlEnabled(hidden_stuff)}",
 		"_comment": "With hidden_stuff, go to Funhouse, then use door hidden behind red hills texture"
 	},
 	{
@@ -204,7 +204,8 @@
 		"name": "Basement Maze - Yellow Box on Blue Box",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
-		"requires": []
+		"requires": "{GroundBox()}",
+		"_comment": "Without swim, from Parallel Lobby, opposite door in Hazy Memory Cave area, pit/pipe in back of hedge maze"
 	},
 	{
 		"name": "Vanilla Lobby - Talk to Toad",
@@ -217,7 +218,7 @@
 		"name": "athletic - In the Box",
 		"region": "athletic",
 		"category": ["3rd Floor (beta)"],
-		"requires": []
+		"requires": "{GroundBox()}"
 	},
 	{
 		"name": "castle1 - Star Chase",
@@ -253,7 +254,7 @@
 		"name": "Tall Floating Fortress - Red Coins",
 		"region": "Tall Floating Fortress",
 		"category": ["3rd Floor (beta)"],
-		"requires": "|Ledge Grab| OR |Wall Kick| OR |Triple Jump|"
+		"requires": "|Ledge Grab| OR |Wall Kick| OR |Progressive Triple Jump:1|"
 	},
 	{
 		"name": "Wing Cap by the Rainbow Highway - Wing Cap Switch",
@@ -265,7 +266,7 @@
 		"name": "Wing Cap by the Rainbow Highway - High in the Tower",
 		"region": "Wing Cap by the Rainbow Highway",
 		"category": ["3rd Floor (beta)"],
-		"requires": "(|Wing Cap| AND |Triple Jump|) OR |Wall Kick|"
+		"requires": "(|Wing Cap| AND |Progressive Triple Jump:2|) OR |Wall Kick|"
 	},
 	{
 		"name": "Wing Cap by the Rainbow Highway - Red Coins",
@@ -283,19 +284,19 @@
 		"name": "castle2 - Top of the Castle",
 		"region": "castle2",
 		"category": ["3rd Floor (beta)"],
-		"requires": "{HeightBackflip()}"
+		"requires": "{HeightDoubleJump()}"
 	},
 	{
 		"name": "Deep-Water Station - At the Midway Point",
 		"region": "Deep-Water Station",
 		"category": ["4th Floor"],
-		"requires": "|Wall Kick|"
+		"requires": "|Wall Kick| AND |Swim|"
 	},
 	{
 		"name": "Deep-Water Station - In the Underwater Tunnel",
 		"region": "Deep-Water Station",
 		"category": ["4th Floor"],
-		"requires": "|Wall Kick|"
+		"requires": "|Wall Kick| AND |Swim|"
 	},
 	{
 		"name": "yajimatest - In the Yellow Box",
@@ -307,13 +308,13 @@
 		"name": "Stone Island Pathway - End of the Course",
 		"region": "Stone Island Pathway",
 		"category": ["4th Floor (beta)"],
-		"requires": "{HeightWallKick()}"
+		"requires": "{HeightDoubleJumpLedgeGrab()}"
 	},
 	{
 		"name": "Collision Test - In the Yellow Box",
 		"region": "Collision Test",
 		"category": ["4th Floor (beta)"],
-		"requires": []
+		"requires": "{GroundBox()}"
 	},
 	{
 		"name": "Fire Field - Free Star",
@@ -325,7 +326,7 @@
 		"name": "Fire Field - Red Coins",
 		"region": "Fire Field",
 		"category": ["4th Floor (beta)"],
-		"requires": "|Cannon Unlock (Fire Field)| OR ({YamlEnabled(slope_movement)} AND (|Climb| OR |Long Jump| OR |Triple Jump| OR {YamlEnabled(lava_boost)}))"
+		"requires": "|Cannon Unlock (Fire Field)| OR ({YamlEnabled(slope_movement)} AND (|Ceiling Hang| OR |Long Jump| OR |Progressive Triple Jump:2| OR {YamlEnabled(lava_boost)}))"
 	},
 	{
 		"name": "Test Course - End of the Course",
@@ -337,7 +338,7 @@
 		"name": "Fire Fortress - Silver Stars",
 		"region": "Fire Fortress",
 		"category": ["4th Floor (beta)"],
-		"requires": "|Cannon Unlock (Fire Fortress)| OR |Triple Jump|"
+		"requires": "|Cannon Unlock (Fire Fortress)| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Brown Stony Steps - Top of the Mountain",
@@ -355,7 +356,7 @@
 		"name": "athletic2 - Red Coins",
 		"region": "athletic2",
 		"category": ["4th Floor (beta)"],
-		"requires": "|Wall Kick| OR (|Triple Jump| AND |Wing Cap|)"
+		"requires": "|Wall Kick| OR (|Progressive Triple Jump:2| AND |Wing Cap|)"
 	},
 	{
 		"name": "Snow Tunnels - In the Maze",
@@ -367,7 +368,7 @@
 		"name": "Ghost House - On the Pedestal",
 		"region": "Ghost House",
 		"category": ["Basement Annex"],
-		"requires": "|Wall Kick| OR |Climb|"
+		"requires": "|Wall Kick| OR |Pole Climb|"
 	},
 	{
 		"name": "Ghost House - Red Coins",
@@ -379,25 +380,25 @@
 		"name": "Cozy Woods - Red Coins",
 		"region": "Cozy Woods",
 		"category": ["Basement Annex"],
-		"requires": "|Ledge Grab|"
+		"requires": "|Swim| AND |Ledge Grab|"
 	},
 	{
 		"name": "Koopa Hideout - Red Coins",
 		"region": "Cozy Woods",
 		"category": ["Basement Annex"],
-		"requires": "|Wall Kick|"
+		"requires": "|Swim| AND |Wall Kick|"
 	},
 	{
 		"name": "Koopa Hideout - Kill the Koopas",
 		"region": "Cozy Woods",
 		"category": ["Basement Annex"],
-		"requires": "|Wall Kick|"
+		"requires": "|Swim| AND |Wall Kick|"
 	},
 	{
 		"name": "Koopa Hideout - Beat Koopa the Quick",
 		"region": "Cozy Woods",
 		"category": ["Basement Annex"],
-		"requires": "|Wall Kick|"
+		"requires": "|Swim| AND |Wall Kick|"
 	},
 	{
 		"name": "Carryboy Farmland - Top of the Tower",
@@ -409,13 +410,13 @@
 		"name": "Carryboy Farmland - Red Coins",
 		"region": "Carryboy Farmland",
 		"category": ["Basement Annex"],
-		"requires": []
+		"requires": "|Kick| OR |Ledge Grab| OR |Backflip| OR |Side Flip| OR |Pole Climb| OR |Progressive Grab:2|"
 	},
 	{
 		"name": "Carryboy Farmland - Plant the Crops",
 		"region": "Carryboy Farmland",
 		"category": ["Basement Annex"],
-		"requires": []
+		"requires": "|Kick| OR |Ledge Grab| OR |Backflip| OR |Side Flip| OR |Pole Climb| OR |Progressive Grab:2|"
 	},
 	{
 		"name": "Snow Slider (B-Roll) - Bottom of the Mountain",
@@ -427,7 +428,7 @@
 		"name": "Snow Slider (B-Roll) - Lil' Penguin Lost",
 		"region": "Snow Slider (B-Roll)",
 		"category": ["Beta Lobby A"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Mountain (B-Roll) - Top of the Tower",
@@ -439,13 +440,13 @@
 		"name": "Mountain (B-Roll) - Tower Hidden 1-Up Spot",
 		"region": "Mountain (B-Roll) Upper",
 		"category": ["Beta Lobby A"],
-		"requires": []
+		"requires": "|Progressive Grab:1| OR |Kick|"
 	},
 	{
 		"name": "Mountain (B-Roll) - On the Floating Platform",
 		"region": "Mountain (B-Roll) Upper",
 		"category": ["Beta Lobby A"],
-		"requires": "|Climb| OR ({HeightLedgeGrab()} AND (|Cannon Unlock (Mountain (B-Roll))| OR {DistKick()}))"
+		"requires": "(|Pole Climb| AND |Ceiling Hang|) OR |Cannon Unlock (Mountain (B-Roll))| OR {DistKick()}"
 	},
 	{
 		"name": "Fire Bubble (B-Roll) - Boil the Big Bully Spot",
@@ -475,13 +476,13 @@
 		"name": "Water Land (Shoshinkai) - Board Bowser's Sub",
 		"region": "Water Land (Shoshinkai)",
 		"category": ["Beta Lobby A"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Water Land (Shoshinkai) - Chests in the Current",
 		"region": "Water Land (Shoshinkai)",
 		"category": ["Beta Lobby A"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Jolly Roger Lagoon - Metal Cap Switch",
@@ -493,42 +494,42 @@
 		"name": "Jolly Roger Lagoon - In the Underwater Cave",
 		"region": "Jolly Roger Lagoon",
 		"category": ["Beta Lobby B"],
-		"requires": []
+		"requires": "|Swim| OR |Metal Cap|"
 	},
 	{
 		"name": "Jolly Roger Lagoon - Red Coins",
 		"region": "Jolly Roger Lagoon",
 		"category": ["Beta Lobby B"],
-		"requires": []
+		"requires": "|Swim| OR |Metal Cap|"
 	},
 	{
 		"name": "Frosty Highlands - Top of the Mountain",
-		"region": "Frosty Highlands",
+		"region": "Frosty Highlands Upper",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
-		"requires": "|Triple Jump| OR |Wall Kick|"
+		"requires": []
 	},
 	{
 		"name": "Frosty Highlands - Red Coins",
-		"region": "Frosty Highlands",
+		"region": "Frosty Highlands Upper",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
-		"requires": "|Triple Jump| OR |Wall Kick|"
+		"requires": "{GroundBox()}"
 	},
 	{
 		"name": "Frosty Highlands - Green Star on the Chimney",
-		"region": "Frosty Highlands",
+		"region": "Frosty Highlands Upper",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
-		"requires": "|Green Comet| AND (|Triple Jump| OR |Wall Kick|)",
+		"requires": "|Green Comet|",
 		"_comment": "Chimney only appears if you have 120 Power Stars in-game"
 	},
 	{
 		"name": "Cold Cold Crevasse - Top of the Area",
-		"region": "Frosty Highlands",
+		"region": "Frosty Highlands by Crevasse",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
 		"requires": "|Wall Kick|"
 	},
 	{
 		"name": "Cold Cold Crevasse - Silver Stars",
-		"region": "Frosty Highlands",
+		"region": "Frosty Highlands by Crevasse",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
 		"requires": "{HeightLedgeGrab()} AND ({DistLongJump()} OR {HeightBackflip()})"
 	},
@@ -548,7 +549,7 @@
 		"name": "Snowman's Land (beta) - Silver Stars",
 		"region": "Snowman's Land (beta)",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
-		"requires": "{HeightBackflip()} OR |Climb|"
+		"requires": "{HeightBackflip()} OR |Pole Climb|"
 	},
 	{
 		"name": "Whomp's Kingdom - SMG2 Bonus Area",
@@ -561,14 +562,14 @@
 		"name": "Whomp's Kingdom - Top of the Tower",
 		"region": "Whomp's Kingdom",
 		"category": ["Beta Lobby B"],
-		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Climb| OR |Backflip| OR |Wall Kick| OR |Triple Jump|",
+		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Pole Climb| OR |Backflip| OR |Wall Kick| OR |Progressive Triple Jump:2|",
 		"_comment": "Reach floating islands with backflip from Thwomp, or Wall Kick or Triple Jump from below floating islands."
 	},
 	{
 		"name": "Whomp's Kingdom - Red Coins",
 		"region": "Whomp's Kingdom",
 		"category": ["Beta Lobby B"],
-		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Climb| OR |Backflip| OR |Wall Kick| OR |Triple Jump|"
+		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Pole Climb| OR |Backflip| OR |Wall Kick| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Whomp's Prison - In a Jail Cell",
@@ -600,44 +601,44 @@
 		"name": "Blazing Bully Base - Boil the Big Bully",
 		"region": "Blazing Bully Base",
 		"category": ["Beta Lobby B"],
-		"requires": "|Wall Kick| OR |Triple Jump| OR |Metal Cap| OR {YamlEnabled(lava_boost)}",
-		"_comment": "With Wall Kick, climb up high and use the Crazy Box"
+		"requires": "(|Wall Kick| AND (|Progressive Grab:2| OR {YamlEnabled(slope_movement)})) OR |Progressive Triple Jump:2| OR |Metal Cap| OR {YamlEnabled(lava_boost)}",
+		"_comment": "With Wall Kick, climb up high and use the Crazy Box (or slope movement)"
 	},
 	{
 		"name": "Blazing Bully Base - On a High Platform (Light)",
 		"region": "Blazing Bully Base",
 		"category": ["Beta Lobby B"],
-		"requires": "|Wall Kick| OR (|Wing Cap| AND |Triple Jump|)"
+		"requires": "|Wall Kick| OR (|Wing Cap| AND |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Blazing Bully Base - On a High Platform (Dark)",
 		"region": "Blazing Bully Base",
 		"category": ["Beta Lobby B"],
-		"requires": "(|Wing Cap| AND |Triple Jump|) OR ({HeightKick()} AND (|Kick| OR |Ledge Grab| OR |Dive| OR |Triple Jump| OR {YamlEnabled(lava_boost)}))"
+		"requires": "(|Wing Cap| AND |Progressive Triple Jump:2|) OR ({HeightKick()} AND (|Kick| OR |Ledge Grab| OR |Dive| OR |Progressive Triple Jump:1| OR {YamlEnabled(lava_boost)}))"
 	},
 	{
 		"name": "Blazing Bully Base - Red Coins",
 		"region": "Blazing Bully Base",
 		"category": ["Beta Lobby B"],
-		"requires": "(|Wing Cap| AND |Triple Jump|) OR (|Wall Kick| AND (|Triple Jump| OR |Long Jump| OR |Metal Cap| OR {YamlEnabled(lava_boost)}))"
+		"requires": "(|Wing Cap| AND |Progressive Triple Jump:2|) OR (|Wall Kick| AND (|Progressive Triple Jump:2| OR (|Long Jump| AND (|Progressive Grab:2| OR {YamlEnabled(slope_movement)})) OR |Metal Cap| OR {YamlEnabled(lava_boost)}))"
 	},
 	{
 		"name": "Bowser Inside the Volcano - Defeat Bowser",
 		"region": "Blazing Bully Base",
 		"category": ["Beta Lobby B"],
-		"requires": "|Wall Kick| OR (|Wing Cap| AND |Triple Jump|)"
+		"requires": "|Progressive Grab:2| AND (|Wall Kick| OR (|Wing Cap| AND |Progressive Triple Jump:2|))"
 	},
 	{
 		"name": "Blargg's Lava Realm - Up the Lava Ramp",
 		"region": "Blargg's Lava Realm",
 		"category": ["Beta Lobby C"],
-		"requires": []
+		"requires": "|Shell| OR {DistDoubleJump()} OR {YamlEnabled(lava_boost)}"
 	},
 	{
 		"name": "Blargg's Lava Realm - Silver Stars",
 		"region": "Blargg's Lava Realm",
 		"category": ["Beta Lobby C"],
-		"requires": []
+		"requires": "|Shell| OR {DistDoubleJump()} OR {YamlEnabled(lava_boost)}"
 	},
 	{
 		"name": "Blargg's Fiery Fortress - Top of the Fortress",
@@ -649,56 +650,56 @@
 		"name": "Jolly Roger Bay (beta) - On the High Back Platform",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": "{HeightSideFlip()} AND (|Ledge Grab| OR |Triple Jump| OR (|Long Jump| AND |Wall Kick|))"
+		"requires": "((|Swim| AND |Ledge Grab|) OR |Progressive Triple Jump:2| OR (|Long Jump| AND |Wall Kick|)) AND (|Progressive Triple Jump:1| OR {HeightSideFlip()})"
 	},
 	{
 		"name": "Jolly Roger Bay (beta) - Treasure of the Ocean Cave",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Jolly Roger Bay (beta) - Red Coins",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": "|Triple Jump| OR (|Metal Cap| AND {HeightBackflip()} AND (|Ledge Grab| OR (|Long Jump| AND |Wall Kick|)))"
+		"requires": "|Swim| AND (|Progressive Triple Jump:2| OR (|Metal Cap| AND {HeightBackflip()} AND (|Ledge Grab| OR (|Long Jump| AND |Wall Kick|))))"
 	},
 	{
 		"name": "Jolly Roger Bay (beta) - Raise the Ship",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": "|Metal Cap|"
+		"requires": "|Swim| AND |Metal Cap|"
 	},
 	{
 		"name": "Jolly Roger Bay (beta) - Ghost Ship in the Sky",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": "|Metal Cap|"
+		"requires": "|Swim| AND |Metal Cap|"
 	},
 	{
 		"name": "Sunken Ghost Ship - Inside the Ship",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": "|Metal Cap|"
+		"requires": "|Swim| AND |Metal Cap|"
 	},
 	{
 		"name": "Unagi's Tunnel - Clam Secrets",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": [],
+		"requires": "|Swim|",
 		"_comment": "Stay high to get the one secret without triggering the water switch"
 	},
 	{
 		"name": "Unagi's Tunnel - In the Box",
 		"region": "Jolly Roger Bay (beta)",
 		"category": ["Beta Lobby C"],
-		"requires": []
+		"requires": "|Swim| AND {GroundBox()}"
 	},
 	{
 		"name": "Bowser in the Dark World (Shoshinkai) - Defeat Bowser",
 		"region": "Bowser in the Dark World (Shoshinkai)",
 		"category": ["Beta Lobby C", "Parallel Lobby", "Purple Lobby and Upstairs"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "River Mountain - Top of the Mountain",
@@ -710,7 +711,7 @@
 		"name": "River Mountain - Red Coins",
 		"region": "River Mountain",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "|Cannon Unlock (River Mountain)|"
+		"requires": "|Cannon Unlock (River Mountain)| AND {GroundBox()}"
 	},
 	{
 		"name": "River Mountain - Shoot to the Island in the Sky",
@@ -722,7 +723,7 @@
 		"name": "Inside the Summit - Defeat Prince Bob-omb",
 		"region": "River Mountain",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Inside the Summit - Top of the Area",
@@ -734,20 +735,20 @@
 		"name": "Inside the Summit - Behind the Gate",
 		"region": "River Mountain",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "{YamlEnabled(bomb_clip)} OR (|Side Flip| AND |Wall Kick|) OR |Climb|"
+		"requires": "{YamlEnabled(bomb_clip)} OR (|Side Flip| AND |Wall Kick|) OR |Pole Climb|"
 	},
 	{
 		"name": "Dark Downtown - Red Coins",
 		"region": "Dark Downtown",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "(|Climb| AND |Long Jump|) OR (({HeightSideFlip()} OR ((|Kick| OR |Backflip|) AND {YamlEnabled(slope_movement)})) AND {HeightLedgeGrab()})",
+		"requires": "|Wall Kick| OR (|Swim| AND ((|Pole Climb| AND |Long Jump|) OR {HeightSideFlip()} OR |Progressive Triple Jump:1| OR ({YamlEnabled(slope_movement)} AND (|Backflip| OR |Kick|) AND {HeightLedgeGrab()}))) OR (({HeightSideFlip()} OR |Progressive Triple Jump:1| OR ({YamlEnabled(slope_movement)} AND (|Backflip| OR |Kick|))) AND {HeightLedgeGrab()} AND {DistKick()})",
 		"_comment": "With Climb and Long Jump, can reach the water switch on the white building"
 	},
 	{
 		"name": "Dark Downtown - By the Pipe",
 		"region": "Dark Downtown Pipe",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": []
+		"requires": "{GroundBox()}"
 	},
 	{
 		"name": "Ice Cold Warzone - Top of the Mountain",
@@ -759,7 +760,7 @@
 		"name": "Limitless Lighthouse - Top of the Lighthouse",
 		"region": "Dark Downtown Pipe",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": [],
+		"requires": "|Swim| OR |Progressive Triple Jump:2|",
 		"_comment": "It's in-logic to have full health after Ice Cold Warzone, to tank the swim at normal speed"
 	},
 	{
@@ -772,7 +773,7 @@
 		"name": "Bob-omb Battlefield (beta) - Shoot to the Floating Island",
 		"region": "Bob-omb Battlefield (beta)",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "|Cannon Unlock (Bob-omb Battlefield (beta))| OR |Triple Jump|"
+		"requires": "|Cannon Unlock (Bob-omb Battlefield (beta))| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Bob-omb Battlefield (beta) - Behind Chain Chomp's Gate",
@@ -784,37 +785,37 @@
 		"name": "Chomp Caverns - Top of the Cavern",
 		"region": "Bob-omb Battlefield (beta)",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
-		"requires": "{HeightWallKick()} AND {DistKick()}"
+		"requires": "{HeightDoubleJumpKick()} AND {DistKick()}"
 	},
 	{
 		"name": "Water Land (B-Roll) - Through the Jet Stream",
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Water Land (B-Roll) - Board Bowser's Sub",
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Water Land (B-Roll) - Chests in the Current",
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Inside the Submarine - Red Coins",
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
-		"requires": "|Climb| AND |Triple Jump|"
+		"requires": "|Swim| AND |Wall Climb| AND |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Bowser in the Sub - Defeat Bowser",
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
-		"requires": "|Climb| AND {HeightWallKick()}"
+		"requires": "|Swim| AND |Wall Climb| AND {HeightDoubleJumpLedgeGrab()} AND |Progressive Grab:2|"
 	},
 	{
 		"name": "Fire Bubble (Shoshinkai) - Boil the Big Bully Spot",
@@ -838,13 +839,13 @@
 		"name": "Mountain (Shoshinkai) - Tower Hidden 1-Up Spot",
 		"region": "Mountain (Shoshinkai) Upper",
 		"category": ["Beta Lobby E"],
-		"requires": []
+		"requires": "|Progressive Grab:1| OR |Kick|"
 	},
 	{
 		"name": "Mountain (Shoshinkai) - On the Floating Platform",
 		"region": "Mountain (Shoshinkai) Upper",
 		"category": ["Beta Lobby E"],
-		"requires": "|Cannon Unlock (Mountain (Shoshinkai))| OR |Climb| OR {DistKick()}"
+		"requires": "|Cannon Unlock (Mountain (Shoshinkai))| OR (|Pole Climb| AND |Ceiling Hang|) OR {DistKick()}"
 	},
 	{
 		"name": "Snow Slider (Shoshinkai) - Bottom of the Mountain",
@@ -856,44 +857,44 @@
 		"name": "Snow Slider (Shoshinkai) - Lil' Penguin Lost",
 		"region": "Snow Slider (Shoshinkai)",
 		"category": ["Beta Lobby E"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Drip Drop Depths - Silver Stars",
 		"region": "Drip Drop Depths",
 		"category": ["Bowser's Domain"],
-		"requires": "|Climb| AND |Triple Jump|"
+		"requires": "|Wall Climb| AND |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Drip Drop Depths - Behind the Grate",
 		"region": "Drip Drop Depths",
 		"category": ["Bowser's Domain"],
-		"requires": "|Climb| AND |Vanish Cap|"
+		"requires": "|Swim| AND |Wall Climb| AND |Vanish Cap|"
 	},
 	{
 		"name": "Drip Drop Depths - Unagi's Cage",
 		"region": "Drip Drop Depths",
 		"category": ["Bowser's Domain"],
-		"requires": "|Climb| AND |Vanish Cap|"
+		"requires": "|Swim| AND |Wall Climb| AND |Vanish Cap|"
 	},
 	{
 		"name": "Bob-omb Village - Top of the Path",
 		"region": "Bob-omb Village",
 		"category": ["Bowser's Floor and Endgame"],
-		"requires": "{HeightBackflip()} OR {YamlEnabled(slope_movement)}",
+		"requires": "{HeightDoubleJump()} OR {YamlEnabled(slope_movement)}",
 		"_comment": "Can backwards slope jump up the whole course"
 	},
 	{
 		"name": "Bob-omb Village - Red Coins",
 		"region": "Bob-omb Village",
 		"category": ["Bowser's Floor and Endgame"],
-		"requires": "{HeightBackflip()} OR {YamlEnabled(slope_movement)}"
+		"requires": "{HeightDoubleJump()} OR {YamlEnabled(slope_movement)}"
 	},
 	{
 		"name": "Bob-omb Village - House Secrets",
 		"region": "Bob-omb Village",
 		"category": ["Bowser's Floor and Endgame"],
-		"requires": "{HeightBackflip()} OR {YamlEnabled(slope_movement)}"
+		"requires": "{HeightDoubleJump()} OR {YamlEnabled(slope_movement)}"
 	},
 	{
 		"name": "Peach's Cell - Through the Spotlights",
@@ -905,20 +906,20 @@
 		"name": "Randomized Realm - Pluck the Piranha Flowers",
 		"region": "Randomized Realm",
 		"category": ["Bowser's Floor and Endgame"],
-		"requires": "|Triple Jump| AND (|Wing Cap| OR (|Side Flip| AND |Wall Kick| AND |Ledge Grab|))",
+		"requires": "|Progressive Triple Jump:2| AND (|Wing Cap| OR (|Side Flip| AND |Wall Kick| AND |Ledge Grab|))",
 		"_comment": "Without Wing Cap, can Triple Jump to above the first climbable pole"
 	},
 	{
 		"name": "Randomized Realm - Red Coins",
 		"region": "Randomized Realm",
 		"category": ["Bowser's Floor and Endgame"],
-		"requires": "|Triple Jump| AND (|Wing Cap| OR (|Climb| AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|))"
+		"requires": "|Progressive Triple Jump:2| AND (|Wing Cap| OR (|Pole Climb| AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|))"
 	},
 	{
 		"name": "Eternal Fort - Defeat Bowser",
 		"region": "Eternal Fort",
 		"category": ["Bowser's Floor and Endgame"],
-		"requires": "|Climb| AND {DistLedgeGrab()}",
+		"requires": "|Wall Climb| AND {DistLedgeGrab()} AND |Progressive Grab:2|",
 		"place_item": ["Dead Bowser"],
 		"_comment": "You'll pay for this... later!"
 	},
@@ -932,25 +933,25 @@
 		"name": "River Mountain (beta) - Silver Stars",
 		"region": "River Mountain (beta)",
 		"category": ["Castle Bathroom"],
-		"requires": "|Triple Jump| OR |Cannon Unlock (River Mountain (beta))|"
+		"requires": "|Progressive Triple Jump:2| OR |Cannon Unlock (River Mountain (beta))|"
 	},
 	{
 		"name": "Bob-omb Cavern - Fake Yellow Switch",
 		"region": "River Mountain (beta)",
 		"category": ["Castle Bathroom"],
-		"requires": "|Triple Jump| OR (|Cannon Unlock (River Mountain (beta))| AND {DistLongJump()} AND {HeightBackflip()})"
+		"requires": "|Progressive Triple Jump:2| OR (|Cannon Unlock (River Mountain (beta))| AND {DistLongJump()} AND {HeightDoubleJump()})"
 	},
 	{
 		"name": "Sunken Castle - In the Cage",
 		"region": "Sunken Castle",
 		"category": ["Castle Grounds"],
-		"requires": "|Vanish Cap|"
+		"requires": "|Swim| AND |Vanish Cap| AND {GroundBox()}"
 	},
 	{
 		"name": "Eel Graveyard - Clam Secrets",
 		"region": "Eel Graveyard",
 		"category": ["Castle Grounds"],
-		"requires": [],
+		"requires": "|Swim|",
 		"_comment": "Only logically accessible from Castle Grounds, mid-probability warp from JRB beta not in logic"
 	},
 	{
@@ -987,7 +988,7 @@
 		"name": "Motos Factory - Raid the Vault",
 		"region": "Motos Factory",
 		"category": ["Challenge Lobby"],
-		"requires": "|Wall Kick|",
+		"requires": "|Wall Kick| AND (|Shell| OR |Progressive Triple Jump:2|)",
 		"_comment": "Can use a Shell to cross the void"
 	},
 	{
@@ -1024,7 +1025,7 @@
 		"name": "Motos Factory - Far Back Path",
 		"region": "Motos Factory",
 		"category": ["Challenge Lobby"],
-		"requires": []
+		"requires": "|Shell| OR ({YamlEnabled(slope_movement)} AND |Kick|)"
 	},
 	{
 		"name": "Motos Factory - Behind the Grate",
@@ -1042,7 +1043,7 @@
 		"name": "Motos Factory - Defeat the Giant Motos",
 		"region": "Motos Factory",
 		"category": ["Challenge Lobby"],
-		"requires": "|Vanish Cap| AND {HeightLedgeGrab()} AND (|Ledge Grab| OR |Kick|)"
+		"requires": "|Vanish Cap| AND {HeightLedgeGrab()} AND (|Ledge Grab| OR |Kick|) AND |Progressive Grab:2|"
 	},
 	{
 		"name": "Tower of the Wing Cap (beta) - Wing Cap Switch",
@@ -1114,19 +1115,19 @@
 		"name": "Aquarium Limbo - Bottom of the Aquarium",
 		"region": "Aquarium Limbo",
 		"category": ["Crimson Hallway"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Aquarium Limbo - Red Coins",
 		"region": "Aquarium Limbo",
 		"category": ["Crimson Hallway"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Bowser's Checkered Madness - In the Box",
 		"region": "Bowser's Checkered Madness",
 		"category": ["Crimson Hallway"],
-		"requires": []
+		"requires": "{GroundBox()}"
 	},
 	{
 		"name": "Click Clock Climb - Top of the Clock",
@@ -1156,28 +1157,28 @@
 		"name": "Wet-Dry Moat - On a Floating Platform",
 		"region": "Wet-Dry Moat",
 		"category": ["Fabricated Castle Grounds"],
-		"requires": "{HeightLedgeGrab()}",
+		"requires": "({DistKick()} AND {HeightBackflip()}) OR (|Swim| AND {HeightLedgeGrab()})",
 		"_comment": "Can regular jump to the first water switch"
 	},
 	{
 		"name": "Wet-Dry Moat - Behind the Grate",
 		"region": "Wet-Dry Moat",
 		"category": ["Fabricated Castle Grounds"],
-		"requires": "{HeightLedgeGrab()}",
+		"requires": "|Swim| AND {HeightLedgeGrab()}",
 		"_comment": "Can regular jump to the first water switch"
 	},
 	{
 		"name": "Wet-Dry Moat - Red Coins",
 		"region": "Wet-Dry Moat",
 		"category": ["Fabricated Castle Grounds"],
-		"requires": [],
+		"requires": "|Swim|",
 		"_comment": "Can regular jump to the first water switch"
 	},
 	{
 		"name": "Water Land (fabricated) - Silver Stars",
 		"region": "Water Land (fabricated)",
 		"category": ["Fabricated Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Fire Bubble (fabricated) - End of the Course",
@@ -1195,7 +1196,7 @@
 		"name": "Mountain (fabricated) - On the Floating Platform",
 		"region": "Mountain (fabricated) Upper",
 		"category": ["Fabricated Lobby"],
-		"requires": "|Cannon Unlock (Mountain (fabricated))| OR |Climb| OR |Triple Jump|"
+		"requires": "|Cannon Unlock (Mountain (fabricated))| OR (|Pole Climb| AND |Ceiling Hang|) OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Snow Slider (fabricated) - Bottom of the Mountain",
@@ -1207,7 +1208,7 @@
 		"name": "Snow Slider (fabricated) - Lil' Penguin Lost",
 		"region": "Snow Slider (fabricated)",
 		"category": ["Fabricated Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Fabricated Lobby (Corrupted) - Timer Challenge",
@@ -1225,20 +1226,20 @@
 		"name": "Midnight Meadow - Silver Stars",
 		"region": "Midnight Meadow",
 		"category": ["Floor 2B"],
-		"requires": "{HeightWallKick()}"
+		"requires": "{HeightDoubleJumpLedgeGrab()}"
 	},
 	{
 		"name": "Midnight Meadow - On the Cliffside",
 		"region": "Midnight Meadow",
 		"category": ["Floor 2B"],
-		"requires": "(|Side Flip| AND |Wall Kick|) OR |Triple Jump|",
+		"requires": "(|Side Flip| AND |Wall Kick|) OR |Progressive Triple Jump:2|",
 		"_comment": "Can Triple Jump from the Star Marker"
 	},
 	{
 		"name": "Midnight Meadow - Behind the Waterfall",
 		"region": "Midnight Meadow",
 		"category": ["Floor 2B"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Wiggler's Forest Fortress - Make Wiggler Squirm",
@@ -1250,7 +1251,7 @@
 		"name": "Wiggler's Forest Fortress - Red Coins",
 		"region": "Wiggler's Forest Fortress",
 		"category": ["Floor 2B"],
-		"requires": "{HeightLedgeGrab()} AND {DistLongJump()}"
+		"requires": "{HeightLedgeGrab()} AND {DistLongJump()} AND |Swim|"
 	},
 	{
 		"name": "Sunshine Isles - Red Coins",
@@ -1259,23 +1260,23 @@
 		"requires": []
 	},
 	{
-		"name": "Goomboss Battle - Wall Kicks Will Work",
+		"name": "Goomboss Battle - Climb Up the Shaft",
 		"region": "Goomboss Battle",
 		"category": ["Floor 2B"],
-		"requires": "|Climb|",
+		"requires": "|Wall Climb|",
 		"_comment": "Wall Kick not in logic, as Mario will keep grabbing the wall"
 	},
 	{
 		"name": "Goomboss Battle - Red Coins",
 		"region": "Goomboss Battle",
 		"category": ["Floor 2B"],
-		"requires": "|Triple Jump| AND |Wing Cap| AND |Vanish Cap|"
+		"requires": "|Progressive Triple Jump:2| AND |Wing Cap| AND |Vanish Cap|"
 	},
 	{
 		"name": "Goomboss' Lair - Defeat Goomboss",
 		"region": "Goomboss Battle",
 		"category": ["Floor 2B"],
-		"requires": "|Climb| OR (|Triple Jump| AND |Wing Cap|)"
+		"requires": "(|Pole Climb| OR (|Progressive Triple Jump:2| AND |Wing Cap|)) AND (|Progressive Grab:1| OR |Kick| OR |Dive|)"
 	},
 	{
 		"name": "Sandstone Palace - Inside the Pyramid",
@@ -1305,13 +1306,13 @@
 		"name": "Fly Guy's Hill - In the Lighthouse Window",
 		"region": "Fly Guy's Hill",
 		"category": ["Floor 4B"],
-		"requires": "|Wing Cap| AND (|Triple Jump| OR (|Wall Kick| AND |Cannon Unlock (Fly Guy's Hill)|))"
+		"requires": "|Wing Cap| AND {GroundBox()} AND (|Progressive Triple Jump:2| OR (|Wall Kick| AND |Cannon Unlock (Fly Guy's Hill)|))"
 	},
 	{
 		"name": "Fly Guy's Hill - Red Coins",
 		"region": "Fly Guy's Hill",
 		"category": ["Floor 4B"],
-		"requires": "{HeightBackflip()} OR ({HeightLedgeGrab()} AND {YamlEnabled(slope_movement)})",
+		"requires": "{HeightDoubleJump()} OR ({HeightLedgeGrab()} AND {YamlEnabled(slope_movement)})",
 		"_comment": "With slope_movement, can get on top of the mound near the lighthouse by running up it (without jumping)"
 	},
 	{
@@ -1324,20 +1325,19 @@
 		"name": "Dream Forest - Above the Canopy",
 		"region": "Dream Forest",
 		"category": ["Floor 4B"],
-		"requires": "{HeightLedgeGrab()} AND (|Triple Jump| OR ({DistLedgeGrab()} AND {YamlEnabled(fly_guy)}))"
+		"requires": "{HeightLedgeGrab()} AND (|Progressive Triple Jump:2| OR ({DistLedgeGrab()} AND {YamlEnabled(fly_guy)}))"
 	},
 	{
 		"name": "Toxic Ruins - Red Coins",
 		"region": "Toxic Ruins",
 		"category": ["Floor 4B"],
-		"requires": "|Triple Jump| OR |Cannon Unlock (Toxic Ruins)| OR ({HeightLedgeGrab()} AND (|Long Jump| OR {YamlEnabled(lava_boost)}))",
-		"_comment": "Without Triple Jump, use a Shell to reach most places"
+		"requires": "|Progressive Triple Jump:2| OR ((|Cannon Unlock (Toxic Ruins)| OR ({HeightLedgeGrab()} AND (|Long Jump| OR {YamlEnabled(lava_boost)}))) AND (|Shell| OR |Long Jump| OR ({YamlEnabled(slope_movement)} AND {YamlEnabled(lava_boost)})))"
 	},
 	{
 		"name": "Toxic Ruins - Top of the Ruins",
 		"region": "Toxic Ruins",
 		"category": ["Floor 4B"],
-		"requires": "|Cannon Unlock (Toxic Ruins)|"
+		"requires": "|Cannon Unlock (Toxic Ruins)| AND (|Shell| OR {DistLongJump()} OR ({YamlEnabled(slope_movement)} AND {YamlEnabled(lava_boost)}))"
 	},
 	{
 		"name": "Dream Battlefield - On the Fence",
@@ -1355,31 +1355,31 @@
 		"name": "Dream Battlefield - On the Cliffside",
 		"region": "Dream Battlefield",
 		"category": ["Floor 4B"],
-		"requires": "|Wall Kick| AND (|Triple Jump| OR |Cannon Unlock (Dream Battlefield)| OR (|Kick| AND {YamlEnabled(slope_movement)}))"
+		"requires": "|Wall Kick| AND (|Progressive Triple Jump:2| OR |Cannon Unlock (Dream Battlefield)| OR (|Kick| AND {YamlEnabled(slope_movement)}))"
 	},
 	{
 		"name": "Water Cube - In the Side Room",
 		"region": "Water Cube",
 		"category": ["Floor 4B"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Big Blue Skylands - Red Coins",
 		"region": "Big Blue Skylands",
 		"category": ["Floor 4B"],
-		"requires": "|Wing Cap| AND (|Triple Jump| OR |Cannon Unlock (Big Blue Skylands)|)"
+		"requires": "|Wing Cap| AND (|Progressive Triple Jump:2| OR |Cannon Unlock (Big Blue Skylands)|)"
 	},
 	{
 		"name": "Big Blue Skylands - The Big House in the Sky",
 		"region": "Big Blue Skylands",
 		"category": ["Floor 4B"],
-		"requires": "|Wing Cap| AND (|Triple Jump| OR |Cannon Unlock (Big Blue Skylands)|)"
+		"requires": "|Wing Cap| AND (|Progressive Triple Jump:2| OR |Cannon Unlock (Big Blue Skylands)|)"
 	},
 	{
 		"name": "Big Blue Skylands - Atop a Spire",
 		"region": "Big Blue Skylands",
 		"category": ["Floor 4B"],
-		"requires": "(|Wing Cap| AND |Triple Jump|) OR (|Cannon Unlock (Big Blue Skylands)| AND {DistLedgeGrab()})"
+		"requires": "(|Wing Cap| AND |Progressive Triple Jump:2|) OR (|Cannon Unlock (Big Blue Skylands)| AND {DistLedgeGrab()})"
 	},
 	{
 		"name": "Flower Fields - Top of the Flagpole",
@@ -1391,7 +1391,7 @@
 		"name": "Chroma Tundra - Blast to the Lonely Tree",
 		"region": "Chroma Tundra",
 		"category": ["Genesis Basement"],
-		"requires": "|Triple Jump| OR (|Cannon Unlock (Chroma Tundra)| AND ({DistLongJump()} OR {YamlEnabled(slope_movement)}))"
+		"requires": "|Progressive Triple Jump:2| OR (|Cannon Unlock (Chroma Tundra)| AND ({DistLongJump()} OR {YamlEnabled(slope_movement)}))"
 	},
 	{
 		"name": "Chroma Tundra - Blast Away the Ice",
@@ -1446,13 +1446,13 @@
 		"name": "Bob-omb Tower - Top of the Tower",
 		"region": "Bob-omb Tower",
 		"category": ["Internal Garden"],
-		"requires": "{HeightBackflip()}"
+		"requires": "{HeightDoubleJump()}"
 	},
 	{
 		"name": "Bob-omb Tower - Yellow Box Secrets",
 		"region": "Bob-omb Tower",
 		"category": ["Internal Garden"],
-		"requires": "{HeightBackflip()}"
+		"requires": "{HeightDoubleJump()}"
 	},
 	{
 		"name": "Secret of the Plexus - End of the Course",
@@ -1476,31 +1476,31 @@
 		"name": "Dire Bubble - Silver Stars",
 		"region": "Dire Bubble",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "(|Shell| AND (|Swim| OR {DistLongJumpLedgeGrab()})) OR (|Swim| AND {YamlEnabled(slope_movement)} AND |Kick|)"
 	},
 	{
 		"name": "Dire Bubble - Below the Grate",
 		"region": "Dire Bubble",
 		"category": ["Nebula Lobby"],
-		"requires": "|Vanish Cap|"
+		"requires": "|Swim| AND |Vanish Cap|"
 	},
 	{
 		"name": "Dire Bubble - The Manta Ray's Reward",
 		"region": "Dire Bubble",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Dire Bubble - Save the Drowning Goomba",
 		"region": "Dire Bubble",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "|Swim| AND |Progressive Grab:2|"
 	},
 	{
 		"name": "Dire Bubble - Defeat the Chuckyas",
 		"region": "Dire Bubble",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "|Swim| AND |Progressive Grab:2| AND (|Ledge Grab| OR |Shell| OR {DistLongJump()})"
 	},
 	{
 		"name": "Skyhigh Pipelands - End of the Course",
@@ -1555,7 +1555,7 @@
 		"name": "Scorched Tar Land - Red Coins",
 		"region": "Blazing Bullet Factory Top",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "|Shell| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Snow Ravine - On a High Platform",
@@ -1573,21 +1573,21 @@
 		"name": "Rustic Swampland - Silver Stars",
 		"region": "Rustic Swampland",
 		"category": ["Nebula Lobby"],
-		"requires": "|Triple Jump| OR (|Long Jump| AND ({YamlEnabled(slope_movement)} OR (|Climb| AND |Wall Kick|)))",
+		"requires": "|Progressive Triple Jump:2| OR (|Long Jump| AND ({YamlEnabled(slope_movement)} OR (|Wall Climb| AND |Wall Kick|)))",
 		"_comment": "Can reach the upper area by Triple Jumping off the wooden slope to the platform behind it"
 	},
 	{
 		"name": "Rustic Swampland - Red Coins",
 		"region": "Rustic Swampland",
 		"category": ["Nebula Lobby"],
-		"requires": "|Triple Jump| OR (|Long Jump| AND |Ledge Grab| AND ({YamlEnabled(slope_movement)} OR (|Climb| AND |Wall Kick|)))",
+		"requires": "|Progressive Triple Jump:2| OR (|Long Jump| AND |Ledge Grab| AND ({YamlEnabled(slope_movement)} OR (|Wall Climb| AND |Wall Kick|)))",
 		"_comment": "Can reach the upper area by Triple Jumping off the wooden slope to the platform behind it"
 	},
 	{
 		"name": "Blackrock Mountain - Across the Teeter-Totter Platform",
 		"region": "Blackrock Mountain",
 		"category": ["Nebula Lobby"],
-		"requires": [],
+		"requires": "|Shell| OR {DistKick()} OR |Cannon Unlock (Blackrock Mountain)|",
 		"_comment": "Shell in the box left of start"
 	},
 	{
@@ -1599,28 +1599,28 @@
 	},
 	{
 		"name": "Wet-Dry Ruins - Climb the Blue Pillar",
-		"region": "Wet-Dry Ruins",
+		"region": "Wet-Dry Ruins Houses",
 		"category": ["Nebula Lobby"],
 		"requires": "|Wall Kick| OR (|Side Flip| AND |Ledge Grab|)"
 	},
 	{
 		"name": "Wet-Dry Ruins - Top of the Flooded Ruins",
-		"region": "Wet-Dry Ruins",
+		"region": "Wet-Dry Ruins Houses",
 		"category": ["Nebula Lobby"],
-		"requires": "|Climb| AND (|Wall Kick| OR (|Side Flip| AND |Ledge Grab|)) AND {DistLongJump()}"
+		"requires": "|Pole Climb| AND (|Wall Kick| OR (|Side Flip| AND |Ledge Grab|)) AND {DistLongJump()} AND {GroundBox()}"
 	},
 	{
 		"name": "Wet-Dry Ruins - Inside the House",
-		"region": "Wet-Dry Ruins",
+		"region": "Wet-Dry Ruins Houses",
 		"category": ["Nebula Lobby"],
-		"requires": "{HeightBackflip()} AND (|Climb| OR {YamlEnabled(hidden_stuff)})",
+		"requires": "|Swim| AND {HeightBackflip()} AND (|Ceiling Hang| OR {YamlEnabled(hidden_stuff)})",
 		"_comment": "Damage boosting off Thwomp in logic without the trick here, since only other option is an obscure warp inside one of the nearby coin rings"
 	},
 	{
 		"name": "Wet-Dry Ruins - Red Coins",
-		"region": "Wet-Dry Ruins",
+		"region": "Wet-Dry Ruins Houses",
 		"category": ["Nebula Lobby"],
-		"requires": "{HeightBackflip()}"
+		"requires": []
 	},
 	{
 		"name": "Captain Fly Guy's Tower - Defeat Captain Fly Guy",
@@ -1646,20 +1646,21 @@
 		"name": "Snowman's Frozen Desert - Pillar Secrets",
 		"region": "Snowman's Frozen Desert",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "|Shell|",
+		"_comment": "Damage boosting off pillars not in logic"
 	},
 	{
 		"name": "Vanish Cap under the Moat (beta) - End of the Course",
 		"region": "Vanish Cap under the Moat (beta)",
 		"category": ["Orange Hall"],
-		"requires": "|Triple Jump| OR (({YamlEnabled(slope_movement)} OR |Wall Kick|) AND {DistKick()}) OR ({HeightWallKick()} AND ({DistLongJump()} OR |Climb|))",
+		"requires": "|Progressive Triple Jump:2| OR (({YamlEnabled(slope_movement)} OR |Wall Kick|) AND {DistKick()}) OR ({HeightWallKick()} AND ({DistLongJump()} OR |Pole Climb|))",
 		"_comment": "Can skip most of the level with Triple Jump, or by getting on top of the wall near the start"
 	},
 	{
 		"name": "Tall Mountain - Behind the Waterfall",
 		"region": "Tall Mountain",
 		"category": ["Painting Museum"],
-		"requires": "|Wall Kick| OR |Climb| OR {YamlEnabled(fly_guy)}"
+		"requires": "|Wall Kick| OR |Wall Climb| OR {YamlEnabled(fly_guy)}"
 	},
 	{
 		"name": "Tall Mountain - Scale the Mountain",
@@ -1683,14 +1684,14 @@
 		"name": "Dream Castle - Under the Grate",
 		"region": "Dream Castle",
 		"category": ["Painting Museum"],
-		"requires": "((|Climb| AND |Ledge Grab|) OR |Triple Jump|) AND (|Vanish Cap| OR {YamlEnabled(hidden_stuff)})",
+		"requires": "((|Wall Climb| AND |Ledge Grab|) OR |Progressive Triple Jump:2|) AND (|Metal Cap| OR |Swim|) AND (|Vanish Cap| OR {YamlEnabled(hidden_stuff)})",
 		"_comment": "Invisible water switches on the blue diamond platforms"
 	},
 	{
 		"name": "Dry Square - Behind the Lower Grate",
 		"region": "Dry Square",
 		"category": ["Painting Museum"],
-		"requires": "|Vanish Cap| AND (|Wall Kick| OR ({YamlEnabled(slope_movement)} AND (|Backflip| OR |Side Flip| OR |Triple Jump|)))",
+		"requires": "|Vanish Cap| AND (|Wall Kick| OR ({YamlEnabled(slope_movement)} AND (|Backflip| OR |Side Flip| OR |Progressive Triple Jump:1|)))",
 		"_comment": "There's a second vanish cap box that doesn't require going all the way to the top"
 	},
 	{
@@ -1709,41 +1710,41 @@
 		"name": "Wing Mario over the Floating Islands - Red Coins",
 		"region": "Wing Mario over the Floating Islands",
 		"category": ["Parallel Lobby"],
-		"requires": "|Wing Cap| AND |Triple Jump|",
+		"requires": "|Wing Cap| AND |Progressive Triple Jump:2|",
 		"_comment": "Grabbing Red Coins without landing on platforms would be too annoying"
 	},
 	{
 		"name": "Treetop Ride - Red Coins",
 		"region": "Treetop Ride",
 		"category": ["Parallel Lobby"],
-		"requires": []
+		"requires": "|Shell| OR {YamlEnabled(slope_movement)} OR |Wall Kick| OR (|Pole Climb| AND {DistDoubleJump()})"
 	},
 	{
 		"name": "Treetop Ride - Silver Stars",
 		"region": "Treetop Ride",
 		"category": ["Parallel Lobby"],
-		"requires": "|Wall Kick| OR (|Climb| AND {DistKick()} AND {HeightLedgeGrab()})",
+		"requires": "|Wall Kick| OR (|Pole Climb| AND {DistDoubleJump()} AND {HeightLedgeGrab()})",
 		"_comment": "Without Wall Kick, can go left at start"
 	},
 	{
 		"name": "Treetop Ride - Tricky Triangles!",
 		"region": "Treetop Ride",
 		"category": ["Parallel Lobby"],
-		"requires": "|Wall Kick| OR (|Climb| AND {DistKick()})",
+		"requires": "|Wall Kick| OR (|Pole Climb| AND {DistDoubleJump()})",
 		"_comment": "Without Wall Kick, can go left at start"
 	},
 	{
 		"name": "Treetop Ride - Top of the Big Tree",
 		"region": "Treetop Ride",
 		"category": ["Parallel Lobby"],
-		"requires": "|Climb| AND (|Wall Kick| OR {DistKick()})",
+		"requires": "|Pole Climb| AND (|Wall Kick| OR {DistDoubleJump()})",
 		"_comment": "Without Wall Kick, can go left at start"
 	},
 	{
 		"name": "Frosty Flowering Peak - Catch Ukiki",
 		"region": "Frosty Flowering Peak",
 		"category": ["Parallel Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Frosty Flowering Peak - Bottom of the Frosty Peak",
@@ -1755,13 +1756,13 @@
 		"name": "Steep Green Summit - Catch Ukiki",
 		"region": "Steep Green Summit",
 		"category": ["Parallel Lobby"],
-		"requires": "|Climb| OR (|Triple Jump| AND (|Kick| AND {YamlEnabled(slope_movement)}))"
+		"requires": "|Progressive Grab:2| AND (|Pole Climb| OR (|Progressive Triple Jump:2| AND (|Kick| AND {YamlEnabled(slope_movement)})))"
 	},
 	{
 		"name": "Steep Green Summit - Scale the Mountain",
 		"region": "Steep Green Summit",
 		"category": ["Parallel Lobby"],
-		"requires": "|Climb| OR ({HeightWallKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))"
+		"requires": "|Pole Climb| OR ({HeightDoubleJumpKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))"
 	},
 	{
 		"name": "Steep Green Summit - Mysterious Mountainside",
@@ -1785,25 +1786,25 @@
 		"name": "No Man's Land - Lil' Penguin Lost",
 		"region": "No Man's Land",
 		"category": ["Parallel Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "No Man's Land - Chill with the Bully",
 		"region": "No Man's Land",
 		"category": ["Parallel Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "The City - Behind the Grate",
 		"region": "The City",
 		"category": ["Parallel Lobby"],
-		"requires": "|Vanish Cap|"
+		"requires": "|Vanish Cap| AND |Swim|"
 	},
 	{
 		"name": "The City - Destroy the Bob-omb's Books",
 		"region": "The City",
 		"category": ["Parallel Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "The City - Flood the Town",
@@ -1815,7 +1816,8 @@
 		"name": "The City - Kill the Top Bob-omb",
 		"region": "The City",
 		"category": ["Parallel Lobby"],
-		"requires": "|Wall Kick|"
+		"requires": "|Wall Kick| AND (|Kick| OR |Progressive Grab:2|)",
+		"_comment": "Kick or Grab to account for low dynamic difficulty where bob-omb won't explode on its own"
 	},
 	{
 		"name": "Curly's Fire Bubble - Across the Floating Planks",
@@ -1839,20 +1841,20 @@
 		"name": "Hazy Memory Cave - Swimming Beast in the Cavern",
 		"region": "Hazy Memory Cave",
 		"category": ["Parallel Lobby"],
-		"requires": "({DistKick()} OR {HeightKick()}) AND ((|Kick| AND {YamlEnabled(slope_movement)}) OR {DistLongJump()} OR {YamlEnabled(fast_swim)})",
+		"requires": "({DistDoubleJump()} OR {HeightKick()}) AND (|Progressive Triple Jump:2| OR (|Swim| AND ((|Kick| AND {YamlEnabled(slope_movement)}) OR |Long Jump| OR {YamlEnabled(fast_swim)})))",
 		"_comment": "Can reach lake either directly with DistKick, or from right side and taking the door back left with HeightKick"
 	},
 	{
 		"name": "Hazy Memory Cave - Elevate for a Star",
 		"region": "Hazy Memory Cave",
 		"category": ["Parallel Lobby"],
-		"requires": "|Backflip| OR |Wall Kick| OR |Triple Jump|"
+		"requires": "|Backflip| OR |Wall Kick| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Hazy Memory Cave - Metal Mario Can Move!",
 		"region": "Hazy Memory Cave",
 		"category": ["Parallel Lobby"],
-		"requires": "{DistKick()} OR {HeightKick()}"
+		"requires": "|Swim| AND ({DistDoubleJump()} OR {HeightKick()})"
 	},
 	{
 		"name": "Hazy Memory Cave - Navigating the Toxic Maze",
@@ -1870,25 +1872,25 @@
 		"name": "Underwater Maze - End of the Maze",
 		"region": "Underwater Maze",
 		"category": ["Parallel Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Frosty Mountains - Defeat the Giant Ice Motos",
 		"region": "Frosty Mountains",
 		"category": ["Parallel Lobby"],
-		"requires": "|Backflip| OR |Side Flip| OR |Triple Jump|"
+		"requires": "|Progressive Grab:2| AND (|Backflip| OR |Side Flip| OR |Progressive Triple Jump:1|)"
 	},
 	{
 		"name": "Bowser in the Airship Cabin - Defeat Bowser",
 		"region": "Bowser's Airship",
 		"category": ["Parallel Lobby"],
-		"requires": "|Backflip| OR |Side Flip| OR |Triple Jump| OR (|Wall Kick| AND |Ledge Grab|)"
+		"requires": "|Progressive Grab:2| AND (|Backflip| OR |Side Flip| OR |Progressive Triple Jump:2| OR (|Wall Kick| AND |Ledge Grab|))"
 	},
 	{
 		"name": "Hazy Maze Cave (beta) - At the Lake",
 		"region": "Hazy Maze Cave (beta)",
 		"category": ["Plexal Basement"],
-		"requires": "{DistLongJump()} OR |Wall Kick|"
+		"requires": "|Swim| AND ({DistLongJump()} OR |Wall Kick|)"
 	},
 	{
 		"name": "Hazy Maze Cave (beta) - Red Coins",
@@ -1900,7 +1902,7 @@
 		"name": "Hazy Maze Cave (beta) - Navigate the Maze",
 		"region": "Hazy Maze Cave (beta)",
 		"category": ["Plexal Basement"],
-		"requires": "{HeightKick()}"
+		"requires": "{HeightKick()} AND {GroundBox()}"
 	},
 	{
 		"name": "Caldera Temple - Top of the Temple",
@@ -1912,73 +1914,73 @@
 		"name": "Sandy Skyloft - Climb the Stone Tower",
 		"region": "Sandy Skyloft",
 		"category": ["Plexal Basement"],
-		"requires": "|Triple Jump| AND (|Wing Cap| OR ({YamlEnabled(slope_movement)} AND |Wall Kick| AND |Ledge Grab|))"
+		"requires": "|Progressive Triple Jump:2| AND (|Wing Cap| OR ({YamlEnabled(slope_movement)} AND |Wall Kick| AND |Ledge Grab|))"
 	},
 	{
 		"name": "Sandy Skyloft - Under the Far Yellow Roof",
 		"region": "Sandy Skyloft",
 		"category": ["Plexal Basement"],
-		"requires": "|Triple Jump|"
+		"requires": "|Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Sandy Skyloft - Red Coins",
 		"region": "Sandy Skyloft",
 		"category": ["Plexal Basement"],
-		"requires": "|Triple Jump|"
+		"requires": "|Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Bowser in the Fire Sea - Defeat Bowser",
 		"region": "Bowser in the Fire Sea",
 		"category": ["Plexal Basement"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Minion's Prison - Visit the Jailed Goombas",
 		"region": "Bowser in the Fire Sea",
 		"category": ["Plexal Basement"],
-		"requires": "|Vanish Cap| AND ({DistLedgeGrab()} OR {HeightWallKick()})"
+		"requires": "|Progressive Grab:2| AND |Vanish Cap| AND ({DistLedgeGrab()} OR {HeightWallKick()})"
 	},
 	{
 		"name": "Tiny-Huge Island (beta) - Pluck the Piranha Flowers",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Pipe",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
 		"requires": []
 	},
 	{
 		"name": "Tiny-Huge Island (beta) - The Tip Top of the Huge Island",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Top",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
 		"requires": []
 	},
 	{
 		"name": "Tiny-Huge Island (beta) - Above the Huge Island Lake",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Pipe",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
-		"requires": [],
+		"requires": "|Shell| OR {DistDoubleJump()} OR |Pole Climb| OR (|Cannon Unlock (Tiny-Huge Island (beta))| AND (|Swim| OR {HeightBackflip()}))",
 		"_comment": "Can use Huge entrance and Shell to climb mountain and jump directly to star"
 	},
 	{
 		"name": "Tiny-Huge Island (beta) - Above the Tiny Island Lake",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Pipe",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
 		"requires": []
 	},
 	{
 		"name": "Tiny-Huge Island (beta) - Red Coins",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Pipe",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
-		"requires": [],
-		"_comment": "Can use Huge entrance and Shell to reach all Red Coins"
+		"requires": "|Shell| OR (|Wing Cap| AND |Progressive Triple Jump:2| AND {GroundBox()}) OR ({DistLongJump()} AND (({YamlEnabled(slope_movement)} AND |Kick|) OR |Swim|) AND (({YamlEnabled(slope_movement)} AND |Kick|) OR |Cannon Unlock (Tiny-Huge Island (beta))| OR |Progressive Triple Jump:2|))",
+		"_comment": "Shell OR Fly OR ((reach cannon from nearby platform) AND (reach cannon from sand slope) AND (reach pipe from cannon))"
 	},
 	{
 		"name": "Wiggler's Cave - Make Wiggler Squirm",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Top",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
 		"requires": []
 	},
 	{
 		"name": "Wiggler's Cave - Silver Stars",
-		"region": "Tiny-Huge Island (beta) Upper",
+		"region": "Tiny-Huge Island (beta) Pipe",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
 		"requires": "{DistKick()} OR {HeightBackflip()}"
 	},
@@ -1986,19 +1988,19 @@
 		"name": "Flooded Downtown - Yellow Box on a Building",
 		"region": "Flooded Downtown",
 		"category": ["Plexal Basement"],
-		"requires": "{HeightDoubleJumpWallKick()}"
+		"requires": "|Swim| AND {HeightDoubleJumpWallKick()}"
 	},
 	{
 		"name": "Flooded Downtown - Free Star",
 		"region": "Flooded Downtown",
 		"category": ["Plexal Basement"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Flooded Downtown - Door Secrets",
 		"region": "Flooded Downtown",
 		"category": ["Plexal Basement"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Shifted Sand Land - Red Coins",
@@ -2010,7 +2012,7 @@
 		"name": "Shifted Sand Land - In a Box",
 		"region": "Shifted Sand Land",
 		"category": ["Plexal Basement"],
-		"requires": "{HeightDoubleJumpWallKick()}"
+		"requires": "{HeightDoubleJumpWallKick()} AND {GroundBox()}"
 	},
 	{
 		"name": "Eyerok's Tomb - Defeat Eyerok",
@@ -2022,7 +2024,7 @@
 		"name": "Desert Maze - Top of the Flagpole",
 		"region": "Desert Maze",
 		"category": ["Plexal Basement"],
-		"requires": "|Climb| OR |Backflip| OR |Side Flip|"
+		"requires": "|Pole Climb| OR |Backflip| OR |Side Flip|"
 	},
 	{
 		"name": "Desert Maze - Red Coins",
@@ -2034,13 +2036,13 @@
 		"name": "Toad Catacombs - Coffin Secrets",
 		"region": "Toad Catacombs",
 		"category": ["Plexal Basement"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Dry Town - Top of the Town",
 		"region": "Dry Town",
 		"category": ["Plexal Basement", "Plexal Upstairs", "Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Dry Town)| OR (|Triple Jump| AND |Wing Cap|) OR ({HeightDoubleJumpWallKick()} AND {YamlEnabled(fast_swim)})"
+		"requires": "|Cannon Unlock (Dry Town)| OR (|Progressive Triple Jump:2| AND |Wing Cap|) OR ({HeightDoubleJumpWallKick()} AND |Swim| AND {YamlEnabled(fast_swim)})"
 	},
 	{
 		"name": "Dry Town - Door Secrets",
@@ -2052,14 +2054,15 @@
 		"name": "Grim Green Forest - Under the Canopy",
 		"region": "Grim Green Forest",
 		"category": ["Plexal Hallway"],
-		"requires": "(|Climb| AND ({DistKick()} OR |Wall Kick|)) OR |Ledge Grab| OR |Backflip|",
-		"_comment": ""
+		"requires": "(|Ceiling Hang| AND ({DistDoubleJump()} OR |Wall Kick|)) OR (|Swim| AND (|Ledge Grab| OR |Backflip|))",
+		"_comment": "Can swim to and jump from the log nubs under the star"
 	},
 	{
 		"name": "Grim Green Forest - Red Coins",
 		"region": "Grim Green Forest",
 		"category": ["Plexal Hallway"],
-		"requires": "{HeightLedgeGrab()}"
+		"requires": "|Progressive Triple Jump:2| OR (|Swim| AND {HeightLedgeGrab()})",
+		"_comment": "The water near the 2 back Red Coins is shallow enough to stand in"
 	},
 	{
 		"name": "Thwomp's Fortress - Top of the Tower",
@@ -2071,7 +2074,7 @@
 		"name": "Thwomp's Fortress - Silver Stars",
 		"region": "Thwomp's Fortress",
 		"category": ["Plexal Hallway"],
-		"requires": "{HeightBackflip()} OR {YamlEnabled(lava_boost)}"
+		"requires": "{HeightDoubleJump()} OR {YamlEnabled(lava_boost)}"
 	},
 	{
 		"name": "Thwomp's Fortress - Green Star on the Checker Platform",
@@ -2083,13 +2086,13 @@
 		"name": "Rocky Trek - Top of the Mountain",
 		"region": "Rocky Trek",
 		"category": ["Plexal Hallway"],
-		"requires": "{HeightWallKick()} OR ({HeightLedgeGrab()} AND |Climb|)"
+		"requires": "{HeightDoubleJumpLedgeGrab()} OR ({HeightLedgeGrab()} AND |Pole Climb|)"
 	},
 	{
 		"name": "Cave City - Elevate for Silver Stars",
 		"region": "Cave City",
 		"category": ["Plexal Hallway"],
-		"requires": "{HeightBackflip()}"
+		"requires": "{HeightBackflip()} AND {GroundBox()}"
 	},
 	{
 		"name": "Cave City - Back Alley Silver Stars",
@@ -2114,7 +2117,7 @@
 		"name": "Big Boo's Haunted Forest - Silver Stars",
 		"region": "Big Boo's Haunted Forest Upper",
 		"category": ["Plexal Lobby", "Vanilla Lobby"],
-		"requires": "{HeightKick()} AND |Vanish Cap|"
+		"requires": "{HeightKick()} AND |Vanish Cap| AND {GroundBox()}"
 	},
 	{
 		"name": "Big Boo's Haunted Forest - Bottom of the Slide",
@@ -2132,19 +2135,19 @@
 		"name": "Grassy Highlands - Top of the Tower",
 		"region": "Grassy Highlands",
 		"category": ["Plexal Lobby"],
-		"requires": "|Cannon Unlock (Grassy Highlands)| OR |Climb| OR {HeightWallKick()}"
+		"requires": "|Cannon Unlock (Grassy Highlands)| OR |Wall Climb| OR {HeightWallKick()}"
 	},
 	{
 		"name": "Grassy Highlands - Red Coins",
 		"region": "Grassy Highlands",
 		"category": ["Plexal Lobby"],
-		"requires": "|Cannon Unlock (Grassy Highlands)| OR |Climb| OR {HeightWallKick()}"
+		"requires": "|Cannon Unlock (Grassy Highlands)| OR |Wall Climb| OR {HeightWallKick()}"
 	},
 	{
 		"name": "Grassy Highlands - On the Left Cliff",
 		"region": "Grassy Highlands",
 		"category": ["Plexal Lobby"],
-		"requires": "|Cannon Unlock (Grassy Highlands)| OR |Triple Jump| OR ((|Climb| OR {HeightWallKick()}) AND {YamlEnabled(fly_guy)})"
+		"requires": "|Cannon Unlock (Grassy Highlands)| OR |Progressive Triple Jump:2| OR ((|Wall Climb| OR {HeightWallKick()}) AND {YamlEnabled(fly_guy)})"
 	},
 	{
 		"name": "Grassy Highlands - Green Star on a High Platform",
@@ -2174,7 +2177,8 @@
 		"name": "Goomba Hills - Far Back Platform",
 		"region": "Goomba Hills",
 		"category": ["Plexal Lobby"],
-		"requires": "|Cannon Unlock (Goomba Hills)| OR (|Kick| AND {YamlEnabled(slope_movement)}) OR |Wall Kick|"
+		"requires": "|Cannon Unlock (Goomba Hills)| OR (|Kick| AND {YamlEnabled(slope_movement)}) OR ((|Swim| OR {DistLongJumpLedgeGrab()} OR {YamlEnabled(slope_movement)}) AND |Wall Kick|)",
+		"_comment": "With slope_movement enabled, can use slope momentum to jump over the river"
 	},
 	{
 		"name": "Goomba Hills - Ring Secrets",
@@ -2186,14 +2190,14 @@
 		"name": "Goomba Hills - Red Coins",
 		"region": "Goomba Hills",
 		"category": ["Plexal Lobby"],
-		"requires": "|Cannon Unlock (Goomba Hills)| OR (|Triple Jump| AND |Side Flip| AND |Wall Kick|)",
+		"requires": "|Cannon Unlock (Goomba Hills)| OR (|Progressive Triple Jump:2| AND |Side Flip| AND |Wall Kick|)",
 		"_comment": "Can use Triple Jump and Side Flip + Wall Kick to reach the two floating islands from the wall"
 	},
 	{
 		"name": "Rainbow Ride (beta) - Big House in the Sky",
 		"region": "Rainbow Ride (beta)",
 		"category": ["Plexal Upstairs"],
-		"requires": "{DistKick()} AND {HeightBackflip()}"
+		"requires": "{DistDoubleJump()} AND {HeightBackflip()}"
 	},
 	{
 		"name": "Lavish Lava Mountain - Bottom of the Green Mountain",
@@ -2217,19 +2221,19 @@
 		"name": "Creepy Cove - On the Sunken Ship",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Creepy Cove - Red Coins",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Ledge Grab| OR |Triple Jump|"
+		"requires": "|Swim| AND (|Ledge Grab| OR |Progressive Triple Jump:1|)"
 	},
 	{
 		"name": "Jolly Roger Coastline - Above the Lighthouse",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Wing Cap| AND (|Cannon Unlock (Creepy Cove)| OR |Triple Jump|)"
+		"requires": "|Wing Cap| AND ((|Shell| AND |Cannon Unlock (Creepy Cove)|) OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Jolly Roger Coastline - Stone Arch Secrets",
@@ -2241,7 +2245,7 @@
 		"name": "Inside the Sunken Ship - On the Highest Platform",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Triple Jump| OR (|Ledge Grab| AND |Side Flip|)"
+		"requires": "|Progressive Triple Jump:2| OR (|Ledge Grab| AND (|Side Flip| OR |Progressive Triple Jump:1|))"
 	},
 	{
 		"name": "Pleasant Pleasant Falls - Halfway up the Climb",
@@ -2253,7 +2257,7 @@
 		"name": "Pleasant Pleasant Falls - Top of the Climb",
 		"region": "Pleasant Pleasant Falls",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightWallKick()}",
+		"requires": "(|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightWallKick()}) AND {GroundBox()}",
 		"_comment": "There's a second cannon partway up the cliff"
 	},
 	{
@@ -2284,14 +2288,14 @@
 		"name": "SGI Indy - Top of Near-Right Corner",
 		"region": "SGI Indy",
 		"category": ["Polygonal Chaos"],
-		"requires": "|Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR |Dive|)) OR (|Triple Jump| AND |Side Flip| AND |Ledge Grab|))",
+		"requires": "|Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR |Dive|)) OR (|Progressive Triple Jump:2| AND |Side Flip| AND |Ledge Grab|))",
 		"_comment": "Without slope_movement, you are expected to go all the way to the back-left corner, climb up to the 2nd floor there, then make your way back. Skipping the last wall kick section via a gap in level geometry is not in logic."
 	},
 	{
 		"name": "SGI Indy - 2nd Floor Near-Left Yellow Area",
 		"region": "SGI Indy",
 		"category": ["Polygonal Chaos"],
-		"requires": "|Triple Jump| AND |Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR |Dive|)) OR (|Side Flip| AND |Ledge Grab|))"
+		"requires": "|Progressive Triple Jump:2| AND |Wall Kick| AND (({YamlEnabled(slope_movement)} AND (|Kick| OR |Dive|)) OR (|Side Flip| AND |Ledge Grab|))"
 	},
 	{
 		"name": "SGI Indy - 3rd Floor Processor",
@@ -2315,26 +2319,26 @@
 		"name": "Salty Salty Shore - Red Coins",
 		"region": "Salty Salty Shore",
 		"category": ["Royal Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Piranha Plant Garden - Top of the Mountain",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR |Climb| OR {HeightBackflip()}"
+		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR |Pole Climb| OR {HeightDoubleJump()}"
 	},
 	{
 		"name": "Piranha Plant Garden - Red Coins",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "|Wing Cap| AND (|Cannon Unlock (Piranha Plant Garden)| OR |Triple Jump|)",
+		"requires": "|Wing Cap| AND (|Cannon Unlock (Piranha Plant Garden)| OR |Progressive Triple Jump:2|)",
 		"_comment": "Cannon-only not in logic, would involve too much fall damage, too difficult to get Red Coins without landing"
 	},
 	{
 		"name": "Piranha's Igloo - Behind the Glass",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "(|Cannon Unlock (Piranha Plant Garden)| OR {HeightWallKick()}) AND |Vanish Cap|"
+		"requires": "(|Cannon Unlock (Piranha Plant Garden)| OR {HeightWallKick()}) AND |Vanish Cap| AND {GroundBox()}"
 	},
 	{
 		"name": "Piranha's Igloo - Pluck the Piranha Flowers",
@@ -2346,7 +2350,7 @@
 		"name": "Downtown City - Flood the City",
 		"region": "Downtown City",
 		"category": ["Royal Lobby"],
-		"requires": []
+		"requires": "|Swim| OR {DistLongJump()} OR {YamlEnabled(slope_movement)}"
 	},
 	{
 		"name": "Downtown City - Red Coins",
@@ -2382,7 +2386,7 @@
 		"name": "Tall Tall Mountain (beta) - Catch Ukiki",
 		"region": "Magic Mushroom Cave",
 		"category": ["Royal Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Tall Tall Mountain (beta) - Mysterious Mountainside",
@@ -2400,7 +2404,7 @@
 		"name": "Magic Mushroom Cave - Under the Rainbow Mushroom",
 		"region": "Magic Mushroom Cave",
 		"category": ["Royal Lobby"],
-		"requires": "|Climb| OR |Kick|",
+		"requires": "|Ceiling Hang| OR |Kick|",
 		"_comment": "Can skip the mushroom platform with a jump + kick from the first mushroom"
 	},
 	{
@@ -2419,7 +2423,7 @@
 		"name": "Uncanny Moat - Red Coins",
 		"region": "Uncanny Moat",
 		"category": ["Silent Hall"],
-		"requires": "{DistLongJump()} AND (|Wall Kick| OR (|Triple Jump| AND |Vanish Cap|))"
+		"requires": "{DistLongJump()} AND (|Wall Kick| OR (|Progressive Triple Jump:2| AND |Vanish Cap|))"
 	},
 	{
 		"name": "Vanish Cap within the Plexus - Vanish Cap Switch",
@@ -2437,55 +2441,55 @@
 		"name": "Vanish Cap within the Plexus - Behind the Back Grate",
 		"region": "Vanish Cap within the Plexus",
 		"category": ["Silent Hall"],
-		"requires": "|Vanish Cap| AND {HeightSideFlip()}"
+		"requires": "|Vanish Cap| AND ({HeightSideFlip()} OR |Progressive Triple Jump:1|)"
 	},
 	{
 		"name": "Yoshi's Beach - Yellow Box on a Far Island",
 		"region": "Yoshi's Beach",
 		"category": ["Star Road"],
-		"requires": "|Cannon Unlock (Yoshi's Beach)| OR |Triple Jump|"
+		"requires": "|Cannon Unlock (Yoshi's Beach)| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Yoshi's Beach - Top of the Mountain",
 		"region": "Yoshi's Beach",
 		"category": ["Star Road"],
-		"requires": "|Cannon Unlock (Yoshi's Beach)| OR (|Wing Cap| AND |Triple Jump|) OR |Wall Kick|"
+		"requires": "|Cannon Unlock (Yoshi's Beach)| OR (|Wing Cap| AND |Progressive Triple Jump:2|) OR |Wall Kick|"
 	},
 	{
 		"name": "Yoshi's Beach - Egg Secrets",
 		"region": "Yoshi's Beach",
 		"category": ["Star Road"],
-		"requires": "|Cannon Unlock (Yoshi's Beach)| OR (|Wing Cap| AND |Triple Jump|)"
+		"requires": "|Cannon Unlock (Yoshi's Beach)| OR (|Wing Cap| AND |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Yoshi's Beach - On a Cloud",
 		"region": "Yoshi's Beach",
 		"category": ["Star Road"],
-		"requires": "|Cannon Unlock (Yoshi's Beach)| OR (|Wing Cap| AND |Triple Jump|) OR |Climb|"
+		"requires": "|Cannon Unlock (Yoshi's Beach)| OR (|Wing Cap| AND |Progressive Triple Jump:2|) OR (({HeightDoubleJump()} OR |Progressive Grab:2|) AND |Pole Climb|)"
 	},
 	{
 		"name": "Yoshi's Beach - Red Coins",
 		"region": "Yoshi's Beach",
 		"category": ["Star Road"],
-		"requires": "|Cannon Unlock (Yoshi's Beach)| OR |Triple Jump| OR (|Metal Cap| AND |Wall Kick|)"
+		"requires": "|Cannon Unlock (Yoshi's Beach)| OR |Progressive Triple Jump:2| OR (|Metal Cap| AND |Wall Kick|)"
 	},
 	{
 		"name": "Ultra Battle Fort - Top of the Tower",
 		"region": "Ultra Battle Fort",
 		"category": ["Star Road"],
-		"requires": "|Cannon Unlock (Ultra Battle Fort)| AND |Wall Kick| AND (|Climb| OR |Triple Jump|)"
+		"requires": "|Cannon Unlock (Ultra Battle Fort)| AND |Wall Kick| AND (|Pole Climb| OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Ultra Battle Fort - Under the Thwomp",
 		"region": "Ultra Battle Fort",
 		"category": ["Star Road"],
-		"requires": "|Ground Pound| AND |Wall Kick| AND (|Climb| OR |Triple Jump|)"
+		"requires": "|Ground Pound| AND |Wall Kick| AND (|Pole Climb| OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Piranha's Hidden Pillar - Make Piranha Squirm",
 		"region": "Ultra Battle Fort",
 		"category": ["Star Road"],
-		"requires": "|Wall Kick| AND (|Climb| OR |Triple Jump|)"
+		"requires": "|Wall Kick| AND (|Pole Climb| OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Snow Tower - Under the Ice",
@@ -2497,13 +2501,13 @@
 		"name": "Snow Tower - On the Floating Platform",
 		"region": "Snow Tower",
 		"category": ["Star Road"],
-		"requires": "|Triple Jump|"
+		"requires": "|Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Snow Tower - Lil' Penguin Lost",
 		"region": "Snow Tower",
 		"category": ["Star Road"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Snow Tower - Bottom of the Slide",
@@ -2515,26 +2519,26 @@
 		"name": "Wet-Dry Town - Top of the Town",
 		"region": "Wet-Dry Town",
 		"category": ["Star Road"],
-		"requires": "|Triple Jump| OR (|Metal Cap| AND |Ledge Grab| AND (|Backflip| OR |Kick|))",
+		"requires": "(|Progressive Triple Jump:2| AND (|Swim| OR |Pole Climb|)) OR (|Swim| AND |Metal Cap| AND |Ledge Grab| AND (|Progressive Triple Jump:1| OR |Backflip| OR |Kick|))",
 		"_comment": "With Triple Jump, can just get the star, don't need the boxes"
 	},
 	{
 		"name": "Wet-Dry Town - Quick Race Through Downtown",
 		"region": "Wet-Dry Town",
 		"category": ["Star Road"],
-		"requires": "|Climb|"
+		"requires": "|Swim| AND |Pole Climb|"
 	},
 	{
 		"name": "Wet-Dry Town - Red Coins",
 		"region": "Wet-Dry Town",
 		"category": ["Star Road"],
-		"requires": []
+		"requires": "|Swim| AND {GroundBox()}"
 	},
 	{
 		"name": "Corrupted Challenge - Green Demon Chase",
 		"region": "Corrupted Challenge",
 		"category": ["Star Road"],
-		"requires": "(|Long Jump| OR |Dive|) AND (|Wall Kick| OR |Ledge Grab| OR |Side Flip|)"
+		"requires": "(|Long Jump| OR |Dive|) AND (|Progressive Triple Jump:1| OR |Wall Kick| OR |Ledge Grab| OR |Side Flip|)"
 	},
 	{
 		"name": "Endings - Grand Red Star",
@@ -2570,7 +2574,7 @@
 		"name": "Bob-omb Grassyfield - Above the Big Tree",
 		"region": "Bob-omb Grassyfield",
 		"category": ["Stellar Tower"],
-		"requires": "|Cannon Unlock (Bob-omb Grassyfield)| OR |Triple Jump|"
+		"requires": "|Cannon Unlock (Bob-omb Grassyfield)| OR |Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Bob-omb Grassyfield - Behind Chain Chomp's Gate",
@@ -2582,32 +2586,33 @@
 		"name": "Bob-omb Grassyfield - Tree Secrets",
 		"region": "Bob-omb Grassyfield",
 		"category": ["Stellar Tower"],
-		"requires": "|Climb| OR |Backflip| OR |Side Flip| OR |Triple Jump| OR {YamlEnabled(slope_movement)}"
+		"requires": "|Pole Climb| OR |Backflip| OR |Side Flip| OR |Progressive Triple Jump:1| OR {YamlEnabled(slope_movement)}"
 	},
 	{
 		"name": "Misty Beach - Timed Box Secrets",
 		"region": "Misty Beach",
 		"category": ["Stellar Tower"],
-		"requires": "|Metal Cap| OR {YamlEnabled(hidden_stuff)}"
+		"requires": "((|Swim| OR |Kick| OR {DistDoubleJumpKick()}) AND |Metal Cap|) OR (|Swim| AND {YamlEnabled(hidden_stuff)})",
+		"_comment": "Without Swim, can get a few secrets at a time with Metal Cap"
 	},
 	{
 		"name": "Misty Beach - On a Floating Island",
 		"region": "Misty Beach",
 		"category": ["Stellar Tower"],
-		"requires": "|Cannon Unlock (Misty Beach)| OR (|Wing Cap| AND |Triple Jump|)",
+		"requires": "(|Cannon Unlock (Misty Beach)| AND (|Swim| OR |Progressive Triple Jump:2| OR ((|Kick| OR {DistDoubleJumpKick()}) AND |Metal Cap|))) OR (|Wing Cap| AND |Progressive Triple Jump:2|)",
 		"_comment": "There's a cannon on the opposite end of the course from the start"
 	},
 	{
 		"name": "Misty Beach - Behind the Grate",
 		"region": "Misty Beach",
 		"category": ["Stellar Tower"],
-		"requires": "|Vanish Cap|"
+		"requires": "(|Swim| OR ((|Kick| OR {DistDoubleJumpKick()}) AND |Metal Cap|)) AND |Vanish Cap|"
 	},
 	{
 		"name": "Misty Beach - Inside the Mound",
 		"region": "Misty Beach",
 		"category": ["Stellar Tower"],
-		"requires": "|Wall Kick| OR |Cannon Unlock (Misty Beach)| OR (|Wing Cap| AND |Triple Jump|)"
+		"requires": "(|Cannon Unlock (Misty Beach)| AND (|Swim| OR |Progressive Triple Jump:2| OR ((|Kick| OR {DistDoubleJumpKick()}) AND |Metal Cap|))) OR (|Wing Cap| AND |Progressive Triple Jump:2|) OR (|Wall Kick| AND ({DistDoubleJumpKick()} OR |Swim|))"
 	},
 	{
 		"name": "Battle Fort - Top of the Course",
@@ -2631,31 +2636,31 @@
 		"name": "Chroma Tundra (beta) - Top of the Frozen Tower",
 		"region": "Chroma Tundra (beta)",
 		"category": ["Vanilla Basement Maze"],
-		"requires": "|Wall Kick| AND (|Triple Jump| OR |Climb|)"
+		"requires": "{GroundBox()} AND |Wall Kick| AND (|Progressive Triple Jump:2| OR |Pole Climb|)"
 	},
 	{
 		"name": "Shifting Sand Land (beta) - Top of the Pyramid",
 		"region": "Chroma Tundra (beta)",
 		"category": ["Vanilla Basement Maze"],
-		"requires": []
+		"requires": "|Shell| OR {DistKick()} OR |Cannon Unlock (Shifting Sand Land (beta))|"
 	},
 	{
 		"name": "Shifting Sand Land (beta) - Stomp on the Condor",
 		"region": "Chroma Tundra (beta)",
 		"category": ["Vanilla Basement Maze"],
-		"requires": []
+		"requires": "|Shell| OR {DistKick()} OR |Cannon Unlock (Shifting Sand Land (beta))|"
 	},
 	{
 		"name": "Pyramid of Old - Climb the Inside of the Pyramid",
 		"region": "Chroma Tundra (beta)",
 		"category": ["Vanilla Basement Maze"],
-		"requires": "|Climb| AND {HeightBackflip()}"
+		"requires": "(|Shell| OR {DistKick()} OR |Cannon Unlock (Shifting Sand Land (beta))|) AND |Pole Climb| AND {HeightBackflip()}"
 	},
 	{
 		"name": "Pyramid of Old - Wall Kick Spot",
 		"region": "Chroma Tundra (beta)",
 		"category": ["Vanilla Basement Maze"],
-		"requires": "|Wall Kick|"
+		"requires": "(|Shell| OR {DistKick()} OR |Cannon Unlock (Shifting Sand Land (beta))|) AND |Wall Kick|"
 	},
 	{
 		"name": "Cave Dungeon - Watch for Rolling Rocks",
@@ -2667,19 +2672,19 @@
 		"name": "Cave Dungeon - Red Coins",
 		"region": "Cave Dungeon",
 		"category": ["Vanilla Basement Maze"],
-		"requires": "|Climb|"
+		"requires": "|Wall Climb| AND |Ceiling Hang|"
 	},
 	{
 		"name": "Cave Dungeon - Silver Stars",
 		"region": "Cave Dungeon",
 		"category": ["Vanilla Basement Maze"],
-		"requires": "|Climb|"
+		"requires": "(|Wall Kick| OR |Pole Climb|) AND |Ceiling Hang|"
 	},
 	{
 		"name": "Cave Dungeon - Behind the Grate",
 		"region": "Cave Dungeon",
 		"category": ["Vanilla Basement Maze"],
-		"requires": "|Vanish Cap| AND |Climb|"
+		"requires": "|Vanish Cap| AND |Wall Climb| AND |Ceiling Hang|"
 	},
 	{
 		"name": "Scuttlebug's Nest - Defeat the Giant Scuttlebug",
@@ -2715,13 +2720,13 @@
 		"name": "Bowser in the Dark World (December '95) - Defeat Bowser",
 		"region": "Bowser in the Dark World (beta)",
 		"category": ["Vanilla Lobby"],
-		"requires": "{HeightLedgeGrab()}"
+		"requires": "{HeightLedgeGrab()} AND |Progressive Grab:2|"
 	},
 	{
 		"name": "Cool Cool Mountain (beta) - Lil' Penguin Lost",
 		"region": "Cool Cool Mountain (beta)",
 		"category": ["Vanilla Lobby"],
-		"requires": []
+		"requires": "|Progressive Grab:2|"
 	},
 	{
 		"name": "Cool Cool Mountain (beta) - Red Coin Star Spot",
@@ -2745,62 +2750,63 @@
 		"name": "Flying Fortress - Tower Hidden 1-Up Spot",
 		"region": "Flying Fortress",
 		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}"
+		"requires": "(|Progressive Grab:1| OR |Kick|) AND (|Cannon Unlock (Flying Fortress)| OR |Pole Climb| OR {HeightKick()})"
 	},
 	{
 		"name": "Flying Fortress - Red Coins",
 		"region": "Flying Fortress",
 		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}"
+		"requires": "|Cannon Unlock (Flying Fortress)| OR |Pole Climb| OR {HeightKick()}"
 	},
 	{
 		"name": "Flying Fortress - Top of the Tower",
 		"region": "Flying Fortress",
 		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs"],
-		"requires": "(|Wing Cap| AND |Cannon Unlock (Flying Fortress)|) OR |Side Flip| OR |Triple Jump| OR ((|Cannon Unlock (Flying Fortress)| OR |Climb| OR {HeightKick()}) AND {YamlEnabled(slope_movement)})"
+		"requires": "(|Wing Cap| AND |Cannon Unlock (Flying Fortress)|) OR |Side Flip| OR |Progressive Triple Jump:2| OR ((|Cannon Unlock (Flying Fortress)| OR |Pole Climb| OR {HeightKick()}) AND {YamlEnabled(slope_movement)})"
 	},
 	{
 		"name": "Fish Tank - Red Coins",
 		"region": "Fish Tank",
 		"category": ["Vanilla Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Jolly Roger Docks - On the Ship",
 		"region": "Jolly Roger Docks",
 		"category": ["Vanilla Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Jolly Roger Docks - Red Coins",
 		"region": "Jolly Roger Docks",
 		"category": ["Vanilla Lobby"],
-		"requires": "|Wall Kick| OR |Triple Jump|"
+		"requires": "|Swim| AND (|Wall Kick| OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Jolly Roger Docks - Map Secrets",
 		"region": "Jolly Roger Docks",
 		"category": ["Vanilla Lobby"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Jolly Roger Docks - Climb the Back Room",
 		"region": "Jolly Roger Docks",
 		"category": ["Vanilla Lobby"],
-		"requires": "|Wall Kick| AND {DistLongJump()}",
+		"requires": "|Swim| AND |Wall Kick| AND {DistLongJump()}",
 		"_comment": "With Long Jump, have to use the box switch (difficult, but intended)"
 	},
 	{
 		"name": "Wet-Dry Paradise - Pluck the Piranha Flowers",
 		"region": "Wet-Dry Paradise",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightDoubleJumpWallKick()} OR ({YamlEnabled(slope_movement)} AND (|Wall Kick| OR ({HeightBackflip()} AND |Climb|)))"
+		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightDoubleJumpWallKick()} OR ({YamlEnabled(slope_movement)} AND (|Wall Kick| OR ({HeightDoubleJump()} AND |Pole Climb|)))"
 	},
 	{
 		"name": "Wet-Dry Paradise - Destroy the Crystals",
 		"region": "Wet-Dry Paradise",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightWallKick()} OR ({HeightBackflip()} AND {YamlEnabled(slope_movement)})"
+		"requires": "|Cannon Unlock (Wet-Dry Paradise)| OR {HeightWallKick()} OR ({HeightBackflip()} AND {YamlEnabled(slope_movement)})",
+		"_comment": "Can break the crystals with a jump"
 	},
 	{
 		"name": "Wet-Dry Paradise - Ring Secrets",
@@ -2837,7 +2843,7 @@
 		"name": "Wet-Dry World (beta) - Yellow Box Secrets",
 		"region": "Wet-Dry World (beta)",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Grassy Snowy Summit - Scale the Mountain",
@@ -2855,19 +2861,19 @@
 		"name": "Clockwork Innards - Top of the Clock",
 		"region": "Clockwork Innards",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": "{HeightBackflip()} AND |Climb|"
+		"requires": "{HeightDoubleJump()} AND |Pole Climb|"
 	},
 	{
 		"name": "Fire Bubble 2 - End of the Maze",
 		"region": "Fire Bubble 2",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": []
+		"requires": "|Shell|"
 	},
 	{
 		"name": "Fire Bubble 2 - Climb the Structure",
 		"region": "Fire Bubble 2",
 		"category": ["Vanilla and Mirrored Upstairs"],
-		"requires": "{HeightWallKick()}"
+		"requires": "|Shell| AND {HeightDoubleJumpLedgeGrab()}"
 	},
 	{
 		"name": "Game Beaten",
