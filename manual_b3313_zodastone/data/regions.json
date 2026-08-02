@@ -273,9 +273,10 @@
 	},
 	"Frosty Highlands Main Entrance":
 	{
-		"connects_to": ["Frosty Highlands by Crevasse from Main"],
+		"connects_to": ["Frosty Highlands by Crevasse from Main", "Frosty Highlands Ledge Above Pipe From Main", "Snowman's Land (beta)"],
 		"requires": [],
-		"map": "beta_lobby_b"
+		"map": "beta_lobby_b",
+		"_comment": "From main entrance, can go to right and jump to pipe area"
 	},
 	"Snowman's Land (beta)":
 	{
@@ -297,7 +298,7 @@
 	},
 	"Frosty Highlands by Crevasse":
 	{
-		"connects_to": ["Frosty Highlands Upper", "Frosty Highlands Ledge Above Pipe From Crevasse"],
+		"connects_to": ["Frosty Highlands Upper"],
 		"requires": [],
 		"map": "beta_lobby_b"
 	},
@@ -307,10 +308,10 @@
 		"requires": "|Shell| OR {YamlEnabled(slope_movement)} AND (|Progressive Triple Jump:2| OR |Wall Kick|)",
 		"map": "beta_lobby_b"
 	},
-	"Frosty Highlands Ledge Above Pipe From Crevasse":
+	"Frosty Highlands Ledge Above Pipe From Main":
 	{
 		"connects_to": ["Frosty Highlands Ledge Above Pipe"],
-		"requires": [],
+		"requires": "|Shell| OR {YamlEnabled(slope_movement)} OR {DistDoubleJump()}",
 		"map": "beta_lobby_b"
 	},
 	"Frosty Highlands Ledge Above Pipe From Pipe":
@@ -321,7 +322,7 @@
 	},
 	"Frosty Highlands Ledge Above Pipe":
 	{
-		"connects_to": ["Frosty Highlands by Crevasse from Ledge Above Pipe", "Snowman's Land (beta)"],
+		"connects_to": ["Frosty Highlands by Crevasse from Ledge Above Pipe"],
 		"requires": [],
 		"map": "beta_lobby_b"
 	},
@@ -473,7 +474,7 @@
 	"Randomized Realm":
 	{
 		"connects_to": ["Eternal Fort"],
-		"requires": [],
+		"requires": "|Swim|",
 		"map": "bowser_floor"
 	},
 	"Eternal Fort":
@@ -948,7 +949,7 @@
 	"Blazing Bullet Factory":
 	{
 		"connects_to": ["Blazing Bullet Factory Top", "Blazing Bullet Factory Aquarium"],
-		"requires": "|Vanish Cap| AND {GroundBox()}",
+		"requires": "|Vanish Cap| AND (|Kick| OR |Progressive Grab: 1| OR |Ground Pound|)",
 		"map": "nebula_lobby"
 	},
 	"Blazing Bullet Factory Top":
@@ -1087,7 +1088,7 @@
 	"Monkey Slide (beta)":
 	{
 		"connects_to": [],
-		"requires": "(|Pole Climb| OR ({HeightDoubleJumpKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND {HeightKick()}",
+		"requires": "(|Pole Climb| OR ({HeightDoubleJumpKick()} AND (|Kick| AND {YamlEnabled(slope_movement)}))) AND (|Kick| OR |Ledge Grab| OR |Backflip| OR |Progressive Triple Jump:1|)",
 		"map": "parallel_lobby"
 	},
 	"Parallel Lobby Vanish Painting":
@@ -1201,7 +1202,7 @@
 	"Tiny-Huge Island (beta) Top":
 	{
 		"connects_to": [],
-		"requires": "|Shell| OR ({YamlEnabled(slope_movement)} AND |Kick|) OR {HeightBackflip()} OR (|Wing Cap| AND {GroundBox()} AND |Swim| AND |Cannon Unlock (Tiny-Huge Island (beta))|)",
+		"requires": "|Shell| OR {YamlEnabled(slope_movement)} OR {HeightBackflip()} OR (|Wing Cap| AND {GroundBox()} AND |Swim| AND |Cannon Unlock (Tiny-Huge Island (beta))|)",
 		"map": "plexal_basement"
 	},
 	"Flooded Downtown":
@@ -1605,7 +1606,7 @@
 	},
 	"Vanilla and Mirrored Upstairs":
 	{
-		"connects_to": ["Wet-Dry Paradise", "Snowman's Darkness", "Wet-Dry World (beta)", "Tiny-Huge Island (beta) Huge", "Tiny-Huge Island (beta) Tiny", "Tiny-Huge Island (beta) Mid-Size", "Grassy Snowy Summit", "Clockwork Innards", "Fire Bubble 2", "Snow Tunnels", "Flying Fortress"],
+		"connects_to": ["Wet-Dry Paradise", "Snowman's Darkness", "Wet-Dry World (beta)", "Tiny-Huge Island (beta) Huge", "Tiny-Huge Island (beta) Tiny", "Tiny-Huge Island (beta) Mid-Size", "Grassy Snowy Summit", "Clockwork Innards Warp", "Fire Bubble 2", "Snow Tunnels", "Flying Fortress"],
 		"requires": "|Vanilla and Mirrored Upstairs Courses|",
 		"map": "vanilla_upstairs"
 	},
@@ -1644,6 +1645,13 @@
 		"connects_to": [],
 		"requires": [],
 		"map": "vanilla_upstairs"
+	},
+	"Clockwork Innards Warp":
+	{
+		"connects_to": ["Clockwork Innards"],
+		"requires": "{GroundBox()}",
+		"map": "vanilla_upstairs",
+		"_comment": "Ground Pound and Triple Jump do break the glass"
 	},
 	"Clockwork Innards":
 	{

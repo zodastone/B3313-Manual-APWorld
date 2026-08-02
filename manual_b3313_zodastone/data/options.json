@@ -43,6 +43,18 @@
 			"range_end": 33,
 			"group": "Red Stars"
 		},
+		"filler_boxes": {
+			"type": "Toggle",
+			"display_name": "Filler Boxes",
+			"description": [
+				"Whether to add yellow ? boxes containing filler items to the location pool (116 locations).",
+				"   Only includes yellow ? boxes containing coins, enemies, or nothing.",
+				"   Does not include other types of boxes, or boxes containing stars, shells, caps, or which crash the game.",
+				"   Location names for these will all start with \"? Box\"."
+			],
+			"default": true,
+			"group": "Locations"
+		},
 		"slope_movement": {
 			"type": "Toggle",
 			"display_name": "Slope Movement",

@@ -7,6 +7,12 @@
 		"_comment": "Warp only works if you have 120 Power Stars in-game"
 	},
 	{
+		"name": "Aventura Lobby - ? Box by the Bob-omb",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Bowser's Castle - Nighttime Chat with Toad",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
@@ -59,6 +65,12 @@
 		"name": "Floor 3B - Talk to Toad",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
+		"requires": []
+	},
+	{
+		"name": "Floor 3B - ? Box Near Toad",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
 		"requires": []
 	},
 	{
@@ -137,6 +149,12 @@
 		"requires": []
 	},
 	{
+		"name": "Purple Castle - ? Box in Soft Sand Area",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Mirrored Upstairs - Talk to Toad",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
@@ -147,6 +165,12 @@
 		"region": "Main Overworld",
 		"category": ["Overworld"],
 		"requires": "|Wing Cap| AND |Progressive Triple Jump:2|"
+	},
+	{
+		"name": "Solar Tower - ? Box by Wing Cap",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Stellar Tower - Red Coins",
@@ -174,6 +198,104 @@
 		"_comment": "Building only appears if you have 120 Power Stars in-game"
 	},
 	{
+		"name": "Toad's Rec Room - ? Box with Filler (1 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (2 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (3 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (4 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (5 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (6 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (7 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (8 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (9 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (10 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (11 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (12 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (13 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
+		"name": "Toad's Rec Room - ? Box with Filler (14 of 14)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": [],
+		"_comment": "14 boxes have filler, 1 has the star, 1 crashes the game"
+	},
+	{
 		"name": "Uncanny Courtyard - MIPS 1",
 		"region": "Main Overworld",
 		"category": ["Overworld"],
@@ -199,6 +321,48 @@
 		"region": "Main Overworld",
 		"category": ["Overworld"],
 		"requires": "|Green Comet| AND |Wall Kick|"
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box by Battle Fort (Peaceful)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box by Battle Fort (Windy)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box on Ground Level of Maze (1 of 4)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box on Ground Level of Maze (2 of 4)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box on Ground Level of Maze (3 of 4)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box on Ground Level of Maze (4 of 4)",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Uncanny Courtyard - ? Box Containing Green Star",
+		"region": "Main Overworld",
+		"category": ["Overworld", "Filler Boxes"],
+		"requires": "|Wall Kick|"
 	},
 	{
 		"name": "Basement Maze - Yellow Box on Blue Box",
@@ -242,6 +406,48 @@
 		"name": "Test Level - Top of the Tower",
 		"region": "Test Level",
 		"category": ["3rd Floor (beta)"],
+		"requires": "{HeightWallKickLedgeGrab()}"
+	},
+	{
+		"name": "Test Level - ? Box on Ground Level",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Test Level - ? Box on First Green Platform",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
+		"requires": "{HeightBackflip()} OR {YamlEnabled(fly_guy)}"
+	},
+	{
+		"name": "Test Level - ? Box During Wall Kick Climb (1 of 2)",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
+		"requires": "{HeightWallKickLedgeGrab()}"
+	},
+	{
+		"name": "Test Level - ? Box During Wall Kick Climb (2 of 2)",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
+		"requires": "{HeightWallKickLedgeGrab()}"
+	},
+	{
+		"name": "Test Level - ? Box in 1st Open Area (1 of 2)",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
+		"requires": "{HeightWallKickLedgeGrab()}"
+	},
+	{
+		"name": "Test Level - ? Box in 1st Open Area (2 of 2)",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
+		"requires": "{HeightWallKickLedgeGrab()}"
+	},
+	{
+		"name": "Test Level - ? Box in 2nd Open Area",
+		"region": "Test Level",
+		"category": ["3rd Floor (beta)", "Filler Boxes"],
 		"requires": "{HeightWallKickLedgeGrab()}"
 	},
 	{
@@ -302,6 +508,12 @@
 		"name": "yajimatest - In the Yellow Box",
 		"region": "yajimatest",
 		"category": ["4th Floor (beta)"],
+		"requires": []
+	},
+	{
+		"name": "yajimatest - ? Box on the Right",
+		"region": "yajimatest",
+		"category": ["4th Floor (beta)", "Filler Boxes"],
 		"requires": []
 	},
 	{
@@ -522,6 +734,12 @@
 		"_comment": "Chimney only appears if you have 120 Power Stars in-game"
 	},
 	{
+		"name": "Frosty Highlands - ? Box Near Pipe",
+		"region": "Frosty Highlands Ledge Above Pipe",
+		"category": ["Beta Lobby B", "Beta Lobby D", "Filler Boxes"],
+		"requires": "{GroundBox()}"
+	},
+	{
 		"name": "Cold Cold Crevasse - Top of the Area",
 		"region": "Frosty Highlands by Crevasse",
 		"category": ["Beta Lobby B", "Beta Lobby D"],
@@ -552,6 +770,12 @@
 		"requires": "{HeightBackflip()} OR |Pole Climb|"
 	},
 	{
+		"name": "Snowman's Land (beta) - ? Box Near Start",
+		"region": "Snowman's Land (beta)",
+		"category": ["Beta Lobby B", "Beta Lobby D", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Whomp's Kingdom - SMG2 Bonus Area",
 		"region": "Whomp's Kingdom",
 		"category": ["Beta Lobby B"],
@@ -569,7 +793,25 @@
 		"name": "Whomp's Kingdom - Red Coins",
 		"region": "Whomp's Kingdom",
 		"category": ["Beta Lobby B"],
-		"requires": "|Cannon Unlock (Whomp's Kingdom)| OR |Pole Climb| OR |Backflip| OR |Wall Kick| OR |Progressive Triple Jump:2|"
+		"requires": "(|Cannon Unlock (Whomp's Kingdom)| OR |Pole Climb| OR |Backflip| OR |Wall Kick| OR |Progressive Triple Jump:2|) AND {GroundBox()}"
+	},
+	{
+		"name": "Whomp's Kingdom - ? Box by Start (1 of 2)",
+		"region": "Whomp's Kingdom",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Whomp's Kingdom - ? Box by Start (2 of 2)",
+		"region": "Whomp's Kingdom",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Whomp's Kingdom - ? Box by SMG2 Bonus Warp",
+		"region": "Whomp's Kingdom",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Whomp's Prison - In a Jail Cell",
@@ -621,6 +863,36 @@
 		"region": "Blazing Bully Base",
 		"category": ["Beta Lobby B"],
 		"requires": "(|Wing Cap| AND |Progressive Triple Jump:2|) OR (|Wall Kick| AND (|Progressive Triple Jump:2| OR (|Long Jump| AND (|Progressive Grab:2| OR {YamlEnabled(slope_movement)})) OR |Metal Cap| OR {YamlEnabled(lava_boost)}))"
+	},
+	{
+		"name": "Blazing Bully Base - ? Box at Middle of Climb (Light)",
+		"region": "Blazing Bully Base",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": "|Wall Kick| OR (|Wing Cap| AND |Progressive Triple Jump:2|)"
+	},
+	{
+		"name": "Blazing Bully Base - ? Box Near High Platform Star (Light)",
+		"region": "Blazing Bully Base",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": "|Wall Kick| OR (|Wing Cap| AND |Progressive Triple Jump:2|)"
+	},
+	{
+		"name": "Blazing Bully Base - ? Box on Left Side (Dark)",
+		"region": "Blazing Bully Base",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": "|Kick| OR |Ledge Grab| OR |Dive| OR |Progressive Triple Jump:1| OR {YamlEnabled(lava_boost)}"
+	},
+	{
+		"name": "Blazing Bully Base - ? Box at Start of Climb (Dark)",
+		"region": "Blazing Bully Base",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": "|Kick| OR |Ledge Grab| OR |Dive| OR |Progressive Triple Jump:1| OR {YamlEnabled(lava_boost)}"
+	},
+	{
+		"name": "Blazing Bully Base - ? Box at Middle of Climb (Dark)",
+		"region": "Blazing Bully Base",
+		"category": ["Beta Lobby B", "Filler Boxes"],
+		"requires": "|Kick| OR |Ledge Grab| OR |Dive| OR |Progressive Triple Jump:1| OR {YamlEnabled(lava_boost)}"
 	},
 	{
 		"name": "Bowser Inside the Volcano - Defeat Bowser",
@@ -720,6 +992,12 @@
 		"requires": "|Cannon Unlock (River Mountain)|"
 	},
 	{
+		"name": "River Mountain - ? Box on Low Floating Island",
+		"region": "River Mountain",
+		"category": ["Beta Lobby D", "Vanilla Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Inside the Summit - Defeat Prince Bob-omb",
 		"region": "River Mountain",
 		"category": ["Beta Lobby D", "Vanilla Lobby"],
@@ -788,6 +1066,12 @@
 		"requires": "{HeightDoubleJumpKick()} AND {DistKick()}"
 	},
 	{
+		"name": "Chomp Caverns - ? Box on Green Platform",
+		"region": "Bob-omb Battlefield (beta)",
+		"category": ["Beta Lobby D", "Vanilla Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Water Land (B-Roll) - Through the Jet Stream",
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
@@ -810,6 +1094,12 @@
 		"region": "Water Land (B-Roll)",
 		"category": ["Beta Lobby E"],
 		"requires": "|Swim| AND |Wall Climb| AND |Progressive Triple Jump:2|"
+	},
+	{
+		"name": "Inside the Submarine - ? Box by the Gate",
+		"region": "Water Land (B-Roll)",
+		"category": ["Beta Lobby E", "Filler Boxes"],
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Bowser in the Sub - Defeat Bowser",
@@ -914,6 +1204,13 @@
 		"region": "Randomized Realm",
 		"category": ["Bowser's Floor and Endgame"],
 		"requires": "|Progressive Triple Jump:2| AND (|Wing Cap| OR (|Pole Climb| AND |Side Flip| AND |Wall Kick| AND |Ledge Grab|))"
+	},
+	{
+		"name": "Randomized Realm - ? Box Near 4th Piranha",
+		"region": "Randomized Realm",
+		"category": ["Bowser's Floor and Endgame", "Filler Boxes"],
+		"requires": "|Progressive Triple Jump:2| AND (|Wing Cap| OR (|Side Flip| AND |Wall Kick| AND |Ledge Grab|))",
+		"_comment": "Without Wing Cap, can Triple Jump to above the first climbable pole"
 	},
 	{
 		"name": "Eternal Fort - Defeat Bowser",
@@ -1088,6 +1385,12 @@
 		"requires": "|Wall Kick| AND |Vanish Cap|"
 	},
 	{
+		"name": "Big Boo's Haunt (beta) - ? Box Behind the House",
+		"region": "Big Boo's Haunt (beta)",
+		"category": ["Courtyard (fabribated)", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Checkerboard (fabricated) - Free Star",
 		"region": "Checkerboard (fabricated)",
 		"category": ["Courtyard (fabribated)"],
@@ -1152,6 +1455,12 @@
 		"region": "Bedrock Magmas",
 		"category": ["Elder Koopa's Library", "Nebula Lobby"],
 		"requires": "{HeightLedgeGrab()}"
+	},
+	{
+		"name": "Bedrock Magmas - ? Box During Early Climb",
+		"region": "Bedrock Magmas",
+		"category": ["Elder Koopa's Library", "Nebula Lobby", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Wet-Dry Moat - On a Floating Platform",
@@ -1232,7 +1541,7 @@
 		"name": "Midnight Meadow - On the Cliffside",
 		"region": "Midnight Meadow",
 		"category": ["Floor 2B"],
-		"requires": "(|Side Flip| AND |Wall Kick|) OR |Progressive Triple Jump:2|",
+		"requires": "((|Side Flip| OR |Progressive Triple Jump:1|) AND |Wall Kick|) OR |Progressive Triple Jump:2|",
 		"_comment": "Can Triple Jump from the Star Marker"
 	},
 	{
@@ -1271,6 +1580,12 @@
 		"region": "Goomboss Battle",
 		"category": ["Floor 2B"],
 		"requires": "|Progressive Triple Jump:2| AND |Wing Cap| AND |Vanish Cap|"
+	},
+	{
+		"name": "Goomboss Battle - ? Box Near Star Marker",
+		"region": "Goomboss Battle",
+		"category": ["Floor 2B", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Goomboss' Lair - Defeat Goomboss",
@@ -1325,7 +1640,7 @@
 		"name": "Dream Forest - Above the Canopy",
 		"region": "Dream Forest",
 		"category": ["Floor 4B"],
-		"requires": "{HeightLedgeGrab()} AND (|Progressive Triple Jump:2| OR ({DistLedgeGrab()} AND {YamlEnabled(fly_guy)}))"
+		"requires": "|Progressive Triple Jump:2|"
 	},
 	{
 		"name": "Toxic Ruins - Red Coins",
@@ -1455,6 +1770,36 @@
 		"requires": "{HeightDoubleJump()}"
 	},
 	{
+		"name": "Bob-omb Tower - ? Box with Secret (1 of 5)",
+		"region": "Bob-omb Tower",
+		"category": ["Internal Garden", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Bob-omb Tower - ? Box with Secret (2 of 5)",
+		"region": "Bob-omb Tower",
+		"category": ["Internal Garden", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Bob-omb Tower - ? Box with Secret (3 of 5)",
+		"region": "Bob-omb Tower",
+		"category": ["Internal Garden", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Bob-omb Tower - ? Box with Secret (4 of 5)",
+		"region": "Bob-omb Tower",
+		"category": ["Internal Garden", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Bob-omb Tower - ? Box with Secret (5 of 5)",
+		"region": "Bob-omb Tower",
+		"category": ["Internal Garden", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Secret of the Plexus - End of the Course",
 		"region": "Secret of the Plexus",
 		"category": ["Nebula Lobby"],
@@ -1524,7 +1869,7 @@
 		"name": "Chomp's Cloudy Isles - Red Coins",
 		"region": "Chomp's Cloudy Isles",
 		"category": ["Nebula Lobby"],
-		"requires": []
+		"requires": "{HeightKick()}"
 	},
 	{
 		"name": "Blazing Bullet Factory - Raid the Vault",
@@ -1584,6 +1929,18 @@
 		"_comment": "Can reach the upper area by Triple Jumping off the wooden slope to the platform behind it"
 	},
 	{
+		"name": "Rustic Swampland - ? Box in Bottom Back Area",
+		"region": "Rustic Swampland",
+		"category": ["Nebula Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Rustic Swampland - ? Box Near Star Marker",
+		"region": "Rustic Swampland",
+		"category": ["Nebula Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Blackrock Mountain - Across the Teeter-Totter Platform",
 		"region": "Blackrock Mountain",
 		"category": ["Nebula Lobby"],
@@ -1613,7 +1970,7 @@
 		"name": "Wet-Dry Ruins - Inside the House",
 		"region": "Wet-Dry Ruins Houses",
 		"category": ["Nebula Lobby"],
-		"requires": "|Swim| AND {HeightBackflip()} AND (|Ceiling Hang| OR {YamlEnabled(hidden_stuff)})",
+		"requires": "|Swim| AND (|Ceiling Hang| OR {YamlEnabled(hidden_stuff)})",
 		"_comment": "Damage boosting off Thwomp in logic without the trick here, since only other option is an obscure warp inside one of the nearby coin rings"
 	},
 	{
@@ -1633,13 +1990,13 @@
 		"name": "Snowman's Frozen Desert - Top of the Mountain",
 		"region": "Snowman's Frozen Desert",
 		"category": ["Nebula Lobby"],
-		"requires": "{HeightKick()}"
+		"requires": "{HeightKick()} OR |Shell|"
 	},
 	{
 		"name": "Snowman's Frozen Desert - In the Deep Freeze",
 		"region": "Snowman's Frozen Desert",
 		"category": ["Nebula Lobby"],
-		"requires": "{HeightKick()} AND |Ground Pound|",
+		"requires": "({HeightKick()} OR |Shell|) AND |Ground Pound|",
 		"_comment": "Can climb the mountain and jump from there"
 	},
 	{
@@ -1653,7 +2010,7 @@
 		"name": "Vanish Cap under the Moat (beta) - End of the Course",
 		"region": "Vanish Cap under the Moat (beta)",
 		"category": ["Orange Hall"],
-		"requires": "|Progressive Triple Jump:2| OR (({YamlEnabled(slope_movement)} OR |Wall Kick|) AND {DistKick()}) OR ({HeightWallKick()} AND ({DistLongJump()} OR |Pole Climb|))",
+		"requires": "|Progressive Triple Jump:2| OR (({YamlEnabled(slope_movement)} OR |Wall Kick|) AND {DistKick()}) OR (|Side Flip| AND |Wall Kick|) OR ({HeightWallKick()} AND ({DistLongJump()} OR (|Pole Climb| AND (|Swim| OR |Wall Kick|))))",
 		"_comment": "Can skip most of the level with Triple Jump, or by getting on top of the wall near the start"
 	},
 	{
@@ -1684,7 +2041,7 @@
 		"name": "Dream Castle - Under the Grate",
 		"region": "Dream Castle",
 		"category": ["Painting Museum"],
-		"requires": "((|Wall Climb| AND |Ledge Grab|) OR |Progressive Triple Jump:2|) AND (|Metal Cap| OR |Swim|) AND (|Vanish Cap| OR {YamlEnabled(hidden_stuff)})",
+		"requires": "|Wall Climb| AND |Ledge Grab| AND (|Metal Cap| OR |Swim|) AND (|Vanish Cap| OR {YamlEnabled(hidden_stuff)})",
 		"_comment": "Invisible water switches on the blue diamond platforms"
 	},
 	{
@@ -1705,6 +2062,36 @@
 		"region": "Dry Square",
 		"category": ["Painting Museum"],
 		"requires": "|Vanish Cap| AND |Wall Kick|"
+	},
+	{
+		"name": "Dry Square - ? Box with Secret (Bottom)",
+		"region": "Dry Square",
+		"category": ["Painting Museum", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Dry Square - ? Box with Secret (2nd Tier 1 of 2)",
+		"region": "Dry Square",
+		"category": ["Painting Museum", "Filler Boxes"],
+		"requires": "|Wall Kick| OR {YamlEnabled(slope_movement)}"
+	},
+	{
+		"name": "Dry Square - ? Box with Secret (2nd Tier 2 of 2)",
+		"region": "Dry Square",
+		"category": ["Painting Museum", "Filler Boxes"],
+		"requires": "|Wall Kick| OR {YamlEnabled(slope_movement)}"
+	},
+	{
+		"name": "Dry Square - ? Box with Secret (3rd Tier)",
+		"region": "Dry Square",
+		"category": ["Painting Museum", "Filler Boxes"],
+		"requires": "|Wall Kick| OR {YamlEnabled(slope_movement)}"
+	},
+	{
+		"name": "Dry Square - ? Box with Secret (Top)",
+		"region": "Dry Square",
+		"category": ["Painting Museum", "Filler Boxes"],
+		"requires": "|Wall Kick|"
 	},
 	{
 		"name": "Wing Mario over the Floating Islands - Red Coins",
@@ -1869,6 +2256,12 @@
 		"requires": "|Wall Kick|"
 	},
 	{
+		"name": "Hazy Memory Cave - ? Box Near Elevator to Lake",
+		"region": "Hazy Memory Cave",
+		"category": ["Parallel Lobby", "Filler Boxes"],
+		"requires": "{DistDoubleJump()} OR {HeightKick()}"
+	},
+	{
 		"name": "Underwater Maze - End of the Maze",
 		"region": "Underwater Maze",
 		"category": ["Parallel Lobby"],
@@ -1896,7 +2289,7 @@
 		"name": "Hazy Maze Cave (beta) - Red Coins",
 		"region": "Hazy Maze Cave (beta)",
 		"category": ["Plexal Basement"],
-		"requires": "{DistWallKickLedgeGrab()} AND ({DistLongJump()} OR |Wall Kick|)"
+		"requires": "|Wall Kick|"
 	},
 	{
 		"name": "Hazy Maze Cave (beta) - Navigate the Maze",
@@ -1969,8 +2362,26 @@
 		"name": "Tiny-Huge Island (beta) - Red Coins",
 		"region": "Tiny-Huge Island (beta) Pipe",
 		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs"],
-		"requires": "|Shell| OR (|Wing Cap| AND |Progressive Triple Jump:2| AND {GroundBox()}) OR ({DistLongJump()} AND (({YamlEnabled(slope_movement)} AND |Kick|) OR |Swim|) AND (({YamlEnabled(slope_movement)} AND |Kick|) OR |Cannon Unlock (Tiny-Huge Island (beta))| OR |Progressive Triple Jump:2|))",
+		"requires": "|Shell| OR (|Wing Cap| AND |Progressive Triple Jump:2| AND {GroundBox()}) OR ({DistLongJump()} AND ({YamlEnabled(slope_movement)} OR |Swim|) AND (({YamlEnabled(slope_movement)} AND |Kick|) OR |Cannon Unlock (Tiny-Huge Island (beta))| OR |Progressive Triple Jump:2|))",
 		"_comment": "Shell OR Fly OR ((reach cannon from nearby platform) AND (reach cannon from sand slope) AND (reach pipe from cannon))"
+	},
+	{
+		"name": "Tiny-Huge Island (beta) - ? Box at Top of Mid-Size Island",
+		"region": "Tiny-Huge Island (beta) Pipe",
+		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": "{HeightKick()} OR {YamlEnabled(slope_movement)}"
+	},
+	{
+		"name": "Tiny-Huge Island (beta) - ? Box Near Mid-Size Start",
+		"region": "Tiny-Huge Island (beta) Pipe",
+		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Tiny-Huge Island (beta) - ? Box Near Tiny Koopa the Quick Flag Spot",
+		"region": "Tiny-Huge Island (beta) Pipe",
+		"category": ["Plexal Basement", "Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Wiggler's Cave - Make Wiggler Squirm",
@@ -1988,7 +2399,7 @@
 		"name": "Flooded Downtown - Yellow Box on a Building",
 		"region": "Flooded Downtown",
 		"category": ["Plexal Basement"],
-		"requires": "|Swim| AND {HeightDoubleJumpWallKick()}"
+		"requires": "|Swim| AND {HeightDoubleJumpWallKick()} AND {GroundBox()}"
 	},
 	{
 		"name": "Flooded Downtown - Free Star",
@@ -2015,6 +2426,18 @@
 		"requires": "{HeightDoubleJumpWallKick()} AND {GroundBox()}"
 	},
 	{
+		"name": "Shifted Sand Land - ? Box at Start",
+		"region": "Shifted Sand Land",
+		"category": ["Plexal Basement", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Shifted Sand Land - ? Box Near Sun",
+		"region": "Shifted Sand Land",
+		"category": ["Plexal Basement", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Eyerok's Tomb - Defeat Eyerok",
 		"region": "Shifted Sand Land",
 		"category": ["Plexal Basement"],
@@ -2024,12 +2447,18 @@
 		"name": "Desert Maze - Top of the Flagpole",
 		"region": "Desert Maze",
 		"category": ["Plexal Basement"],
-		"requires": "|Pole Climb| OR |Backflip| OR |Side Flip|"
+		"requires": "|Pole Climb|"
 	},
 	{
 		"name": "Desert Maze - Red Coins",
 		"region": "Desert Maze",
 		"category": ["Plexal Basement"],
+		"requires": []
+	},
+	{
+		"name": "Desert Maze - ? Box at Start",
+		"region": "Desert Maze",
+		"category": ["Plexal Basement", "Filler Boxes"],
 		"requires": []
 	},
 	{
@@ -2048,6 +2477,12 @@
 		"name": "Dry Town - Door Secrets",
 		"region": "Dry Town",
 		"category": ["Plexal Basement", "Plexal Upstairs", "Vanilla and Mirrored Upstairs"],
+		"requires": []
+	},
+	{
+		"name": "Dry Town - ? Box in Back-Right Area",
+		"region": "Dry Town",
+		"category": ["Plexal Basement", "Plexal Upstairs", "Vanilla and Mirrored Upstairs", "Filler Boxes"],
 		"requires": []
 	},
 	{
@@ -2156,6 +2591,12 @@
 		"requires": "(|Cannon Unlock (Grassy Highlands)| OR |Wall Kick|) AND |Green Comet|"
 	},
 	{
+		"name": "Grassy Highlands - ? Box Near Start",
+		"region": "Grassy Highlands",
+		"category": ["Plexal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Bob-omb Test Field - Top of the Monolith",
 		"region": "Bob-omb Test Field",
 		"category": ["Plexal Lobby"],
@@ -2194,6 +2635,24 @@
 		"_comment": "Can use Triple Jump and Side Flip + Wall Kick to reach the two floating islands from the wall"
 	},
 	{
+		"name": "Goomba Hills - ? Box at Start",
+		"region": "Goomba Hills",
+		"category": ["Plexal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Goomba Hills - ? Box Right of Start",
+		"region": "Goomba Hills",
+		"category": ["Plexal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Goomba Hills - ? Box Near Bottom Cannon",
+		"region": "Goomba Hills",
+		"category": ["Plexal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Rainbow Ride (beta) - Big House in the Sky",
 		"region": "Rainbow Ride (beta)",
 		"category": ["Plexal Upstairs"],
@@ -2218,6 +2677,33 @@
 		"requires": []
 	},
 	{
+		"name": "Lavish Lava Mountain - ? Box Near Penguin Spot (Fiery)",
+		"region": "Lavish Lava Mountain",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Lavish Lava Mountain - ? Box at Star Marker Spot (Fiery 1 of 2)",
+		"region": "Lavish Lava Mountain",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": [],
+		"_comment": "Can enter fiery version of the level and jump down"
+	},
+	{
+		"name": "Lavish Lava Mountain - ? Box at Star Marker Spot (Fiery 2 of 2)",
+		"region": "Lavish Lava Mountain",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": [],
+		"_comment": "Can enter fiery version of the level and jump down"
+	},
+	{
+		"name": "Lavish Lava Mountain - ? Box at End of Slide (Fiery)",
+		"region": "Lavish Lava Mountain",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": [],
+		"_comment": "Can enter fiery version of the level and jump down"
+	},
+	{
 		"name": "Creepy Cove - On the Sunken Ship",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
@@ -2233,19 +2719,19 @@
 		"name": "Jolly Roger Coastline - Above the Lighthouse",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Wing Cap| AND ((|Shell| AND |Cannon Unlock (Creepy Cove)|) OR |Progressive Triple Jump:2|)"
+		"requires": "|Swim| AND |Wing Cap| AND ((|Shell| AND |Cannon Unlock (Creepy Cove)|) OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Jolly Roger Coastline - Stone Arch Secrets",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": []
+		"requires": "|Swim|"
 	},
 	{
 		"name": "Inside the Sunken Ship - On the Highest Platform",
 		"region": "Creepy Cove",
 		"category": ["Plexal Upstairs"],
-		"requires": "|Progressive Triple Jump:2| OR (|Ledge Grab| AND (|Side Flip| OR |Progressive Triple Jump:1|))"
+		"requires": "|Swim| AND (|Progressive Triple Jump:2| OR (|Ledge Grab| AND (|Side Flip| OR |Progressive Triple Jump:1|)))"
 	},
 	{
 		"name": "Pleasant Pleasant Falls - Halfway up the Climb",
@@ -2265,6 +2751,36 @@
 		"region": "Pleasant Pleasant Falls",
 		"category": ["Plexal Upstairs"],
 		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightWallKick()}"
+	},
+	{
+		"name": "Pleasant Pleasant Falls - ? Box by Left Wall",
+		"region": "Pleasant Pleasant Falls",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Pleasant Pleasant Falls - ? Box by Left Waterfalls",
+		"region": "Pleasant Pleasant Falls",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Pleasant Pleasant Falls - ? Box North of Start",
+		"region": "Pleasant Pleasant Falls",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Pleasant Pleasant Falls - ? Box East of Star Marker",
+		"region": "Pleasant Pleasant Falls",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Pleasant Pleasant Falls - ? Box Halfway up the Climb",
+		"region": "Pleasant Pleasant Falls",
+		"category": ["Plexal Upstairs", "Filler Boxes"],
+		"requires": "|Cannon Unlock (Pleasant Pleasant Falls)| OR {HeightBackflip()}"
 	},
 	{
 		"name": "Big Boo's Fortress - Behind Luigi's Mirror",
@@ -2325,14 +2841,38 @@
 		"name": "Piranha Plant Garden - Top of the Mountain",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR |Pole Climb| OR {HeightDoubleJump()}"
+		"requires": "{GroundBox()} AND (|Cannon Unlock (Piranha Plant Garden)| OR |Pole Climb| OR {HeightDoubleJump()})"
 	},
 	{
 		"name": "Piranha Plant Garden - Red Coins",
 		"region": "Piranha Plant Garden",
 		"category": ["Royal Lobby"],
-		"requires": "|Wing Cap| AND (|Cannon Unlock (Piranha Plant Garden)| OR |Progressive Triple Jump:2|)",
+	"requires": "(|Cannon Unlock (Piranha Plant Garden)| AND (|Wing Cap| OR |Ground Pound| OR |Dive|)) OR (|Wing Cap| AND |Progressive Triple Jump:2|)",
 		"_comment": "Cannon-only not in logic, would involve too much fall damage, too difficult to get Red Coins without landing"
+	},
+	{
+		"name": "Piranha Plant Garden - ? Box Near Bottom Piranha Statue",
+		"region": "Piranha Plant Garden",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Piranha Plant Garden - ? Box Near Pipe",
+		"region": "Piranha Plant Garden",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR {HeightWallKick()}"
+	},
+	{
+		"name": "Piranha Plant Garden - ? Box at Top of the Mountain",
+		"region": "Piranha Plant Garden",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": "{GroundBox()} AND (|Cannon Unlock (Piranha Plant Garden)| OR |Pole Climb| OR {HeightDoubleJump()})"
+	},
+	{
+		"name": "Piranha Plant Garden - ? Box on Floating Island",
+		"region": "Piranha Plant Garden",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": "|Cannon Unlock (Piranha Plant Garden)| OR (|Wing Cap| AND |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Piranha's Igloo - Behind the Glass",
@@ -2395,6 +2935,37 @@
 		"requires": []
 	},
 	{
+		"name": "Tall Tall Mountain (beta) - ? Box at Start",
+		"region": "Tall Tall Mountain (beta)",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Tall Tall Mountain (beta) - ? Box at Waterfall Bottom",
+		"region": "Tall Tall Mountain (beta)",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": "{DistWallKickLedgeGrab()} OR {YamlEnabled(slope_movement)}"
+	},
+	{
+		"name": "Tall Tall Mountain (beta) - ? Box Near Goomba Stack",
+		"region": "Tall Tall Mountain (beta)",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": "|Progressive Triple Jump:2|",
+		"_comment": "Requires Triple Jump since it's over a void"
+	},
+	{
+		"name": "Tall Tall Mountain (beta) - ? Box by Bottom Monkey",
+		"region": "Tall Tall Mountain (beta)",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": "{DistWallKickLedgeGrab()} OR {YamlEnabled(slope_movement)}"
+	},
+	{
+		"name": "Tall Tall Mountain (beta) - ? Box at Summit",
+		"region": "Magic Mushroom Cave",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Magic Mushroom Cave - Top of the Rainbow Mushroom",
 		"region": "Magic Mushroom Cave",
 		"category": ["Royal Lobby"],
@@ -2405,7 +2976,13 @@
 		"region": "Magic Mushroom Cave",
 		"category": ["Royal Lobby"],
 		"requires": "|Ceiling Hang| OR |Kick|",
-		"_comment": "Can skip the mushroom platform with a jump + kick from the first mushroom"
+		"_comment": "Can skip the mushroom platforming with a jump + kick from the first mushroom"
+	},
+	{
+		"name": "Magic Mushroom Cave - ? Box by the Door",
+		"region": "Magic Mushroom Cave",
+		"category": ["Royal Lobby", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Uncanny Moat - Vanish Cap Switch",
@@ -2441,6 +3018,30 @@
 		"name": "Vanish Cap within the Plexus - Behind the Back Grate",
 		"region": "Vanish Cap within the Plexus",
 		"category": ["Silent Hall"],
+		"requires": "|Vanish Cap| AND ({HeightSideFlip()} OR |Progressive Triple Jump:1|)"
+	},
+	{
+		"name": "Vanish Cap within the Plexus - ? Box Before the Chasm (Left)",
+		"region": "Vanish Cap within the Plexus",
+		"category": ["Silent Hall", "Filler Boxes"],
+		"requires": "|Vanish Cap|"
+	},
+	{
+		"name": "Vanish Cap within the Plexus - ? Box Before the Chasm (Right)",
+		"region": "Vanish Cap within the Plexus",
+		"category": ["Silent Hall", "Filler Boxes"],
+		"requires": "|Vanish Cap|"
+	},
+	{
+		"name": "Vanish Cap within the Plexus - ? Box Near Left Grate",
+		"region": "Vanish Cap within the Plexus",
+		"category": ["Silent Hall", "Filler Boxes"],
+		"requires": "|Vanish Cap|"
+	},
+	{
+		"name": "Vanish Cap within the Plexus - ? Box Near Back Grate",
+		"region": "Vanish Cap within the Plexus",
+		"category": ["Silent Hall", "Filler Boxes"],
 		"requires": "|Vanish Cap| AND ({HeightSideFlip()} OR |Progressive Triple Jump:1|)"
 	},
 	{
@@ -2484,6 +3085,12 @@
 		"region": "Ultra Battle Fort",
 		"category": ["Star Road"],
 		"requires": "|Ground Pound| AND |Wall Kick| AND (|Pole Climb| OR |Progressive Triple Jump:2|)"
+	},
+	{
+		"name": "Ultra Battle Fort - ? Box Above Wall Kick Wall",
+		"region": "Ultra Battle Fort",
+		"category": ["Star Road", "Filler Boxes"],
+		"requires": "{GroundBox()} AND |Wall Kick| AND (|Pole Climb| OR |Progressive Triple Jump:2|)"
 	},
 	{
 		"name": "Piranha's Hidden Pillar - Make Piranha Squirm",
@@ -2533,6 +3140,24 @@
 		"region": "Wet-Dry Town",
 		"category": ["Star Road"],
 		"requires": "|Swim| AND {GroundBox()}"
+	},
+	{
+		"name": "Wet-Dry Town - ? Box on Gray House",
+		"region": "Wet-Dry Town",
+		"category": ["Star Road", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Wet-Dry Town - ? Box on White House",
+		"region": "Wet-Dry Town",
+		"category": ["Star Road", "Filler Boxes"],
+		"requires": "|Swim| OR (|Progressive Triple Jump:1| AND |Ledge Grab|) OR |Progressive Triple Jump:2| OR |Wall Kick| OR (|Pole Climb| AND (|Ledge Grab| OR |Kick| OR {HeightDoubleJump()}))"
+	},
+	{
+		"name": "Wet-Dry Town - ? Box Inside White House",
+		"region": "Wet-Dry Town",
+		"category": ["Star Road", "Filler Boxes"],
+		"requires": "{GroundBox()}"
 	},
 	{
 		"name": "Corrupted Challenge - Green Demon Chase",
@@ -2586,7 +3211,8 @@
 		"name": "Bob-omb Grassyfield - Tree Secrets",
 		"region": "Bob-omb Grassyfield",
 		"category": ["Stellar Tower"],
-		"requires": "|Pole Climb| OR |Backflip| OR |Side Flip| OR |Progressive Triple Jump:1| OR {YamlEnabled(slope_movement)}"
+		"requires": "|Pole Climb| OR |Backflip| OR |Side Flip| OR |Progressive Triple Jump:1| OR {YamlEnabled(slope_movement)}",
+		"_comment": "Either climb trees, or have moves enabling touching secrets without grabbing trees. Cannon-only too annoying."
 	},
 	{
 		"name": "Misty Beach - Timed Box Secrets",
@@ -2648,6 +3274,12 @@
 		"name": "Shifting Sand Land (beta) - Stomp on the Condor",
 		"region": "Chroma Tundra (beta)",
 		"category": ["Vanilla Basement Maze"],
+		"requires": "|Shell| OR {DistKick()} OR |Cannon Unlock (Shifting Sand Land (beta))|"
+	},
+	{
+		"name": "Shifting Sand Land (beta) - ? Box Near Pyramid Entrance",
+		"region": "Chroma Tundra (beta)",
+		"category": ["Vanilla Basement Maze", "Filler Boxes"],
 		"requires": "|Shell| OR {DistKick()} OR |Cannon Unlock (Shifting Sand Land (beta))|"
 	},
 	{
@@ -2717,10 +3349,28 @@
 		"requires": "{HeightLedgeGrab()}"
 	},
 	{
+		"name": "Big Boo's Haunt (vanilla) - ? Box Behind the House",
+		"region": "Big Boo's Haunt (vanilla)",
+		"category": ["Vanilla Courtyard", "Filler Boxes"],
+		"requires": []
+	},
+	{
 		"name": "Bowser in the Dark World (December '95) - Defeat Bowser",
 		"region": "Bowser in the Dark World (beta)",
 		"category": ["Vanilla Lobby"],
 		"requires": "{HeightLedgeGrab()} AND |Progressive Grab:2|"
+	},
+	{
+		"name": "Bowser in the Dark World (December '95) - ? Box on the Way (1 of 2)",
+		"region": "Bowser in the Dark World (beta)",
+		"category": ["Vanilla Lobby", "Filler Boxes"],
+		"requires": "{HeightLedgeGrab()}"
+	},
+	{
+		"name": "Bowser in the Dark World (December '95) - ? Box on the Way (2 of 2)",
+		"region": "Bowser in the Dark World (beta)",
+		"category": ["Vanilla Lobby", "Filler Boxes"],
+		"requires": "{HeightLedgeGrab()}"
 	},
 	{
 		"name": "Cool Cool Mountain (beta) - Lil' Penguin Lost",
@@ -2763,6 +3413,18 @@
 		"region": "Flying Fortress",
 		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs"],
 		"requires": "(|Wing Cap| AND |Cannon Unlock (Flying Fortress)|) OR |Side Flip| OR |Progressive Triple Jump:2| OR ((|Cannon Unlock (Flying Fortress)| OR |Pole Climb| OR {HeightKick()}) AND {YamlEnabled(slope_movement)})"
+	},
+	{
+		"name": "Flying Fortress - ? Box by Lower Thwomp",
+		"region": "Flying Fortress",
+		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Flying Fortress - ? Box by Collapsing Bridge",
+		"region": "Flying Fortress",
+		"category": ["Vanilla Lobby", "Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
 	},
 	{
 		"name": "Fish Tank - Red Coins",
@@ -2846,6 +3508,36 @@
 		"requires": "|Swim|"
 	},
 	{
+		"name": "Wet-Dry World (beta) - ? Box with Secret (1 of 5)",
+		"region": "Wet-Dry World (beta)",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": "|Swim|"
+	},
+	{
+		"name": "Wet-Dry World (beta) - ? Box with Secret (2 of 5)",
+		"region": "Wet-Dry World (beta)",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": "|Swim|"
+	},
+	{
+		"name": "Wet-Dry World (beta) - ? Box with Secret (3 of 5)",
+		"region": "Wet-Dry World (beta)",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": "|Swim|"
+	},
+	{
+		"name": "Wet-Dry World (beta) - ? Box with Secret (4 of 5)",
+		"region": "Wet-Dry World (beta)",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": "|Swim|"
+	},
+	{
+		"name": "Wet-Dry World (beta) - ? Box with Secret (5 of 5)",
+		"region": "Wet-Dry World (beta)",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": "|Swim|"
+	},
+	{
 		"name": "Grassy Snowy Summit - Scale the Mountain",
 		"region": "Grassy Snowy Summit",
 		"category": ["Vanilla and Mirrored Upstairs"],
@@ -2855,6 +3547,30 @@
 		"name": "Grassy Snowy Summit - Breathtaking View from the Bridge",
 		"region": "Grassy Snowy Summit",
 		"category": ["Vanilla and Mirrored Upstairs"],
+		"requires": []
+	},
+	{
+		"name": "Grassy Snowy Summit - ? Box at Lowest Part (Grassy)",
+		"region": "Grassy Snowy Summit",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Grassy Snowy Summit - ? Box Midway up Vines on Left (Grassy)",
+		"region": "Grassy Snowy Summit",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Grassy Snowy Summit - ? Box at Lowest Part (Snowy)",
+		"region": "Grassy Snowy Summit",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
+		"requires": []
+	},
+	{
+		"name": "Grassy Snowy Summit - ? Box Midway up Vines on Left (Snowy)",
+		"region": "Grassy Snowy Summit",
+		"category": ["Vanilla and Mirrored Upstairs", "Filler Boxes"],
 		"requires": []
 	},
 	{

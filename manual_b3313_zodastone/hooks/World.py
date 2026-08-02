@@ -83,6 +83,13 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
     eternal_fort_red_stars = int(getattr(world.options, "eternal_fort_red_stars"))
     if eternal_fort_red_stars > num_total_red_stars:
         raise ValidationError(f"{multiworld.player_name[player]}: Number of Red Stars for Eternal Fort ({eternal_fort_red_stars}) is greater than total number of Red Stars ({num_total_red_stars})")
+    
+    filler_boxes = getattr(world.options, "filler_boxes")
+    if filler_boxes:
+        # TODO do this more robustly, for now adding roughly proportionate amount of each filler item
+        item_config["Power Star"] = 130
+        item_config["50 Coins"] = 130
+        item_config["10 Coins"] = 130
     return item_config
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage

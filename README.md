@@ -37,6 +37,7 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
     - For climbing poles, trees, etc.
   - Progressive Grab
     - This has 2 stages, Punch (can press B to strike objects with Mario's hand), and Grab (can pick up objects)
+    - The stage 2 grab includes all types of grabs (punching grab, diving grab, swimming grab)
   - Progressive Triple Jump
     - This has 2 stages, Double Jump and Triple Jump. You always have access to the basic jump.
   - Shell
@@ -60,6 +61,10 @@ This is a Manual APWorld for the Super Mario 64 ROM hack B3313.
   - 2 of each of the 4 colors.
   - Switches of the same color are still separate checks.
   - You are expected to make a save state before pressing a Yellow Switch (playing the rest of the game without a hat would be painful).
+- Yellow ? Boxes (optional)
+  - Only includes yellow ? boxes containing coins, enemies, or nothing.
+  - Does not include other types of boxes, or boxes containing stars, shells, caps, or which crash the game.
+  - Location names for these will all start with "? Box".
 
 # How Progression Works
 

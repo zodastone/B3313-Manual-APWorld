@@ -1,3 +1,6 @@
 {
-
+	"Filler Boxes": {
+		"hidden": true,
+		"yaml_option": ["filler_boxes"]
+	}
 }
